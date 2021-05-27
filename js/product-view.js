@@ -76,7 +76,7 @@ $(document).ready(function () {
         allowTouchMove: true,
     });
 
-    var allCollectionSwiper = new Swiper(".all-collection-swiper-container", {
+    var allCollectionSwiper = new Swiper(".all-collection-swiper-container.active", {
         init: false,
         loop: false,
         slidesPerView: 3,
