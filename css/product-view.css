@@ -1188,7 +1188,24 @@
         margin: 56px 0 0 0;
     }
 
-    .product-view-equipment-tab .equipment-top {
+    .product-view-equipment-tab .equipment-top .equipment-name {
+        margin: 0 0 40px 0;
+        text-align: center;
+    }
+
+    .product-view-equipment-tab .equipment-top .equipment-name span {
+        font-weight: bold;
+        font-size: 36px;
+        text-align: center;
+        letter-spacing: 0.3px;
+        color: #000000;
+    }
+
+    .product-view-equipment-tab .equipment-top .equipment-link {
+        display: none;
+    }
+
+    .product-view .product-view-option ul li .information-icon.non-icon {
         display: none;
     }
 
@@ -1326,7 +1343,7 @@
 
     .product-view .product-view-option ul li .product-count {
         border-bottom: 1px dashed #ED2024;
-        font-size: 12px;
+        font-size: 14px;
     }
 
     .product-view .product-view-option ul li span {
@@ -1338,10 +1355,6 @@
         max-height: 36px;
         display: block;
         margin: 0 10px 0 0;
-    }
-
-    .product-view .product-view-option ul li:first-child .option-icon {
-        display: none;
     }
 
     .product-view-tabs .nav-tabs {
@@ -1495,8 +1508,30 @@
         padding: 12px 9px;
     }
 
+    .feature-package-size-content table tbody tr td:first-of-type {
+        padding-left: 18px;
+    }
+
     .product-view-rating-review-tab .rating-review-title {
         margin: 0 0 15px 0;
+        position: relative;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .rating-review-all-product-link {
+        position: absolute;
+        right: 24px;
     }
 
     .product-view-rating-review-tab .rating-review-title > span {
@@ -1583,7 +1618,8 @@
         line-height: normal;
     }
 
-    .exec-options-all-product-link a {
+    .exec-options-all-product-link a,
+    .rating-review-all-product-link a {
         font-size: 10px;
         text-align: right;
         color: #ED2024;

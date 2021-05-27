@@ -14,14 +14,57 @@ $.fn.responsiveTabs = function () {
     });
 };
 
-// if ($(this).hasClass('active')) {
-//     $(this).removeClass('active');
-//     container.find('#' + $(this).children().attr("aria-controls")).removeClass('active');
-// } else {
-//     $(this).addClass('active').siblings().removeClass('active');
-// }
 $(document).ready(function () {
     $('.product-view-tabs').responsiveTabs();
+
+    var swiper = new Swiper(".product-view-review-images", {
+        loop: false,
+        slidesPerView: 3,
+        spaceBetween: 10,
+        observer: true,
+        observeParents: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                spaceBetween: 20,
+            },
+            768: {
+                spaceBetween: 30,
+            },
+            1024: {
+                spaceBetween: 40,
+            },
+        },
+    });
+
+    var galleryThumbs = new Swiper('.gallery-thumbs', {
+        spaceBetween: 10,
+        slidesPerView: 5,
+        loop: false,
+        centeredSlides: false,
+        watchSlidesVisibility: true,
+        watchSlidesProgress: true
+    });
+
+    var galleryTop = new Swiper('.gallery-top', {
+        spaceBetween: 10,
+        centeredSlides: true,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        },
+        thumbs: {
+            swiper: galleryThumbs,
+        },
+    });
 
     var execOptionsSwiper = new Swiper(".exec-options-swiper-container", {
         init: false,
@@ -138,54 +181,3 @@ $(document).ready(function () {
         }
     });
 });
-
-let swiper = new Swiper(".product-view-review-images", {
-    loop: false,
-    slidesPerView: 3,
-    spaceBetween: 10,
-    observer: true,
-    observeParents: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        640: {
-            spaceBetween: 20,
-        },
-        768: {
-            spaceBetween: 30,
-        },
-        1024: {
-            spaceBetween: 40,
-        },
-    },
-});
-
-let galleryThumbs = new Swiper('.gallery-thumbs', {
-    spaceBetween: 10,
-    slidesPerView: 5,
-    loop: false,
-    centeredSlides: false,
-    watchSlidesVisibility: true,
-    watchSlidesProgress: true,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    }
-});
-let galleryTop = new Swiper('.gallery-top', {
-    spaceBetween: 10,
-    centeredSlides: true,
-    freeMode: true,
-    grabCursor: true,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
-    thumbs: {
-        swiper: galleryThumbs,
-    },
-});
-
