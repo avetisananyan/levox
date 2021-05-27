@@ -1,0 +1,626 @@
+.personal-information-container {
+    width: 100%;
+}
+
+.personal-information-blocks {
+    padding: 30px;
+    margin: 0 0 30px 0;
+    border: 1px solid #C4C4C4;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 1430px;
+}
+
+.personal-information-info {
+    height: 50px;
+    background: #F6F6F6;
+    border: 1px solid #C6C6C6;
+    border-radius: 3px;
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+}
+
+.personal-information-info > span {
+    width: 100%;
+}
+
+.personal-information-info label {
+    margin: 0;
+    max-width: 300px;
+    width: 100%;
+    font-size: 18px;
+    color: #828282;
+}
+
+.information-info {
+    font-size: 18px;
+    color: #202020;
+}
+
+.personal-information-date {
+    width: 23%;
+    margin: 0 30px 0 0;
+}
+
+.personal-information-date label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #828282;
+}
+
+.personal-information-gender > label {
+    font-weight: bold;
+    font-size: 18px;
+    color: #828282;
+    margin: 0 0 20px 0;
+}
+
+.personal-information-gender .fieldset .field {
+    margin: 0 24px 0 0;
+}
+
+.personal-information-gender .fieldset .field label {
+    font-size: 18px;
+    color: #202020;
+}
+
+input[type="date"] {
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 50px;
+    max-width: 200px;
+    width: 100%;
+}
+input[type="date"] {
+    background: #fff url("../assets/icons/datepicker.svg") 94% 50% no-repeat;
+}
+
+/*input[type="date"]:focus,*/
+/*input[type="date"]:active {*/
+/*    color: #888888;*/
+/*    outline: none;*/
+/*}*/
+
+input[type="date"]::-webkit-datetime-edit {
+    color: #888888;
+    padding-left: 10px;
+}
+
+input[type="date"]:focus::-webkit-datetime-edit {
+    color: #888888;
+}
+
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+
+input[type="date"]::-webkit-inner-spin-button {
+    display: none;
+    -webkit-appearance: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0;
+    -webkit-appearance: none;
+}
+
+.personal-information-card .personal-information-info {
+    margin: 0 0 30px 0;
+}
+
+.personal-information-card .personal-information-info label {
+    color: #202020;
+}
+
+.personal-information-title span {
+    font-weight: bold;
+    font-size: 22px;
+    color: #202020;
+}
+
+.personal-information-card-payment {
+    background: #FFFFFF;
+    border: 2px solid #ED2024;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 304px;
+    height: 44px;
+}
+
+.personal-information-card-payment a {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #ED2024 !important;
+    width: 100%;
+    height: 100%;
+}
+
+.personal-information-card .personal-information-info .edit-action {
+    margin: 0 16px 0 0;
+}
+
+/* Card Modal*/
+.card-modal .modal-content {
+    padding: 60px;
+}
+.card-modal .modal-header,
+.card-modal .modal-body,
+.card-modal .modal-footer {
+    padding: 0;
+}
+.card-modal .modal-header {
+    margin: 0 0 15px 0;
+    border: unset;
+}
+.card-modal .modal-header .modal-title {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.6px;
+    color: #202020;
+}
+.card-modal .modal-header .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ED2024;
+}
+.card-modal .modal-body > span {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: #202020;
+    margin: 0 0 34px 0;
+    display: block;
+}
+.card-modal input {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+.card-modal label {
+    font-size: 18px;
+    color: #757575;
+    margin: 0 0 14px 0;
+}
+.card-modal .card-modal-date input:first-child {
+    margin: 0 10px 0 0;
+}
+.card-modal .card-modal-date > div {
+    margin: 0 42px 0 0;
+}
+.card-modal .card-modal-number {
+    margin: 0 0 30px 0;
+}
+.card-modal .modal-footer {
+    margin: 30px 0 0 0;
+    border: unset;
+}
+.card-modal .modal-footer button {
+    width: 100%;
+    height: 46px;
+    background: #A0A0A0;
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    margin: 0 0 30px 0;
+}
+.card-modal .modal-footer .card-images {
+    width: 100%;
+}
+
+/* The Address Modal */
+.address-modal .fieldset {
+    margin: 0;
+}
+.address-modal .fieldset .field {
+    padding: 0 15px 0 0;
+    margin: 0 0 25px 0;
+}
+.address-modal .field:first-child,
+.address-modal .field:last-child {
+    padding: 0;
+}
+.address-modal .fieldset .field > label {
+    font-size: 18px;
+    color: #757575;
+}
+.address-modal .fieldset .field.required > label:after {
+    content: "*";
+    color: #ED2024;
+}
+.address-modal .fieldset .field input {
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 100%;
+    height: 50px;
+    padding: 0 10px;
+    outline: unset;
+    font-weight: 600;
+    font-size: 18px;
+    color: #202020;
+}
+.address-modal .field:not(:first-child) {
+    min-width: 146px;
+}
+.address-modal .field.private-house {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 25px 15px 0 0;
+}
+.address-modal .field.private-house .control {
+    width: 20px;
+    height: 20px;
+}
+.address-modal .field.private-house .control > label.checkbox {
+    height: 100%;
+    width: 100%;
+}
+.address-modal .field.private-house .control > label.checkbox > input:checked + span::before {
+    left: 0;
+    top: 0;
+}
+.address-modal .field.private-house > label {
+    margin: 0 0 0 12px;
+}
+.address-modal .field.private-house input {
+    width: 100%;
+    height: 100%;
+}
+
+.address-modal .lift-option-container {
+    position: relative;
+    width: 100%;
+}
+.address-modal .lift-option-dropdown {
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    min-height: 2em;
+    max-height: 46px;
+    overflow: hidden;
+    top: 0;
+    cursor: pointer;
+    text-align: left;
+    white-space: nowrap;
+    color: #444;
+    outline: none;
+    border: 1px solid #DEDEDE;
+    transition: 0.3s all ease-in-out;
+}
+.address-modal .lift-option-dropdown input {
+    width: 1px;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    opacity: 0.01;
+}
+.address-modal .lift-option-dropdown input:checked + label {
+    border-top: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.address-modal .lift-option-dropdown > label {
+    border-top: 1px solid #C0C0C0;
+    height: 46px;
+    line-height: 2em;
+    padding: 0 16px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.3s color ease-in-out;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 0;
+}
+.address-modal .lift-option-dropdown.bi-chevron-down::after {
+    position: absolute;
+    right: 0.8em;
+    top: 17px;
+    color: #E50914;
+    font-size: 14px;
+}
+.address-modal .lift-option-dropdown.expanded {
+    background: #fff;
+    padding: 0;
+    box-shadow: rgb(0 0 0 / 10%) 3px 3px 5px 0;
+    max-height: max-content;
+    z-index: 10;
+}
+.address-modal .lift-option-dropdown input:checked + label:nth-child(2) {
+    margin-top: 0;
+    position: relative;
+}
+.address-modal input.lift-option-default + label {
+    border: unset;
+}
+.address-modal .modal-content {
+    padding: 60px;
+}
+.address-modal .modal-dialog {
+    max-width: 1326px;
+}
+.address-modal .modal-header {
+    border: unset;
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+.address-modal .modal-header .modal-title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #202020;
+    line-height: 1;
+}
+.address-modal .modal-body {
+    padding: 0;
+}
+.address-modal .modal-header a.close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* Desktop */
+@media only screen and (min-width: 769px) {
+    .personal-information-title {
+        margin: 0 0 20px 0;
+    }
+
+    .personal-information-mobile {
+        display: none;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 768px) {
+    .personal-information-info {
+        position: relative;
+        margin: 0 0 50px 0;
+        background: unset;
+    }
+
+    .personal-information-info:last-child {
+        margin: 0 0 20px 0
+    }
+
+    .personal-information-info > span label {
+        position: absolute;
+        top: -30px;
+        left: 0;
+        font-weight: normal;
+        font-size: 14px;
+        color: #828282;
+    }
+
+    .personal-information-info a.edit-action {
+        position: absolute;
+        right: 0;
+        top: -30px;
+    }
+
+    .personal-information-info a.edit-action img,
+    .personal-information-info a.remove-action img {
+        width: 11px;
+        height: 11px;
+    }
+
+    .personal-information-info .information-info {
+        font-weight: normal;
+        font-size: 14px;
+        color: #202020;
+    }
+
+    .personal-information-mobile {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .personal-information-mobile img {
+        border-radius: 100%;
+        max-height: 67px;
+        max-width: 67px;
+    }
+
+    .personal-information-mobile > span {
+        margin: 0 0 0 20px;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0.3px;
+        color: #202020;
+    }
+
+    .personal-information-blocks {
+        border: unset;
+        border-radius: unset;
+        border-bottom: 1px solid #C4C4C4;
+        padding: 0 0 30px 0;
+    }
+
+    .personal-information-blocks:last-child {
+        border-bottom: unset;
+        padding: 0;
+    }
+
+    .personal-information-title {
+        margin: 0 0 40px 0;
+    }
+
+    .personal-information-title span {
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0.4px;
+        color: #000000;
+    }
+
+    .personal-information-bottom {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .personal-information-date {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .personal-information-date label {
+        font-size: 14px;
+    }
+
+    .personal-information-gender > label {
+        margin: 0 0 6px 0;
+        font-size: 14px;
+    }
+
+    .personal-information-gender .fieldset .field label {
+        font-size: 14px;
+    }
+
+    input[type="date"] {
+        height: 40px;
+    }
+
+    .personal-information-card .personal-information-info {
+        margin: 0 0 12px 0;
+        height: 40px;
+    }
+
+    .personal-information-card-payment a {
+        font-size: 13px;
+        font-weight: bold;
+    }
+
+    .personal-information-card .personal-information-info a.edit-action {
+        position: unset;
+        display: none;
+    }
+
+    .personal-information-card .personal-information-info label {
+        display: none;
+    }
+
+    .personal-information-card .personal-information-title {
+        margin: 0 0 20px 0;
+    }
+
+    .personal-information-card-payment {
+        max-width: 100%;
+    }
+
+    /* Card Modal Mobile */
+    .card-modal .modal-dialog {
+        margin: 0 !important;
+        height: 100%;
+    }
+    .card-modal .modal-content {
+        border: unset;
+        border-radius: unset;
+        padding: 14px;
+        height: 100%;
+        display: block;
+    }
+    .card-modal .modal-header .modal-title {
+        font-size: 20px;
+    }
+    .card-modal .modal-body > span {
+        font-size: 16px;
+        margin: 0 0 26px 0;
+    }
+    .card-modal label {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .card-modal input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .card-modal .card-modal-number {
+        margin: 0 0 20px 0;
+    }
+    .card-modal .card-modal-date > div {
+        margin: 0 11px 0 0;
+    }
+    .card-modal .modal-header .close {
+        right: 14px;
+        top: 16px;
+    }
+
+    .address-modal .lift-option-dropdown {
+        max-height: 40px;
+    }
+    .address-modal .lift-option-dropdown.bi-chevron-down::after {
+        top: 13px;
+    }
+    .address-modal .lift-option-dropdown > label {
+        height: 40px;
+        font-size: 14px;
+    }
+    .address-modal .field.private-house {
+        padding: 10px 15px 0 0;
+    }
+    .address-modal .fieldset .field {
+        padding: 0 5px;
+        margin: 0 0 10px 0;
+    }
+    .address-modal .fieldset .field:not(.private-house) input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .address-modal .fieldset .field > label {
+        font-size: 12px;
+    }
+    .modal.address-modal,
+    body.modal-open {
+        padding: 0 !important;
+        margin: 0;
+    }
+    .address-modal .modal-dialog {
+        margin: 0 !important;
+        height: -webkit-fill-available;
+    }
+    .address-modal .modal-content {
+        height: 100%;
+        border: unset;
+        border-radius: unset;
+        padding: 25px 14px;
+    }
+    .address-modal .modal-header .modal-title {
+        font-size: 20px;
+    }
+}

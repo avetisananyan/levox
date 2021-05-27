@@ -1,0 +1,1881 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Levox</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/breadcrumbs.css">
+  <link rel="stylesheet" href="./css/product-view.css">
+  <link rel="stylesheet" href="./css/responsive.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" integrity="sha512-eeBbzvdY28BPYqEsAv4GU/Mv48zr7l0cI6yhWyqhgRoNG3sr+Q2Fr6751bA04Cw8SGUawtVZlugHm5H1GOU/TQ==" crossorigin="anonymous" />-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+  <script src="./js/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js" integrity="sha512-sAHYBRXSgMOV2axInO6rUzuKKM5SkItFLlLHQ8YjRD+FBwowtATOs4njP9oim3/MzyAGrB52SLDjpAOLcOT9TA==" crossorigin="anonymous"></script>-->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/index.js" async></script>
+  <script src="./js/product-view.js" async></script>
+</head>
+<body class="non-home-page">
+<div class="page-wrapper">
+  <div class="header" id="myHeader">
+    <div class="header-container">
+      <div class="logo d-flex align-items-center">
+        <a href="index.html">
+          <img src="./assets/images/logo.png" alt="">
+        </a>
+      </div>
+      <div class="header-links">
+        <div class="nav-container">
+          <ul class="nav-bar">
+            <li class="nav-link">
+              <a href="#">
+                <span>Фабрика мебели и сеть магазинов</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="addresses.html" target="_blank">
+                <img src="./assets/icons/home.svg" alt="">
+                <span class="nav-address-title">Адреса магазинов
+                                    <span class="count">13</span>
+                                </span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <img src="./assets/icons/truck.svg" alt="">
+                <span>Доставка</span>
+              </a>
+            </li>
+            <li class="nav-link switch-checkbox">
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <img src="./assets/icons/comment.svg" alt="">
+                <span>Отзывы и предложения</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <div class="header-contact">
+                  <div class="location">
+                    <img src="./assets/icons/location.svg" alt="">
+                    <span>Москва</span>
+                  </div>
+                  <div class="phone-number">+7(938) 540-86-00</div>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="page-content d-flex">
+    <div class="d-md-none d-flex justify-content-between">
+      <div class="logo d-flex align-items-center">
+        <img src="./assets/images/logo.png" alt="">
+      </div>
+      <div class="header-links-menu d-flex justify-content-between">
+        <div class="nav-container-mobile d-flex align-items-center">
+          <ul class="nav-bar d-flex align-items-center justify-content-center">
+            <li class="small-nav-link-icon">
+              <a href="#">
+                <img src="./assets/icons/location-white.svg" alt="">
+              </a>
+            </li>
+            <li class="small-nav-link-icon">
+              <a href="#">
+                <img src="./assets/icons/phone.svg" alt="">
+              </a>
+            </li>
+            <li class="small-nav-link-icon">
+              <a href="#">
+                <img src="./assets/icons/basket-white.svg" alt="">
+                <span class="count d-flex align-items-center justify-content-center">5</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="menu d-flex align-items-center" id="menu-button-open" onclick="openCloseSideMenu()">
+          <img id="menu-open-close-icon" src="./assets/icons/menu.svg" alt="">
+        </div>
+      </div>
+
+    </div>
+    <div class="side-menu" id="side-menu">
+      <div id="side-menu-container" class="side-menu-container">
+        <div class="mobile-account-container">
+          <div class="menu-account-container">
+            <a href="#" class="side-menu-account">
+                            <span class="profileimage">
+                                <img src="assets/images/profileimage.jpeg" />
+                            </span>
+              <span class="user-name">Анна Васильченко</span>
+            </a>
+          </div>
+
+          <div class="nav-link switch-checkbox justify-content-center">
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <ul class="side-menu-top">
+          <li class="home-page">
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/home.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center">Главная</span>
+            </a>
+          </li>
+          <li>
+
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sale.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-1"><span>Акции</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sofa.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-2"><span>Мягкая мебель</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/living-room.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-3"><span>Гостиная</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/entrance-hall.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-4"><span>Прихожая</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/bedroom.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-5"><span>Спальня</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/boards-and-beds.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-6"><span>Тумбы и комоды</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/cabinets-and-racks.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-7"><span>Шкафы и стеллажи</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/kitchen.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-8"><span>Кухня</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/tables.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-9"><span>Столы</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/chairs.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-10"><span>Стулья и табуреты</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+        </ul>
+        <ul class="side-menu-bottom">
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/star.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Услуги</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sales.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Покупателю</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/partner.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Партнёру</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/about.svg" alt=""></div>
+              <span class="side-menu-title justify-content-between d-flex align-items-center"><span>О компании</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div id="menu-sub-1" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Акции</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-2" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Мягкая мебель</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-3" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Гостиная</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-4" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Прихожая</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-5" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Спальня</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-6" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Тумбы и комоды</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-7" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Шкафы и стеллажи</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-8" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Кухня</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-9" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Столы</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="menu-sub-10" class="menu-sub">
+        <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+        <div class="menu-sub-title"><a href="#"><span>Стулья и табуреты</span></a></div>
+        <div class="menu-sub-content">
+          <ul>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                <span>Диваны модульные</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                <span>Диваны детские</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                <span>Диваны HoReCa</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                <span>Угловые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                <span>Прямые диваны</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                <span>Кресла</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                <span>Диваны наборы</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div id="page-product-view" class="page w-100">
+        <div class="search-block">
+          <div class="form-group">
+            <label for="search">Поиск по сайту:</label>
+            <input type="text" id="search" name="search" placeholder="Введите ключевое слово">
+            <img src="./assets/icons/search.svg" alt="" class="search-icon">
+          </div>
+          <div class="search-block-link">
+            <a href="#">
+              <img src="./assets/icons/account.svg" alt="">
+              <p>Аккаунт</p>
+            </a>
+            <a href="#">
+              <img src="./assets/icons/basket.svg" alt="">
+              <p>Корзина<span class="count">5</span></p>
+            </a>
+          </div>
+        </div>
+        <div class="breadcrumbs-block">
+          <nav class="breadcrumbs-nav">
+            <ul class="d-flex align-items-center">
+              <li class="back"><a href="#"><span>Назад</span></a></li>
+              <li class=""><a href="#"><span>Главная</span></a><span class="right-arrow"><img src="./assets/icons/side-menu/black-right-arrow.svg" alt=""></span></li>
+              <li class=""><a href="#"><span>Мягкая мебель</span></a><span class="right-arrow"><img src="./assets/icons/side-menu/black-right-arrow.svg" alt=""></span></li>
+              <li class="active"><a href="#"><span>Диваны прямые</span></a><span class="right-arrow"><img src="./assets/icons/side-menu/black-right-arrow.svg" alt=""></span></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="product-view">
+          <div class="product-view-top-container">
+            <div class="product-view-title"><span>Раскладной игравой диванчик серии “Классик”</span></div>
+            <div class="product-view-sku-stars-container d-flex ">
+              <div class="product-view-sku">
+                <span class="sku-title">Код: <span>12517625</span></span>
+              </div>
+              <div class="product-view-stars-review d-flex">
+                <div class="product-view-stars d-flex">
+                  <img src="./assets/icons/star.svg" alt="">
+                  <img src="./assets/icons/star.svg" alt="">
+                  <img src="./assets/icons/star.svg" alt="">
+                  <img src="./assets/icons/star.svg" alt="">
+                  <img src="./assets/icons/star.svg" alt="">
+                </div>
+                <div class="product-view-review">
+                  <a href="">
+                    <span>0</span> отзывов
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-view-content d-flex justify-content-between">
+            <div class="product-view-slider">
+              <div class="gallery">
+                <div class="swiper-container gallery-top">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-5.png" alt=""></div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-container gallery-thumbs">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="assets/images/slider/rectangle-5.png" alt=""></div>
+                  </div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <div class="product-view-info col-lg-4">
+              <div class="product-view-price">
+                <span class="old-price d-flex justify-content-end">
+                    <span>35.759 ₽</span>
+                </span>
+                <div class="special-price d-flex flex-column">
+                  <span class="price">32.759 ₽</span>
+                  <span class="price-label">розничная цена</span>
+                </div>
+              </div>
+              <div class="product-view-cart d-flex align-items-center flex-column">
+                <div class="product-view-opt-button">
+                  <a href="" class="d-flex align-items-center justify-content-center">
+                    <span>Условия опта</span>
+                  </a>
+                </div>
+                <div class="product-view-execution-options">
+                  <a href="" class="d-flex align-items-center justify-content-center">
+                    <span>Варианты исполнения</span>
+                  </a>
+                </div>
+                <div class="cart">
+                  <a href="" class="d-flex align-items-center justify-content-center">
+                    <span><img src="assets/icons/cart-white.svg">В корзину</span>
+                  </a>
+                </div>
+              </div>
+              <div class="product-view-option">
+                <ul>
+                  <li>
+                      <span class="option-icon"><img src="assets/icons/product-view/warehouse.svg"></span>
+                      <span class="product-count">Остатки <span>25 шт.</span></span>
+                  </li>
+                  <li>
+                    <span class="option-icon"><img src="assets/icons/product-view/open-box.svg"></span>
+                    <span>Пункты самовывоза</span>
+                  </li>
+                  <li>
+                    <span class="option-icon"><img src="assets/icons/product-view/shipped.svg"></span>
+                    <span>Доставка</span>
+                    <span class="information-icon"><img src="assets/icons/product-view/information.svg"></span>
+                  </li>
+                  <li>
+                    <span class="option-icon"><img src="assets/icons/product-view/tools.svg"></span>
+                    <span>Сборка</span>
+                    <span class="information-icon"><img src="assets/icons/product-view/information.svg"></span>
+                  </li>
+                  <li>
+                    <span class="option-icon"><img src="assets/icons/product-view/money.svg"></span>
+                    <span>Рассрочка</span>
+                    <span class="information-icon"><img src="assets/icons/product-view/information.svg"></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="product-view-tabs">
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">Видеообзор</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">Комплектация</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">Характеристики</a>
+              </li>
+              <li role="presentation" class="">
+                <a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">Отзывы <span class="count">10</span></a>
+              </li>
+            </ul>
+            <div id="tabs-content" class="tab-content panel-group">
+              <div class="panel-heading" role="tab" id="heading1">
+                <a href="#tab1" class="bi-chevron-down" role="button" data-toggle="collapse" data-parent="tabs-content" aria-expanded="true"
+                   aria-controls="tab1">Видеообзор</a>
+              </div>
+
+              <div id="tab1" role="tabpanel" class="tab-pane active panel-collapse collapse in" aria-labelledby="heading1">
+                <div class="product-view-video">
+                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/4_6fHw6ML70" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+              <div class="panel-heading panel-heading-equipment" role="tab" id="heading2">
+                <a href="#tab2" class="collapsed bi-chevron-down" role="button" data-toggle="collapse" data-parent="tabs-content"
+                   aria-expanded="true" aria-controls="tab2">Комплектация</a>
+              </div>
+
+              <div id="tab2" role="tabpanel" class="tab-pane tab-pane-equipment panel-collapse collapse" aria-labelledby="heading2">
+                <div class="product-view-equipment-tab">
+                  <div class="equipment-top">
+                    <div class="equipment-name">
+                      <span>Состав комплекта</span>
+                    </div>
+                    <div class="equipment-link">
+                      <a href="">См. всё</a>
+                    </div>
+                  </div>
+                  <div class="divTable product-view-equipment swiper-container">
+                    <div class="divTableHeading">
+                      <div class="divTableRow">
+                        <div class="divTableHead"><span>№</span></div>
+                        <div class="divTableHead"><span>Фото</span></div>
+                        <div class="divTableHead"><span>Наименование</span></div>
+                        <div class="divTableHead"><span>Цвет исполнения</span></div>
+                        <div class="divTableHead"><span>Кол-во</span></div>
+                        <div class="divTableHead"><span>Цена</span></div>
+                        <div class="divTableHead"><span>Сумма</span></div>
+                      </div>
+                    </div>
+                    <div class="divTableBody swiper-wrapper">
+                      <div class="divTableRow swiper-slide">
+                        <div class="divTableCell" data-th="№"><span>1</span></div>
+                        <div class="divTableCell" data-th="Фото"><img src="assets/images/rectangle-1.png" /></div>
+                        <div class="divTableCell" data-th="Наименование"><div class="dtc-3"><span>Модуль диван</span><span>160x200 см</span></div></div>
+                        <div class="divTableCell dtc-4" data-th="Цвет исполнения"><span>Бежевый</span></div>
+                        <div class="divTableCell" data-th="Кол-во"><span>1 шт</span></div>
+                        <div class="divTableCell" data-th="Цена"><span>5 000 ₽</span></div>
+                        <div class="divTableCell" data-th="Сумма"><span>5 000 ₽</span></div>
+                      </div>
+                      <div class="divTableRow swiper-slide">
+                        <div class="divTableCell" data-th="№"><span>2</span></div>
+                        <div class="divTableCell" data-th="Фото"><img src="assets/images/rectangle-2.png" /></div>
+                        <div class="divTableCell" data-th="Наименование"><div class="dtc-3"><span>Модуль диван</span><span>160x200 см</span></div></div>
+                        <div class="divTableCell dtc-4" data-th="Цвет исполнения"><span>Бежевый</span></div>
+                        <div class="divTableCell" data-th="Кол-во"><span>1 шт</span></div>
+                        <div class="divTableCell" data-th="Цена"><span>5 000 ₽</span></div>
+                        <div class="divTableCell" data-th="Сумма"><span>5 000 ₽</span></div>
+                      </div>
+                      <div class="divTableRow swiper-slide">
+                        <div class="divTableCell" data-th="№"><span>3</span></div>
+                        <div class="divTableCell" data-th="Фото"><img src="assets/images/rectangle-3.png" /></div>
+                        <div class="divTableCell" data-th="Наименование"><div class="dtc-3"><span>Модуль диван</span><span>160x200 см</span></div></div>
+                        <div class="divTableCell dtc-4" data-th="Цвет исполнения"><span>Бежевый</span></div>
+                        <div class="divTableCell" data-th="Кол-во"><span>1 шт</span></div>
+                        <div class="divTableCell" data-th="Цена"><span>5 000 ₽</span></div>
+                        <div class="divTableCell" data-th="Сумма"><span>5 000 ₽</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-view-equipment-total">
+                    <label>Итого:</label>
+                    <span>15 000 ₽</span>
+                  </div>
+                  <div class="product-view-equipment-collect d-flex">
+                    <a href="" class="d-flex align-items-center justify-content-center"><img src="assets/icons/product-view/collect.svg"><span>Собрать свой комплект</span></a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel-heading" role="tab" id="heading3">
+                <a href="#tab3" class="collapsed bi-chevron-down" role="button" data-toggle="collapse" data-parent="tabs-content"
+                   aria-expanded="true" aria-controls="tab3">Характеристики</a>
+              </div>
+
+              <div id="tab3" role="tabpanel" class="tab-pane panel-collapse collapse" aria-labelledby="heading3">
+                <div class="product-view-feature-tab">
+                  <div class="feature-description-content">
+                    <div class="feature-title"><span>Описание</span></div>
+                    <div class="feature-description"><span>Просторный диван Эби обеспечит комфорт при посадке и полноценное спальное место, что особенно актуально в обустройстве современной многофункциональной гостиной. Мебель смотрится монументально и внушительно, а благородный оттенок подчеркивает универсальность модели с надежным механизмом.</span></div>
+                  </div>
+                  <div class="feature-feature-content">
+                    <div class="feature-title"><span>Характеристики</span></div>
+                    <div class="feature-feature">
+                      <ul>
+                        <li><span class="feature-line"><span class="feature-name">Размеры (ШхВхГ)</span><span class="feature-border"></span></span><span class="feature-value">140х160х90 см</span></li>
+                        <li><span class="feature-line"><span class="feature-name">Коллекция</span><span class="feature-border"></span></span><span class="feature-value">Бристоль</span></li>
+                        <li><span class="feature-line"><span class="feature-name">Производитель</span><span class="feature-border"></span></span><span class="feature-value">Levox</span></li>
+                        <li><span class="feature-line"><span class="feature-name">Гарантия</span><span class="feature-border"></span></span><span class="feature-value">5 лет</span></li>
+                        <li class="feature-color">
+                          <span class="feature-feature-name">Цвет</span>
+                          <ul class="d-flex">
+                            <li><span class="feature-color-img"><img src="assets/icons/product-view/ellipse-1.svg"></span><span class="feature-color-title">ЛДСП ясень шимо светлый</span></li>
+                            <li><span class="feature-color-img"><img src="assets/icons/product-view/ellipse-2.svg"></span><span class="feature-color-title">Белый глянец</span></li>
+                            <li><span class="feature-color-img"><img src="assets/icons/product-view/ellipse-3.svg"></span><span class="feature-color-title">Ясень графит матовый</span></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="feature-structure-content">
+                    <div class="feature-title"><span>Состав</span></div>
+                    <div class="feature-structure">
+                      <ul>
+                        <li><span class="feature-line"><span class="feature-name">Наполнитель</span><span class="feature-border"></span></span><span class="feature-value">ППУ</span></li>
+                        <li><span class="feature-line"><span class="feature-name">Механизм трансформации</span><span class="feature-border"></span></span><span class="feature-value">Тик-Так</span></li>
+                        <li><span class="feature-line"><span class="feature-name">Каркас</span><span class="feature-border"></span></span><span class="feature-value">Фанера</span></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="feature-advantage-content">
+                    <div class="feature-title"><span>Преимущества</span></div>
+                    <div class="feature-advantage">
+                      <div class="feature-advantage-info d-flex flex-column">
+                        <span class="feature-advantage-title">3 фабрики полного цикла</span>
+                        <span class="feature-advantage-description">Мы сами производим и контролируем качество всей продукции от этапа разработки модели до контрольной сборки готового изделия</span>
+                      </div>
+                      <div class="feature-advantage-info d-flex flex-column">
+                        <span class="feature-advantage-title">Проверенные комплектующие</span>
+                        <span class="feature-advantage-description">Мы внимательно следим за тем, из чего будет сделан ваш новый диван: от наполнителей сального места и встроенных механизмов до декоративных элементов</span>
+                      </div>
+                      <div class="feature-advantage-info d-flex flex-column">
+                        <span class="feature-advantage-title">Доступные цены</span>
+                        <span class="feature-advantage-description">Мы заботимся о своих покупателях и, не снижая качества, предлагаем самую выгодную цену на товар</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="feature-package-size-content">
+                    <div class="feature-title"><span>Размеры упаковки</span></div>
+                    <div class="feature-package-size container table-responsive">
+                      <table class="table table-bordered table-hover">
+                        <thead>
+                          <tr>
+                            <th scope="col">Упаковка</th>
+                            <th scope="col">Размеры упаковки (ШхВхГ)</th>
+                            <th scope="col">Вес</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Коробка №1</td>
+                            <td>140х160х90 см</td>
+                            <td>23 кг</td>
+                          </tr>
+                          <tr>
+                            <td>Коробка №2</td>
+                            <td>140х160х90 см</td>
+                            <td>23 кг</td>
+                          </tr>
+                          <tr>
+                            <td>Коробка №3</td>
+                            <td>140х160х90 см</td>
+                            <td>23 кг</td>
+                          </tr>
+                          <tr>
+                            <td>Итого:</td>
+                            <td>1.5 м3</td>
+                            <td>100 кг</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-heading" role="tab" id="heading4">
+                <a href="#tab4" class="collapsed bi-chevron-down" role="button" data-toggle="collapse" data-parent="tabs-content"
+                   aria-expanded="true" aria-controls="tab4">Отзывы</a>
+              </div>
+
+              <div id="tab4" role="tabpanel" class="tab-pane panel-collapse collapse" aria-labelledby="heading4">
+                <div class="product-view-rating-review-tab">
+                  <div class="product-view-rating">
+                    <div class="rating-review-title"><span>Рейтинг</span></div>
+                    <div class="product-view-rating-content d-flex align-items-center justify-content-between">
+                      <div class="product-view-rating-left">
+                        <div class="rating-feedback-container d-flex align-items-center">
+                          <div class="product-view-rating-number"><span>4.8</span></div>
+                          <div class="product-view-rating-stars">
+                            <span>Средний рейтинг</span>
+                            <div class="rating-stars d-flex">
+                              <img src="./assets/icons/red-star.svg" alt="">
+                              <img src="./assets/icons/red-star.svg" alt="">
+                              <img src="./assets/icons/red-star.svg" alt="">
+                              <img src="./assets/icons/red-star.svg" alt="">
+                              <img src="./assets/icons/red-star.svg" alt="">
+                            </div>
+                          </div>
+                        </div>
+                        <div class="product-view-rating-feedback">
+                          <a href="" class="d-flex align-items-center justify-content-center">Оставить отзыв</a>
+                        </div>
+                      </div>
+                      <div class="product-view-rating-right">
+                        <div class="product-view-rating-items d-flex align-items-center justify-content-between">
+                          <div class="rating-stars d-flex">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                          </div>
+                          <div class="rating-comment d-flex"><span>159</span><span> комментариев</span></div>
+                        </div>
+                        <div class="product-view-rating-items d-flex align-items-center justify-content-between">
+                          <div class="rating-stars d-flex">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                          </div>
+                          <div class="rating-comment d-flex"><span>21</span><span> комментариев</span></div>
+                        </div>
+                        <div class="product-view-rating-items d-flex align-items-center justify-content-between">
+                          <div class="rating-stars d-flex">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                          </div>
+                          <div class="rating-comment d-flex"><span>159</span><span> комментариев</span></div>
+                        </div>
+                        <div class="product-view-rating-items d-flex align-items-center justify-content-between">
+                          <div class="rating-stars d-flex">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                          </div>
+                          <div class="rating-comment d-flex"><span>10</span><span> комментариев</span></div>
+                        </div>
+                        <div class="product-view-rating-items d-flex align-items-center justify-content-between">
+                          <div class="rating-stars d-flex">
+                            <img src="./assets/icons/red-star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                            <img src="./assets/icons/star.svg" alt="">
+                          </div>
+                          <div class="rating-comment d-flex"><span>1</span><span> комментариев</span></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="product-view-images">
+                    <div class="rating-review-title"><span>Все фотографии покупателей</span></div>
+                    <div class="product-view-images-container">
+                      <div class="swiper-container product-view-review-images">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-1.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-2.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-3.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-1.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-2.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-3.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-1.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-2.png">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="assets/images/rectangle-3.png">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-button-prev"></div>
+                      <div class="swiper-button-next"></div>
+                    </div>
+                  </div>
+                  <div class="product-view-review swiper-container">
+                    <div class="rating-review-title"><span>Отзывы <span class="count">10</span></span></div>
+                    <div class="rating-review-sort d-flex align-items-center flex-wrap">
+                      <span class="rating-review-sort-title">Сортирировать по: </span>
+                      <div class="sort-item active"><span>дате</span></div>
+                      <div class="sort-item"><span>оценке</span></div>
+                      <div class="sort-item"><span>полезности</span></div>
+                      <div class="sort-item">
+                        <div class="d-flex align-items-center">
+                          <label class="checkbox">
+                            <input type="checkbox">
+                            <span></span>
+                          </label>
+                          <span>с фото (<span>2</span>)</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="rating-review-container swiper-wrapper">
+                      <div class="rating-review-items swiper-slide">
+                        <div class="rating-container d-flex">
+                          <div class="review-client-img"><img src="assets/images/client.jpeg"></div>
+                          <div class="rating-review-name-date">
+                            <span>Анна Андреенко</span>
+                            <div class="d-flex">
+                              <div class="rating-stars d-flex">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                              </div>
+                              <div class="rating-review-date"><span>10 апреля, 2020 года</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-container">
+                          <span>Диван выбрали однотонный. Хотели на ножках - это легкая уборка + заезжает робот-пылесос. Формат дивана удобен как для использования в сидячем положении, так и для сна. Раскладывается просто и легко, при распаковке заметили незначительные пятна, но они легко оттерлись. В целом качеством довольны.  Спасибо за прекрасную работу ребятам из службы доставки Евгению и Алексею.</span>
+                        </div>
+                        <div class="rating-review-like-container d-flex flex-wrap">
+                          <div class="review-complain d-flex align-items-center"><span>Пожаловоться на отзыв</span></div>
+                          <div class="review-like-dislike d-flex align-items-center">
+                            <div class="review-useful"><span>Отзыв полезен?</span></div>
+                            <div class="review-like d-flex align-items-center">
+                              <label>Да</label>
+                              <div class="like-count-container d-flex align-items-center justify-content-center">
+                                <img src="assets/icons/like.svg">
+                                <span class="like-count d-flex align-items-center justify-content-center">5</span>
+                              </div>
+                            </div>
+                            <div class="review-dislike d-flex align-items-center">
+                              <label>Нет</label>
+                              <div class="dislike-count-container d-flex align-items-center justify-content-center">
+                                <img src="assets/icons/dislike.svg">
+                                <span class="dislike-count d-flex align-items-center justify-content-center">2</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="rating-review-items swiper-slide">
+                        <div class="rating-container d-flex">
+                          <div class="review-client-img"><img src="assets/images/client.jpeg"></div>
+                          <div class="rating-review-name-date">
+                            <span>Анна Андреенко</span>
+                            <div class="d-flex">
+                              <div class="rating-stars d-flex">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                                <img src="./assets/icons/red-star.svg" alt="">
+                              </div>
+                              <div class="rating-review-date"><span>10 апреля, 2020 года</span></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-container">
+                          <span>Диван выбрали однотонный. Хотели на ножках - это легкая уборка + заезжает робот-пылесос. Формат дивана удобен как для использования в сидячем положении, так и для сна. Раскладывается просто и легко, при распаковке заметили незначительные пятна, но они легко оттерлись. В целом качеством довольны.  Спасибо за прекрасную работу ребятам из службы доставки Евгению и Алексею.</span>
+                        </div>
+                        <div class="image-container d-flex">
+                          <span><img src="assets/images/rectangle-1.png"></span>
+                          <span><img src="assets/images/rectangle-2.png"></span>
+                        </div>
+                        <div class="rating-review-like-container d-flex flex-wrap">
+                          <div class="review-complain d-flex align-items-center"><span>Пожаловоться на отзыв</span></div>
+                          <div class="review-like-dislike d-flex align-items-center">
+                            <div class="review-useful"><span>Отзыв полезен?</span></div>
+                            <div class="review-like d-flex align-items-center">
+                              <label>Да</label>
+                              <div class="like-count-container d-flex align-items-center justify-content-center">
+                                <img src="assets/icons/like.svg">
+                                <span class="like-count d-flex align-items-center justify-content-center">5</span>
+                              </div>
+                            </div>
+                            <div class="review-dislike d-flex align-items-center">
+                              <label>Нет</label>
+                              <div class="dislike-count-container d-flex align-items-center justify-content-center">
+                                <img src="assets/icons/dislike.svg">
+                                <span class="dislike-count d-flex align-items-center justify-content-center">2</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-view-exec-options">
+            <div class="exec-options-container d-flex">
+              <span class="exec-options-title">Варианты исполнения</span>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="exec-options-product-count d-flex align-items-center justify-content-center">
+                  <span class="product-count">14</span>
+                  <span>товаров</span>
+                </div>
+                <div class="exec-options-all-product-link">
+                  <a href="">См. всё</a>
+                </div>
+              </div>
+            </div>
+            <div class="promotions card-block row swiper-container exec-options-swiper-container">
+              <div class="swiper-wrapper">
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-1.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                <span class="old-price">
+                                                    <span>35.759 ₽</span>
+                                                </span>
+                            <span class="special-price">
+                                                    <span>32.759 ₽</span>
+                                                </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-2.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                <span class="old-price">
+                                                    <span>35.759 ₽</span>
+                                                </span>
+                            <span class="special-price">
+                                                    <span>32.759 ₽</span>
+                                                </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-3.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                <span class="old-price">
+                                                    <span>35.759 ₽</span>
+                                                </span>
+                            <span class="special-price">
+                                                    <span>32.759 ₽</span>
+                                                </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-view-all-collection">
+            <div class="exec-options-container d-flex">
+              <span class="exec-options-title">Все товары этой колекции</span>
+              <div class="d-flex align-items-center justify-content-between">
+                <div class="exec-options-product-count d-flex align-items-center justify-content-center">
+                  <span class="product-count">127</span>
+                  <span>товаров</span>
+                </div>
+                <div class="exec-options-all-product-link">
+                  <a href="">См. всё</a>
+                </div>
+              </div>
+            </div>
+            <div class="all-collection-container">
+              <div class="all-collection-tabs">
+                <ul class="d-flex horizontal-scroll-wrapper">
+                  <li>Все<span>127</span></li>
+                  <li>Кровати<span>127</span></li>
+                  <li>Шкафы<span>127</span></li>
+                  <li>Комоды<span>127</span></li>
+                  <li>Тумбы<span>127</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="promotions card-block row swiper-container all-collection-swiper-container">
+              <div class="swiper-wrapper">
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-1.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-2.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-3.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-1.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                  <div class="card">
+                    <div class="card-img">
+                      <img src="./assets/images/rectangle-2.png" alt="">
+                    </div>
+                    <div class="card-name">
+                      <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
+                        </div>
+                      </div>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                <div class="card">
+                  <div class="card-img">
+                    <img src="./assets/images/rectangle-3.png" alt="">
+                  </div>
+                  <div class="card-name">
+                    <span>LEVOX РИККАРДО диван угловой (витал плюм)</span>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-price">
+                      <div class="item">
+                        <div class="price-label"><span>розничная цена</span></div>
+                        <div class="price-container">
+                                                <span class="old-price">
+                                                    <span>35.759 ₽</span>
+                                                </span>
+                          <span class="special-price">
+                                                    <span>32.759 ₽</span>
+                                                </span>
+                        </div>
+                      </div>
+                      <div class="item">
+                        <div class="price-label"><span>оптовая цена</span></div>
+                        <span class="opt-price"><span>25.199 ₽</span></span>
+                      </div>
+                    </div>
+                    <div class="card-button">
+                      <a href="#">Условия опта</a>
+                      <button type="button" class="btn-in-garbage">
+                        <img src="./assets/icons/basket-white.svg" alt="">
+                        <span>В корзину</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-container">
+      <div class="footer-info d-flex flex-wrap justify-content-between">
+        <div class="item">
+          <span class="title">Покупателю</span>
+          <ul>
+            <li>
+              <a href="#"><span>Гарантия</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Обмен и возврат</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Публичная офёрта</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Политика обработки персональных данных</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="title">Партнёру</span>
+          <ul>
+            <li>
+              <a href="#"><span></span>Гостиницам</a>
+            </li>
+            <li>
+              <a href="#"><span></span>Кафе и ресторанам</a>
+            </li>
+            <li>
+              <a href="#"><span></span>Мебельным магазинам</a>
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <pspan class="title">О компании</pspan>
+          <ul>
+            <li>
+              <a href="#"><span>Адреса магазинов</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Контакты</span></a>
+            </li>
+            <li>
+              <a href="#"><span>О компании</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="item">
+          <span class="title">Услуги</span>
+          <ul>
+            <li>
+              <a href="#"><span>Планировщик кухонь</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Доставка</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Сборка</span></a>
+            </li>
+            <li>
+              <a href="#"><span>Рассрочка и кредит</span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="item soc-media-block">
+          <span class="title">Присоединяйся к нам в соц.сетях</span>
+          <ul class="social-media-group">
+            <li>
+              <a class="social-media vk">
+                <img src="./assets/icons/social-media/vk.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="social-media facebook">
+                <img src="./assets/icons/social-media/facebook.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="social-media instagram">
+                <img src="./assets/icons/social-media/instagram.svg" alt="">
+              </a>
+            </li>
+            <li>
+              <a class="social-media odnoklassniki">
+                <img src="./assets/icons/social-media/odnoklassniki.svg" alt="">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-info-dropdown-list">
+        <ul>
+          <li class="dropdown">
+                        <span onclick="myFunction(1)" class="dropbtn" id="1">Покупателю
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+            <div id="my-dropdown-1" class="dropdown-content">
+              <a href="#"><span>Гарантия</span></a>
+              <a href="#"><span>Обмен и возврат</span></a>
+              <a href="#"><span>Публичная офёрта</span></a>
+              <a href="#"><span>Политика обработки персональных данных</span></a>
+            </div>
+          </li>
+          <li class="dropdown">
+                        <span onclick="myFunction(2)" class="dropbtn" id="2">Партнёру
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+            <div id="my-dropdown-2" class="dropdown-content">
+              <a href="#"><span>Гостиницам</span></a>
+              <a href="#"><span>Кафе и ресторанам</span></a>
+              <a href="#"><span>Мебельным магазинам</span></a>
+            </div>
+          </li>
+          <li class="dropdown">
+                        <span onclick="myFunction(3)" class="dropbtn" id="3">Услуги
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+            <div id="my-dropdown-3" class="dropdown-content">
+              <a href="#"><span>Планировщик кухонь</span></a>
+              <a href="#"><span>Доставка</span></a>
+              <a href="#"><span>Сборка</span></a>
+              <a href="#"><span>Рассрочка и кредит</span></a>
+            </div>
+          </li>
+          <li class="dropdown">
+                        <span onclick="myFunction(4)" class="dropbtn" id="4">О компании
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+            <div id="my-dropdown-4" class="dropdown-content">
+              <a href="#"><span>Адреса магазинов</span></a>
+              <a href="#"><span>Контакты</span></a>
+              <a href="#"><span>О компании</span></a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="small-footer-social-media">
+        <p class="title">Присоединяйся к нам в соц.сетях</p>
+        <ul class="social-media-group">
+          <li>
+            <a class="social-media vk">
+              <img src="./assets/icons/social-media/vk.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="social-media facebook">
+              <img src="./assets/icons/social-media/facebook.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="social-media instagram">
+              <img src="./assets/icons/social-media/instagram.svg" alt="">
+            </a>
+          </li>
+          <li>
+            <a class="social-media odnoklassniki">
+              <img src="./assets/icons/social-media/odnoklassniki.svg" alt="">
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-payments">
+        <p class="title">Мы принимаем к оплате</p>
+        <div class="payments-group">
+          <div class="payment">
+            <img src="./assets/icons/payments/visa.svg" alt="">
+          </div>
+          <div class="payment">
+            <img src="./assets/icons/payments/mastercard.svg" alt="">
+          </div>
+          <div class="payment">
+            <img src="./assets/icons/payments/mir.svg" alt="">
+          </div>
+          <div class="payment">
+            <img src="./assets/icons/payments/khalva.svg" alt="">
+          </div>
+          <div class="payment">
+            <img src="./assets/icons/payments/apple-pay.svg" alt="">
+          </div>
+          <div class="payment">
+            <img src="./assets/icons/payments/samsung-pay.svg" alt="">
+          </div>
+        </div>
+        <span class="payment-bottom-text">Информация предоставленная на сайте не является публичной офертой. Цены на продукцию могут меняться в зависимости от города. Точную цену уточняйте у наших продавцов-консультантов.</span>
+      </div>
+      <div class="footer-contact d-flex justify-content-between">
+        <div class="footer-contact-left"><span>© 2004-2020  «LEVOX» фабрика мебели</span></div>
+        <div class="footer-contact-right"><span>+7(861) 290-86-01</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

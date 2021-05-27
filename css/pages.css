@@ -1,0 +1,119 @@
+.page-cat-title {
+    width: 100%;
+    margin: 0 0 40px 0;
+}
+
+.page-cat-title .cat-name {
+    font-weight: 600;
+    font-size: 38px;
+    text-align: center;
+    color: #202020;
+    line-height: 1;
+    margin: 0 16px 0 0;
+}
+
+.page-cat-title .product-count {
+    padding: 8px 12px;
+    border: 1.8px solid #ED2024;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+
+.page-cat-title .product-count .count-container {
+    font-weight: 600;
+    font-size: 15px;
+    color: #ED2024;
+    line-height: 1;
+    display: block;
+}
+
+.page-subcategory {
+    width: 100%;
+    max-width: 1025px;
+    padding: 0 0 50px 0;
+}
+
+.page-subcategory .item {
+    margin: 0 30px;
+    max-width: 200px;
+    width: 100%;
+}
+
+.page-subcategory .sub-img img {
+    width: 100%;
+    height: 70px;
+}
+
+.page-subcategory .sub-name {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    margin: 15px 0 0 0;
+    line-height: 25px;
+    color: #202020;
+}
+
+/* Pagination */
+.pagination-block {
+    padding: 60px 0;
+}
+
+.pagination-block .pagination {
+    list-style-type: none;
+    margin: 0;
+}
+
+.pagination-block .pagination li {
+    width: 51px;
+    height: 35px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.pagination-block .pagination li.active {
+    background: #ED2024;
+}
+
+.pagination-block .pagination li.active a {
+    color: #fff;
+}
+
+.pagination-block .pagination li a {
+    color: #202020;
+    text-decoration: none;
+    height: 100%;
+}
+
+.pagination-block .pagination li a span {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    height: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+}
+
+.pagination-block .pagination li.ellipses a span {
+    font-weight: bold;
+}

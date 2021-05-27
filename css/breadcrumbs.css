@@ -1,0 +1,49 @@
+/* Breadcrumbs */
+.breadcrumbs-block nav.breadcrumbs-nav ul {
+    list-style-type: none;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li {
+    margin: 0 10px 0 0;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li a {
+    color: #202020;
+    font-size: 16px;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li.active a {
+    opacity: 0.5;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li .right-arrow {
+    margin: 0 0 0 10px;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li.active .right-arrow {
+    display: none;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li.back {
+    padding: 7px 17px;
+    border: 1.8px solid #ED2024;
+    box-sizing: border-box;
+    border-radius: 2px;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li.back a {
+    text-decoration: none;
+}
+
+.breadcrumbs-block nav.breadcrumbs-nav ul li.back a span {
+    line-height: 1;
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+    color: #ED2024;
+}

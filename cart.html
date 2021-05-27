@@ -1,0 +1,1426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Levox</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/breadcrumbs.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="./js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/index.js" async></script>
+    <script src="./js/cart.js" async></script>
+    <script src="./js/address-autocomplete.js" async></script>
+</head>
+<body class="non-home-page">
+<div class="page-wrapper">
+    <div class="header" id="myHeader">
+        <div class="header-container">
+            <div class="logo d-flex align-items-center">
+                <a href="index.html">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+            </div>
+            <div class="header-links">
+                <div class="nav-container">
+                    <ul class="nav-bar">
+                        <li class="nav-link">
+                            <a href="#">
+                                <span>Фабрика мебели и сеть магазинов</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="addresses.html" target="_blank">
+                                <img src="./assets/icons/home.svg" alt="">
+                                <span class="nav-address-title">Адреса магазинов
+                                    <span class="count">13</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <img src="./assets/icons/truck.svg" alt="">
+                                <span>Доставка</span>
+                            </a>
+                        </li>
+                        <li class="nav-link switch-checkbox">
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <img src="./assets/icons/comment.svg" alt="">
+                                <span>Отзывы и предложения</span>
+                            </a>
+                        </li>
+                        <li class="nav-link">
+                            <a href="#">
+                                <div class="header-contact">
+                                    <div class="location">
+                                        <img src="./assets/icons/location.svg" alt="">
+                                        <span>Москва</span>
+                                    </div>
+                                    <div class="phone-number">+7(938) 540-86-00</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-content d-flex">
+        <div class="d-md-none d-flex justify-content-between">
+            <div class="logo d-flex align-items-center">
+                <img src="./assets/images/logo.png" alt="">
+            </div>
+            <div class="header-links-menu d-flex justify-content-between">
+                <div class="nav-container-mobile d-flex align-items-center">
+                    <ul class="nav-bar d-flex align-items-center justify-content-center">
+                        <li class="small-nav-link-icon">
+                            <a href="#">
+                                <img src="./assets/icons/location-white.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="small-nav-link-icon">
+                            <a href="#">
+                                <img src="./assets/icons/phone.svg" alt="">
+                            </a>
+                        </li>
+                        <li class="small-nav-link-icon">
+                            <a href="#">
+                                <img src="./assets/icons/basket-white.svg" alt="">
+                                <span class="count d-flex align-items-center justify-content-center">5</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu d-flex align-items-center" id="menu-button-open" onclick="openCloseSideMenu()">
+                    <img id="menu-open-close-icon" src="./assets/icons/menu.svg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <div class="side-menu" id="side-menu">
+            <div id="side-menu-container" class="side-menu-container">
+                <div class="mobile-account-container">
+                    <div class="menu-account-container">
+                        <a href="#" class="side-menu-account">
+                            <span class="profileimage">
+                                <img src="assets/images/profileimage.jpeg" />
+                            </span>
+                            <span class="user-name">Анна Васильченко</span>
+                        </a>
+                    </div>
+
+                    <div class="nav-link switch-checkbox justify-content-center">
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+                <ul class="side-menu-top">
+                    <li class="home-page">
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/home.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center">Главная</span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sale.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-1"><span>Акции</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sofa.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-2"><span>Мягкая мебель</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/living-room.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-3"><span>Гостиная</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/entrance-hall.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-4"><span>Прихожая</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/bedroom.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-5"><span>Спальня</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/boards-and-beds.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-6"><span>Тумбы и комоды</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/cabinets-and-racks.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-7"><span>Шкафы и стеллажи</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/kitchen.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-8"><span>Кухня</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/tables.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-9"><span>Столы</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/chairs.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center" menu-sub="menu-sub-10"><span>Стулья и табуреты</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="side-menu-bottom">
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/star.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Услуги</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/sales.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Покупателю</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/partner.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center"><span>Партнёру</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="side-menu-img"><img class="side-menu-icon" src="./assets/icons/side-menu/about.svg" alt=""></div>
+                            <span class="side-menu-title justify-content-between d-flex align-items-center"><span>О компании</span>
+                                <img class="arrow" src="./assets/icons/side-menu/right-arrow.svg" alt="">
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="menu-sub-1" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Акции</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-2" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Мягкая мебель</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-3" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Гостиная</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-4" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Прихожая</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-5" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Спальня</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-6" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Тумбы и комоды</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-7" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Шкафы и стеллажи</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-8" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Кухня</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-9" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Столы</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="menu-sub-10" class="menu-sub">
+                <div class="menu-sub-close"><span class="close-sub"></span><span class="back-sub"><span><img src="assets/icons/red-prev.svg"></span>Назад</span></div>
+                <div class="menu-sub-title"><a href="#"><span>Стулья и табуреты</span></a></div>
+                <div class="menu-sub-content">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-1.svg"></span>
+                                <span>Диваны модульные</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-2.svg"></span>
+                                <span>Диваны детские</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-3.svg"></span>
+                                <span>Диваны HoReCa</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-4.svg"></span>
+                                <span>Угловые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-5.svg"></span>
+                                <span>Прямые диваны</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-6.svg"></span>
+                                <span>Кресла</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span><img src="assets/icons/sub-menu/sub-icon-7.svg"></span>
+                                <span>Диваны наборы</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div id="page-cart" class="page w-100">
+                <div class="search-block">
+                    <div class="form-group">
+                        <label for="search">Поиск по сайту:</label>
+                        <input type="text" id="search" name="search" placeholder="Введите ключевое слово">
+                        <img src="./assets/icons/search.svg" alt="" class="search-icon">
+                    </div>
+                    <div class="search-block-link">
+                        <a href="#">
+                            <img src="./assets/icons/account.svg" alt="">
+                            <p>Аккаунт</p>
+                        </a>
+                        <a href="#">
+                            <img src="./assets/icons/basket.svg" alt="">
+                            <p>Корзина<span class="count">5</span></p>
+                        </a>
+                    </div>
+                </div>
+                <div class="breadcrumbs-block">
+                    <nav class="breadcrumbs-nav">
+                        <ul class="d-flex align-items-center">
+                            <li class="back"><a href="#"><span>Назад</span></a></li>
+                            <li class=""><a href="#"><span>Главная</span></a><span class="right-arrow"><img src="./assets/icons/side-menu/black-right-arrow.svg" alt=""></span></li>
+                            <li class="active"><a href="#"><span>Корзина</span></a><span class="right-arrow"><img src="./assets/icons/side-menu/black-right-arrow.svg" alt=""></span></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="cart-title d-flex align-items-center justify-content-center"><span>Корзина</span><div class="cart-mobile-count"><span>4</span> товара на <span>59 738</span></div></div>
+                <div class="cart d-flex flex-wrap">
+                    <div class="cart-left">
+                        <div class="cart-content">
+                            <div class="cart-left-title"><span>Заказ</span></div>
+                            <div class="cart-item d-flex">
+                                <div class="cart-item-img"><img src="assets/images/rectangle-4.png"></div>
+                                <div class="cart-item-info">
+                                    <div class="cart-item-name"><span>LEVOX АНРЕА диван прямой</span></div>
+                                    <div class="cart-item-type"><label>Вариант исполнения:</label><span>Черный</span></div>
+                                </div>
+                                <div class="cart-item-qty">
+                                    <div class="cart-qty-container d-flex">
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                        <input type="text" name="qty" value="0" class="input-text qty" />
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price d-flex flex-column align-items-end">
+                                    <div class="price d-flex">
+                                        <span class="old-price"><span>36 990 ₽</span></span>
+                                        <span class="special-price"><span>29 869 ₽</span></span>
+                                    </div>
+                                    <div class="price-title"><span>розничная цена</span></div>
+                                    <div class="action-remove">
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/icons/cart-remove.svg">
+                                            <span>Удалить</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-item d-flex">
+                                <div class="cart-item-img"><img src="assets/images/rectangle-4.png"></div>
+                                <div class="cart-item-info">
+                                    <div class="cart-item-name"><span>LEVOX АНРЕА диван прямой</span></div>
+                                    <div class="cart-item-type"><label>Вариант исполнения:</label><span>Черный</span></div>
+                                </div>
+                                <div class="cart-item-qty">
+                                    <div class="cart-qty-container d-flex align-items-center justify-content-center">
+                                        <button class="cart-qty-minus" type="button" value="-">-</button>
+                                        <input type="text" name="qty" value="0" class="input-text qty" />
+                                        <button class="cart-qty-plus" type="button" value="+">+</button>
+                                    </div>
+                                </div>
+                                <div class="cart-item-price d-flex flex-column align-items-end">
+                                    <div class="price d-flex">
+                                        <span class="old-price"><span>36 990 ₽</span></span>
+                                        <span class="special-price"><span>29 869 ₽</span></span>
+                                    </div>
+                                    <div class="price-title"><span>розничная цена</span></div>
+                                    <div class="action-remove">
+                                        <a href="#" class="d-flex align-items-center">
+                                            <img src="assets/icons/cart-remove.svg">
+                                            <span>Удалить</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="delivery">
+                            <div class="cart-left-title"><span>Способ доставки</span></div>
+                            <div class="tabs-nav">
+                                <ul class="d-flex align-items-center justify-content-between">
+                                    <li class="active"><a href="#tab1">Самовывоз</a></li>
+                                    <li><a href="#tab2">Доставка</a></li>
+                                </ul>
+                            </div>
+                            <div class="tabs-content">
+                                <div id="tab1" class="pickup-tab">
+                                    <div class="info-content">
+                                        <div class="info-item"><label>Адрес:</label><span>поселок городского типа Московской (Краснодарский край), улица Горького, д.74</span></div>
+                                        <div class="info-item"><label>Режим роботы:</label><span>Ежедневно 10:00-18:00</span></div>
+                                        <div class="info-item"><label>Стоимость доставки:</label><span>Бесплатно</span></div>
+                                        <div class="info-item"><label>Номер телефона:</label><span>+7(938) 540-86-00</span></div>
+                                    </div>
+                                    <div class="change-address">
+                                        <a href="" data-toggle="modal" data-target="#addressModal">Изменить адрес</a>
+                                    </div>
+                                </div>
+                                <div id="tab2" class="delivery-tab">
+                                    <div class="fieldset row">
+                                        <div class="field city col-12 required">
+                                            <label for="city">Город / населённый пункт, улица, дом</label>
+                                            <div class="control autocomplete">
+                                                <input name="city" id="city" title="Город" class="input-text" type="text" autocomplete="off" />
+                                            </div>
+                                        </div>
+                                        <div class="field private-house col-lg col-xs-12 hidden-xs visible-sm-block">
+                                            <label for="private-house">Частный дом</label>
+                                            <div class="control">
+                                                <label class="checkbox">
+                                                    <input name="private-house" id="private-house" title="Частный дом" class="input-text" type="checkbox" />
+                                                    <span></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="field case col">
+                                            <label for="case">Корпус</label>
+                                            <div class="control">
+                                                <input name="case" id="case" title="Корпус" class="input-text" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="field apartment required col">
+                                            <label for="apartment">Квартира/офис</label>
+                                            <div class="control">
+                                                <input name="apartment" id="apartment" title="Квартира/офис" class="input-text" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="field entrance col">
+                                            <label for="entrance">Подъезд</label>
+                                            <div class="control">
+                                                <input name="entrance" id="entrance" title="Подъезд" class="input-text" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="field intercom col">
+                                            <label for="intercom">Домофон</label>
+                                            <div class="control">
+                                                <input name="intercom" id="intercom" title="Домофон" class="input-text" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="field floor required col">
+                                            <label for="floor">Этаж</label>
+                                            <div class="control">
+                                                <input name="floor" id="floor" title="Этаж" class="input-text" type="text" />
+                                            </div>
+                                        </div>
+                                        <div class="field lift required col">
+                                            <label for="lift">Лифт</label>
+                                            <div class="control lift-option-container">
+                                                <div class="lift-option-dropdown bi-chevron-right bi-chevron-down">
+                                                    <input type="radio" name="lift" value="-" id="lift-default" class="lift-option-default" area-checked="true" checked="checked" />
+                                                    <label for="lift-default">- </label>
+                                                    <input type="radio" name="lift" value="нет" id="lift-1"  />
+                                                    <label for="lift-1">нет</label>
+                                                    <input type="radio" name="lift" value="грузовой" id="lift-2"  />
+                                                    <label for="lift-2">грузовой</label>
+                                                    <input type="radio" name="lift" value="пассажирский" id="lift-3"  />
+                                                    <label for="lift-3">пассажирский</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <span>Окончательная стоимость доставки будет подтверждена специалистом Интернет-магазина при соглосовании заказа</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="payment-method">
+                            <div class="cart-left-title"><span>Способ оплаты</span></div>
+                            <div class="tabs-nav">
+                                <ul class="horizontal-scroll-wrapper d-flex align-items-center justify-content-between" data-tab="tab-1">
+                                    <li class="active" tab="1"><a href="#payment-tab1">Картой <img src="assets/images/bycards.svg"></a></li>
+                                    <li tab="2"><a href="#payment-tab2">Наличными</a></li>
+                                    <li tab="3"><a href="#payment-tab3">Рассрочка/Кредит</a></li>
+                                </ul>
+                            </div>
+                            <div class="tabs-content">
+                                <div id="payment-tab1" class="by-card-tab">
+                                    <div class="by-card-title"><span>Выберите карту</span></div>
+                                    <div class="fieldset d-flex flex-column">
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-1" type="radio" name="radio" checked />
+                                                <label for="radio-1" class="radio-label">4279 30** ***7 4831</label>
+                                            </div>
+                                            <div class="d-flex align-items-center">
+                                                <img class="by-card-img" src="assets/images/visa.svg">
+                                                <a href=""><img src="assets/icons/cart-remove.svg"></a>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input data-toggle="modal" data-target="#cardModal" id="radio-2" type="radio" name="radio" />
+                                                <label for="radio-2" class="radio-label">Привязать новую карту</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="payment-tab2" class="in-cash-tab">
+                                    <div class="in-cash-title"><span>Наличные деньги необходимо внести в кассу магазина</span></div>
+                                    <div class="info-content">
+                                        <div class="info-item"><label>Адрес:</label><span>поселок городского типа Московской (Краснодарский край), улица Горького, д.74</span></div>
+                                        <div class="info-item"><label>Режим роботы:</label><span>Ежедневно 10:00-18:00</span></div>
+                                        <div class="info-item"><label>Телефон:</label><span>+7(938) 540-86-00</span></div>
+                                    </div>
+                                </div>
+                                <div id="payment-tab3" class="installment-credit-tab">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid amet animi eligendi facilis, illum ipsa laborum magnam minima sed sequi unde, voluptates. Culpa explicabo fugit iusto recusandae saepe sunt vel.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="person-data">
+                            <div class="cart-left-title"><span>Ваши данные</span></div>
+                            <div class="fieldset row">
+                                <div class="field name col-md-6 required">
+                                    <label for="name">Имя</label>
+                                    <div class="control">
+                                        <input name="name" id="name" value="Эдуард" class="input-text" type="text" />
+                                    </div>
+                                </div>
+                                <div class="field surname col-md-6 required">
+                                    <label for="surname">Фамилия</label>
+                                    <div class="control">
+                                        <input name="surname" id="surname" value="Авакян" class="input-text" type="text" />
+                                    </div>
+                                </div>
+                                <div class="field phone col-md-6 required">
+                                    <label for="phone">Контактный телефон</label>
+                                    <div class="control">
+                                        <input name="phone" id="phone" value="+7 (918) 288-85-55" class="input-text" type="text" />
+                                    </div>
+                                </div>
+                                <div class="field email col-md-6 required">
+                                    <label for="email">Электронная почта</label>
+                                    <div class="control">
+                                        <input name="email" id="email" value="director@levox.ru" class="input-text" type="text" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-right">
+                        <div class="cart-info">
+                            <div class="cart-sum d-flex align-items-center justify-content-between"><label>Итого</label><span>29 869 ₽</span></div>
+                            <div class="d-flex align-items-center justify-content-between"><label>Товары, 1 шт.</label><span>36 990 ₽</span></div>
+                            <div class="d-flex align-items-center justify-content-between"><label>Скидка</label><span>-7 121 ₽</span></div>
+                            <div class="d-flex align-items-center justify-content-between"><label>Доставка</label><span>Бесплатно</span></div>
+                        </div>
+                        <div class="cart-delivery">
+                            <div class="d-flex align-items-center"><label>Доставка :</label><span>Самовывоз</span></div>
+                            <div><span>поселок городского типа Мостовской, улица Горького, д.8</span></div>
+                        </div>
+                        <div class="cart-payment">
+                            <div class="d-flex align-items-center"><label>Оплата :</label><span>Онлайн</span></div>
+                            <div><span>4279 30** ***7 4831</span></div>
+                        </div>
+                        <div class="cart-place-order">
+                            <button>ОФОРМИТЬ ЗАКАЗ</button>
+                        </div>
+                        <div class="cart-terms d-flex">
+                            <label class="checkbox">
+                                <input type="checkbox" />
+                                <span></span>
+                            </label>
+                            <span>Я согласен с правилами обработки персональных данных и правилами публичной оферты</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-container">
+            <div class="footer-info d-flex flex-wrap justify-content-between">
+                <div class="item">
+                    <span class="title">Покупателю</span>
+                    <ul>
+                        <li>
+                            <a href="#"><span>Гарантия</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Обмен и возврат</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Публичная офёрта</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Политика обработки персональных данных</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="title">Партнёру</span>
+                    <ul>
+                        <li>
+                            <a href="#"><span></span>Гостиницам</a>
+                        </li>
+                        <li>
+                            <a href="#"><span></span>Кафе и ресторанам</a>
+                        </li>
+                        <li>
+                            <a href="#"><span></span>Мебельным магазинам</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <pspan class="title">О компании</pspan>
+                    <ul>
+                        <li>
+                            <a href="#"><span>Адреса магазинов</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Контакты</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>О компании</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item">
+                    <span class="title">Услуги</span>
+                    <ul>
+                        <li>
+                            <a href="#"><span>Планировщик кухонь</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Доставка</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Сборка</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><span>Рассрочка и кредит</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="item soc-media-block">
+                    <span class="title">Присоединяйся к нам в соц.сетях</span>
+                    <ul class="social-media-group">
+                        <li>
+                            <a class="social-media vk">
+                                <img src="./assets/icons/social-media/vk.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-media facebook">
+                                <img src="./assets/icons/social-media/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-media instagram">
+                                <img src="./assets/icons/social-media/instagram.svg" alt="">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="social-media odnoklassniki">
+                                <img src="./assets/icons/social-media/odnoklassniki.svg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-info-dropdown-list">
+                <ul>
+                    <li class="dropdown">
+                        <span onclick="myFunction(1)" class="dropbtn" id="1">Покупателю
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+                        <div id="my-dropdown-1" class="dropdown-content">
+                            <a href="#"><span>Гарантия</span></a>
+                            <a href="#"><span>Обмен и возврат</span></a>
+                            <a href="#"><span>Публичная офёрта</span></a>
+                            <a href="#"><span>Политика обработки персональных данных</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span onclick="myFunction(2)" class="dropbtn" id="2">Партнёру
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+                        <div id="my-dropdown-2" class="dropdown-content">
+                            <a href="#"><span>Гостиницам</span></a>
+                            <a href="#"><span>Кафе и ресторанам</span></a>
+                            <a href="#"><span>Мебельным магазинам</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span onclick="myFunction(3)" class="dropbtn" id="3">Услуги
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+                        <div id="my-dropdown-3" class="dropdown-content">
+                            <a href="#"><span>Планировщик кухонь</span></a>
+                            <a href="#"><span>Доставка</span></a>
+                            <a href="#"><span>Сборка</span></a>
+                            <a href="#"><span>Рассрочка и кредит</span></a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <span onclick="myFunction(4)" class="dropbtn" id="4">О компании
+                            <img class="arrow" src="./assets/icons/dropdown-arrow.png" alt="">
+                        </span>
+                        <div id="my-dropdown-4" class="dropdown-content">
+                            <a href="#"><span>Адреса магазинов</span></a>
+                            <a href="#"><span>Контакты</span></a>
+                            <a href="#"><span>О компании</span></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="small-footer-social-media">
+                <p class="title">Присоединяйся к нам в соц.сетях</p>
+                <ul class="social-media-group">
+                    <li>
+                        <a class="social-media vk">
+                            <img src="./assets/icons/social-media/vk.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media facebook">
+                            <img src="./assets/icons/social-media/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media instagram">
+                            <img src="./assets/icons/social-media/instagram.svg" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-media odnoklassniki">
+                            <img src="./assets/icons/social-media/odnoklassniki.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-payments">
+                <p class="title">Мы принимаем к оплате</p>
+                <div class="payments-group">
+                    <div class="payment">
+                        <img src="./assets/icons/payments/visa.svg" alt="">
+                    </div>
+                    <div class="payment">
+                        <img src="./assets/icons/payments/mastercard.svg" alt="">
+                    </div>
+                    <div class="payment">
+                        <img src="./assets/icons/payments/mir.svg" alt="">
+                    </div>
+                    <div class="payment">
+                        <img src="./assets/icons/payments/khalva.svg" alt="">
+                    </div>
+                    <div class="payment">
+                        <img src="./assets/icons/payments/apple-pay.svg" alt="">
+                    </div>
+                    <div class="payment">
+                        <img src="./assets/icons/payments/samsung-pay.svg" alt="">
+                    </div>
+                </div>
+                <span class="payment-bottom-text">Информация предоставленная на сайте не является публичной офертой. Цены на продукцию могут меняться в зависимости от города. Точную цену уточняйте у наших продавцов-консультантов.</span>
+            </div>
+            <div class="footer-contact d-flex justify-content-between">
+                <div class="footer-contact-left"><span>© 2004-2020  «LEVOX» фабрика мебели</span></div>
+                <div class="footer-contact-right"><span>+7(861) 290-86-01</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- The Address Modal -->
+<div class="modal address-modal" id="addressModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <span class="modal-title">Выберите адрес:</span>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body row">
+                <div class="col-md-4 col-12">
+                    <div class="address-container">
+                        <div class="address-title"><span>Краснодарский край <span class="count">9</span></span></div>
+                        <div class="address-items">
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                            <div class="address-item d-flex align-items-center">
+                                <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                                <div class="item-content d-flex flex-column">
+                                    <div class="item-title"><span>LEVOX Краснодар</span></div>
+                                    <div class="item-description">
+                                        <span>Адрес: Краснодар, ул. Костюшки 140Б</span>
+                                    </div>
+                                    <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 col-12"><img src="assets/images/map.jpg" style="width: 100%; height: 100%;"></div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+                <button type="button" class="btn btn-select">ВЫБРАТЬ</button>
+                <button type="button" class="btn btn-cancel">ОТМЕНИТЬ</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Card Modal -->
+<div class="modal card-modal" id="cardModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <span class="modal-title">Привязать карту</span>
+                <a type="button" class="close" data-dismiss="modal"><img src="assets/icons/close.svg"></a>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <span>К оплате 1 ₽</span>
+                <div class="card-modal-number d-flex flex-column">
+                    <label>Номер карты</label>
+                    <input value="1262 6556 6566 6526" placeholder="" />
+                </div>
+                <div class="d-flex">
+                    <div class="card-modal-date d-flex flex-column">
+                        <label>Срок действия</label>
+                        <div class="d-flex">
+                            <input placeholder="ММ" />
+                            <input placeholder="ГГ" />
+                        </div>
+                    </div>
+                    <div class="card-modal-cvc d-flex flex-column">
+                        <label>CVC</label>
+                        <input placeholder="XXX" />
+                    </div>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer d-flex flex-column">
+                <button type="button" class="btn btn-select">Применить</button>
+                <div class="card-images"><img src="assets/images/cards.svg"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
