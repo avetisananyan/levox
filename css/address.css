@@ -189,6 +189,7 @@ address-container {
 
     .map-addresses-info-container .map-addresses-info {
         margin: 0 0 15px 0;
+        line-height: 21px;
     }
 
     .map-addresses-info-container .map-addresses-info label {
