@@ -185,5 +185,8 @@ $(document).ready(function () {
         let tabID = $(this).attr('data-tab');
         $(this).addClass('active').siblings().removeClass('active');
         $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+        if(window.matchMedia("(max-width: 768px)").matches) {
+            allCollectionSwiper.init();
+        }
     });
 });
