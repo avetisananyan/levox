@@ -127,6 +127,23 @@ address-container {
     /*    width: 180px;*/
     /*}*/
 
+    .addresses-map-container .map-addresses {
+        position: relative;
+    }
+
+    .addresses-map-container .map-addresses:after {
+        content: '';
+        position: absolute;
+        left: 15%;
+        top: 100%;
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #FFFFFF;
+        clear: both;
+    }
+
     .addresses-map-container {
         position: relative;
     }
