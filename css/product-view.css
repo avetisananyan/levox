@@ -946,16 +946,6 @@
 
 .all-collection-swiper-container {
     display: none;
-    opacity: 0;
-    transform: translateY(15px);
-    animation: fadeIn 0.5s ease 1;
-}
-
-@keyframes fadeIn {
-    100% {
-        opacity: 1;
-        transform: none;
-    }
 }
 
 .all-collection-swiper-container.active {
