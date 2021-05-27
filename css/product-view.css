@@ -1238,10 +1238,6 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
-    body .page-wrapper .page {
-        padding: 0;
-    }
-
     body .page-wrapper .page .search-block,
     body .page-wrapper .page .breadcrumbs-block,
     body .page-wrapper .page .product-view-top-container,
