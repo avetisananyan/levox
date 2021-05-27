@@ -111,6 +111,10 @@ address-container {
     display: none;
 }
 
+#addressMap {
+    height: 100%;
+}
+
 @media only screen and (max-width: 1367px) and (min-width: 769px) {
     .addresses-location ul li {
         padding: 7px 12px;
@@ -119,6 +123,10 @@ address-container {
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
+    /*.address-items .address-item .item-description {*/
+    /*    width: 180px;*/
+    /*}*/
+
     .addresses-map-container {
         position: relative;
     }
@@ -353,5 +361,9 @@ address-container {
     .map-addresses-images .map-addresses-img img {
         width: 100%;
         height: 100%;
+    }
+
+    #addressMap {
+        height: 242px;
     }
 }
