@@ -186,7 +186,14 @@ $(document).ready(function () {
         $(this).addClass('active').siblings().removeClass('active');
         $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
         if(window.matchMedia("(max-width: 768px)").matches) {
-            allCollectionSwiper.init();
+            new Swiper('#tab-'+tabID, {
+                init: true,
+                loop: false,
+                slidesPerView: 3,
+                spaceBetween: 10,
+                observer: true,
+                observeParents: true
+            });
         }
     });
 });
