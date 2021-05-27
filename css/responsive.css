@@ -182,12 +182,6 @@
 /* Tablet and All responsive */
 
 @media only screen and (max-width: 1790px) and (min-width: 1200px) {
-    .promotions .card .card-content {
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-    }
-
     .promotions .card .card-content .card-price {
         margin: 0 0 15px;
     }
