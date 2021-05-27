@@ -37,7 +37,7 @@
     margin: auto;
 }
 
-.product-view .product-view-review a {
+.product-view .product-view-review > a {
     text-decoration: none;
     font-size: 16px;
     color: #757575;
@@ -606,13 +606,11 @@
     font-size: 18px;
     line-height: 25px;
     color: #202020;
+    cursor: pointer;
 }
 
-.all-collection-tabs ul li:first-child {
+.all-collection-tabs ul li.active {
     background: #ED2024;
-    margin: 0 20px 0 8px;
-    font-size: 18px;
-    line-height: 25px;
     color: #FFFFFF;
 }
 
@@ -623,9 +621,7 @@
     color: #ED2024;
 }
 
-.all-collection-tabs ul li:first-child span {
-    font-size: 16px;
-    line-height: 22px;
+.all-collection-tabs ul li.active > span {
     color: #FFFFFF;
 }
 
@@ -946,6 +942,24 @@
 .product-view .promotions .card .card-content .card-button a {
     padding-right: 0;
     margin: 7px 0 0 0;
+}
+
+.all-collection-swiper-container {
+    display: none;
+    opacity: 0;
+    transform: translateY(15px);
+    animation: fadeIn 0.5s ease 1;
+}
+
+@keyframes fadeIn {
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.all-collection-swiper-container.active {
+    display: block;
 }
 
 @media only screen and (max-width: 1800px) and (min-width: 769px) {
@@ -1294,7 +1308,7 @@
         width: 12px;
     }
 
-    .product-view .product-view-review a {
+    .product-view .product-view-review > a {
         font-size: 12px;
     }
 
@@ -1698,18 +1712,8 @@
         line-height: 22px;
     }
 
-    .all-collection-tabs ul li:first-child {
-        margin: 0 10px 0 0;
-        font-size: 16px;
-        line-height: 22px;
-    }
-
     .all-collection-tabs ul li > span {
         padding: 0 0 0 10px;
-    }
-
-    .all-collection-tabs ul li:first-child span {
-        font-size: 14px;
         line-height: 19px;
     }
 
@@ -2037,4 +2041,11 @@
         width: 260px !important;
     }
 
+    .product-view-exec-options .promotions .card .card-name span,
+    .product-view-all-collection .promotions .card .card-name span {
+        font-size: 10px;
+        line-height: 14px;
+        display: block;
+        padding: 8px 4px 14px;
+    }
 }

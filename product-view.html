@@ -1453,16 +1453,17 @@
             </div>
             <div class="all-collection-container">
               <div class="all-collection-tabs">
-                <ul class="d-flex horizontal-scroll-wrapper">
-                  <li>Все<span>127</span></li>
-                  <li>Кровати<span>127</span></li>
-                  <li>Шкафы<span>127</span></li>
-                  <li>Комоды<span>127</span></li>
-                  <li>Тумбы<span>127</span></li>
+                <ul class="tabs d-flex horizontal-scroll-wrapper">
+                  <li class="tab-link active" data-tab="1">Все<span>127</span></li>
+                  <li class="tab-link" data-tab="2">Кровати<span>127</span></li>
+                  <li class="tab-link" data-tab="3">Шкафы<span>127</span></li>
+                  <li class="tab-link" data-tab="4">Комоды<span>127</span></li>
+                  <li class="tab-link" data-tab="5">Тумбы<span>127</span></li>
                 </ul>
               </div>
             </div>
-            <div class="promotions card-block row swiper-container all-collection-swiper-container">
+            <div class="content-wrapper">
+              <div id="tab-1" class="promotions card-block row swiper-container all-collection-swiper-container active">
               <div class="swiper-wrapper">
                 <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
                   <div class="card">
@@ -1645,41 +1646,454 @@
                   </div>
                 </div>
                 <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
-                <div class="card">
-                  <div class="card-img">
-                    <a href="product-view.html"><img src="./assets/images/rectangle-3.png" alt=""></a>
-                  </div>
-                  <div class="card-name">
-                    <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
-                  </div>
-                  <div class="card-content">
-                    <div class="card-price">
-                      <div class="item">
-                        <div class="price-label"><span>розничная цена</span></div>
-                        <div class="price-container">
-                                                <span class="old-price">
-                                                    <span>35.759 ₽</span>
-                                                </span>
-                          <span class="special-price">
-                                                    <span>32.759 ₽</span>
-                                                </span>
+                  <div class="card">
+                    <div class="card-img">
+                      <a href="product-view.html"><img src="./assets/images/rectangle-3.png" alt=""></a>
+                    </div>
+                    <div class="card-name">
+                      <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                    </div>
+                    <div class="card-content">
+                      <div class="card-price">
+                        <div class="item">
+                          <div class="price-label"><span>розничная цена</span></div>
+                          <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                            <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                          </div>
+                        </div>
+                        <div class="item">
+                          <div class="price-label"><span>оптовая цена</span></div>
+                          <span class="opt-price"><span>25.199 ₽</span></span>
                         </div>
                       </div>
-                      <div class="item">
-                        <div class="price-label"><span>оптовая цена</span></div>
-                        <span class="opt-price"><span>25.199 ₽</span></span>
+                      <div class="card-button">
+                        <a href="#">Условия опта</a>
+                        <button type="button" class="btn-in-garbage">
+                          <img src="./assets/icons/basket-white.svg" alt="">
+                          <span>В корзину</span>
+                        </button>
                       </div>
-                    </div>
-                    <div class="card-button">
-                      <a href="#">Условия опта</a>
-                      <button type="button" class="btn-in-garbage">
-                        <img src="./assets/icons/basket-white.svg" alt="">
-                        <span>В корзину</span>
-                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+              <div id="tab-2" class="promotions card-block row swiper-container all-collection-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-1.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-2.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-3.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-3" class="promotions card-block row swiper-container all-collection-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-1.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-2.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-3.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-1.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-4" class="promotions card-block row swiper-container all-collection-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-1.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-2.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="tab-5" class="promotions card-block row swiper-container all-collection-swiper-container">
+                <div class="swiper-wrapper">
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-1.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-item swiper-slide col-xl-4 col-sm-12 col-lg-12">
+                    <div class="card">
+                      <div class="card-img">
+                        <a href="product-view.html"><img src="./assets/images/rectangle-2.png" alt=""></a>
+                      </div>
+                      <div class="card-name">
+                        <a href="product-view.html"><span>LEVOX РИККАРДО диван угловой (витал плюм)</span></a>
+                      </div>
+                      <div class="card-content">
+                        <div class="card-price">
+                          <div class="item">
+                            <div class="price-label"><span>розничная цена</span></div>
+                            <div class="price-container">
+                                                  <span class="old-price">
+                                                      <span>35.759 ₽</span>
+                                                  </span>
+                              <span class="special-price">
+                                                      <span>32.759 ₽</span>
+                                                  </span>
+                            </div>
+                          </div>
+                          <div class="item">
+                            <div class="price-label"><span>оптовая цена</span></div>
+                            <span class="opt-price"><span>25.199 ₽</span></span>
+                          </div>
+                        </div>
+                        <div class="card-button">
+                          <a href="#">Условия опта</a>
+                          <button type="button" class="btn-in-garbage">
+                            <img src="./assets/icons/basket-white.svg" alt="">
+                            <span>В корзину</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

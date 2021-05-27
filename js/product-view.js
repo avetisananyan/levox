@@ -180,4 +180,10 @@ $(document).ready(function () {
             $(this).children('.dislike-count').html(++valueCount);
         }
     });
+
+    $(".all-collection-tabs .tab-link").on('click', function() {
+        let tabID = $(this).attr('data-tab');
+        $(this).addClass('active').siblings().removeClass('active');
+        $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+    });
 });
