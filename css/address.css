@@ -134,13 +134,13 @@ address-container {
     .addresses-map-container .map-addresses:after {
         content: '';
         position: absolute;
-        left: 15%;
-        top: 100%;
+        left: 8%;
+        top: 99%;
         width: 0;
         height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #FFFFFF;
+        border-left: 16px solid transparent;
+        border-right: 16px solid transparent;
+        border-top: 28px solid #FFFFFF;
         clear: both;
     }
 
