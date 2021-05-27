@@ -1192,3 +1192,24 @@ body .page-wrapper .page-content .side-menu .menu-sub .menu-sub-content ul li a 
 .side-menu .menu-sub .menu-sub-content ul li a {
     color: #202020;
 }
+
+body .promotions .card .card-content .card-price .item.opt-item {
+    display: none;
+}
+
+body.opt .promotions .card .card-content .card-price .item.opt-item {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+body.opt .promotions .card .card-content .card-price .item.opt-item .price-label {
+    margin: 0 0 10px 0;
+}
+
+body.opt .promotions .card .card-content .card-price .item {
+    display: none;
+}

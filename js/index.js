@@ -29,6 +29,14 @@ $(document).ready(function() {
     if(window.matchMedia("(max-width: 767px)").matches) {
         moreText();
     }
+
+    $("#switch-id, #switch-id-mobile").change(function () {
+        if ($(this).is(":checked")) {
+            $("body").addClass("opt");
+        } else {
+            $("body").removeClass("opt");
+        }
+    });
 });
 
 function openCloseSideMenu (mouse) {
