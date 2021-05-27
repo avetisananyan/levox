@@ -350,6 +350,8 @@
 
 .product-view-feature-tab ul li .feature-value {
     font-weight: bold;
+    max-width: 100px;
+    width: 100%;
 }
 
 .feature-feature-content .feature-feature ul li.feature-color ul li {
