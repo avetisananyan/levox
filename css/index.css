@@ -611,6 +611,7 @@
 .promotions .card .card-content .card-button button {
     height: 48px;
     max-width: 186px;
+    cursor: pointer;
 }
 
 .category-section .category-section-title {

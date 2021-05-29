@@ -199,6 +199,7 @@
     text-align: center;
     color: #FFFFFF;
     border: unset;
+    cursor: pointer;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;

@@ -53,6 +53,10 @@
     color: #202020;
 }
 
+.promotions > div {
+    min-height: unset;
+}
+
 /* Pagination */
 .pagination-block {
     padding: 60px 0;

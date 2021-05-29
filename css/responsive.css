@@ -849,6 +849,7 @@
     .promotions .card .card-content .card-button button {
         height: 26px;
         max-width: 101px;
+        cursor: pointer;
     }
 
     .promotions .card .card-content .card-button button img {
