@@ -372,6 +372,7 @@
     .filter-content.active {
         position: fixed;
         z-index: 105;
+        display: block;
         background: #fff;
         top: 0;
         visibility: visible;

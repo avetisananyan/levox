@@ -98,6 +98,10 @@
         min-height: 110px;
     }
 
+    .account-container .account-block.account-info {
+        border: unset;
+    }
+
     .account-container .account-title {
         font-size: 18px;
     }
