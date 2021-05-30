@@ -32,6 +32,12 @@
     padding: 10px 13px;
     border-top: 1px solid #C4C4C4;
     cursor: pointer;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 .address-items .address-item .item-img {
     margin: 3px 14px 0 13px;
@@ -107,12 +113,25 @@
     border-bottom: 3px solid #ED2024;
 }
 
-.addresses-map-container .map-addresses {
+/*.addresses-map-container .map-addresses {
     display: none;
-}
+}*/
 
 #addressMap {
     height: 100%;
+}
+
+.addresses-map {
+    display: none;
+}
+
+.addresses-map.active {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
 }
 
 @media only screen and (max-width: 1367px) and (min-width: 769px) {
@@ -154,12 +173,9 @@
         background: #FFFFFF;
         border-radius: 14px;
         padding: 34px 46px;
-        position: absolute;
         max-width: 442px;
         width: 100%;
         height: 363px;
-        top: 30%;
-        left: 10%;
     }
 
     #addressFeatures {
