@@ -317,6 +317,26 @@
     top: -0.2em;
 }
 
+@media only screen and (max-width: 1777px) and (min-width: 769px) {
+    .filter-content .filter-left-content {
+        width: 25%;
+    }
+
+    .filter-content .filter-right-content {
+        max-height: 268px;
+    }
+}
+
+@media only screen and (max-width: 1560px) and (min-width: 769px) {
+    .filter-content .filter-left-content {
+        width: 30%;
+    }
+
+    .filter-content .filter-right-content {
+        max-height: 392px;
+    }
+}
+
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .filter-option-dropdown .filter-option-mobile {

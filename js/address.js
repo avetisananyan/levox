@@ -8,6 +8,7 @@ let arr = [];
 let obj = {};
 $(".addresses-map.active .address-item").each(function(index) {
     obj = {
+        item: $(this).attr("data-item"),
         lat: $(this).attr("data-lat"),
         lng: $(this).attr("data-lng"),
         title: $(this).find(".item-title").text(),
@@ -31,7 +32,8 @@ $(".address-items .address-item").click(function() {
         $('.map-addresses .map-addresses-description').text(itemDescription);
         $('.map-addresses .map-addresses-date').text(itemDate);
     } else {
-        myMap.setMarker();
+        let dataItem = $(this).attr("data-item");
+        myMap.setMarker(dataItem);
     }
 });
 
@@ -50,12 +52,11 @@ function initMap() {
 }
 
 let markers = [];
-
 let myMap = {
     map: null,
     markers: [],
     infowindow: null,
-    image: "assets/images/address-location.svg",
+    image: "assets/images/map-loc.svg",
     addressList: arr,
     initialize: function() {
         this.createMap();
@@ -63,8 +64,8 @@ let myMap = {
     },
     createMap: function() {
         let mapOptions = {
-            center: new google.maps.LatLng(51.479382, -3.179028),
-            zoom: 12,
+            center: new google.maps.LatLng(51.481382, -3.179028),
+            zoom: 16,
             disableDefaultUI: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: true
@@ -84,22 +85,39 @@ let myMap = {
             });
             this.markers.push(marker);
 
-            google.maps.event.addListener(marker, 'click', function(marker, address) {
-                return function() {
-                    myMap.infowindow.setContent('<div class="map-addresses"><div class="map-addresses-title"><span>' + address.title + '</span><a class="close"><img src="assets/icons/close.svg"></a></div><div class="map-addresses-images d-flex"><div class="map-addresses-img"><img src="assets/images/addresses-1.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-2.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-3.png"></div></div><div class="map-addresses-info-container"><div class="map-addresses-info"><label>Адрес:</label><span class="map-addresses-description">' + address.description + '</span></div><div class="map-addresses-info"><label>Режим роботы:</label><span class="map-addresses-date">' + address.date + '</span></div><div class="map-addresses-info"><label>Площадь магазина:</label><span>1 000 м2</span></div><div class="map-addresses-info"><label>Телефон:</label><span>+ 7 (918) 333-33-33</span></div></div></div>');
-                    myMap.infowindow.open(myMap.map, marker);
+            if(!window.matchMedia("(max-width: 768px)").matches) {
+                google.maps.event.addListener(marker, 'click', function (marker, address) {
+                    return function () {
+                        myMap.infowindow.setContent('<div class="map-addresses map-addresses-maps"><div class="map-addresses-title"><span>' + address.title + '</span><a class="close"><img src="assets/icons/close.svg"></a></div><div class="map-addresses-images d-flex"><div class="map-addresses-img"><img src="assets/images/addresses-1.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-2.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-3.png"></div></div><div class="map-addresses-info-container"><div class="map-addresses-info"><label>Адрес:</label><span class="map-addresses-description">' + address.description + '</span></div><div class="map-addresses-info"><label>Режим роботы:</label><span class="map-addresses-date">' + address.date + '</span></div><div class="map-addresses-info"><label>Площадь магазина:</label><span>1 000 м2</span></div><div class="map-addresses-info"><label>Телефон:</label><span>+ 7 (918) 333-33-33</span></div></div></div>');
+                        myMap.infowindow.open(myMap.map, marker);
 
-                    for (let j = 0; j < markers.length; j++) {
-                        markers[j].setIcon("assets/images/address-location.svg");
-                    }
-                    marker.setIcon("assets/images/address-location-3.svg");
-                };
-            }(marker, address));
-
+                        for (let j = 0; j < markers.length; j++) {
+                            markers[j].setIcon("assets/images/map-loc.svg");
+                        }
+                        marker.setIcon("assets/images/map-loc-active.svg");
+                        $(".addresses-map-container .gm-ui-hover-effect").on("click", function() {
+                            marker.setIcon("assets/images/map-loc.svg");
+                        });
+                    };
+                }(marker, address));
+            } else {
+                google.maps.event.addListener(marker, 'click', function (marker, address) {
+                    return function () {
+                        $(`.address-items .address-item[data-item=${address.item}]`).click();
+                        for (let j = 0; j < markers.length; j++) {
+                            markers[j].setIcon("assets/images/map-loc.svg");
+                        }
+                        marker.setIcon("assets/images/map-loc-active.svg");
+                        $(".addresses-map-container .map-addresses .map-addresses-title .close").click(function() {
+                            marker.setIcon("assets/images/map-loc.svg");
+                        });
+                    };
+                }(marker, address));
+            }
             markers.push(marker);
         }
     },
-    setMarker: function() {
-        google.maps.event.trigger(this.markers[1], 'click');
+    setMarker: function(dataItem) {
+        google.maps.event.trigger(this.markers[dataItem], 'click');
     }
 };

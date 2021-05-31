@@ -113,9 +113,9 @@
     border-bottom: 3px solid #ED2024;
 }
 
-/*.addresses-map-container .map-addresses {
+.addresses-map-container .map-addresses-mobile {
     display: none;
-}*/
+}
 
 #addressMap {
     height: 100%;
@@ -142,9 +142,14 @@
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-    /*.address-items .address-item .item-description {*/
-    /*    width: 180px;*/
-    /*}*/
+
+    .addresses-container .addresses-location-container {
+        min-width: 400px;
+        padding: 0;
+    }
+    .address-items .address-item .item-description {
+        width: 180px;
+    }
 
     .addresses-map-container .map-addresses,
     #addressFeatures {
@@ -364,12 +369,6 @@
     }
 
     .addresses-map {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -ms-flex;
-        display: -webkit-flex;
-        display: flex;
         -webkit-flex-direction: column-reverse;
         -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
@@ -444,5 +443,9 @@
 
     #addressMap {
         height: 242px;
+    }
+
+    .map-addresses-maps {
+        display: none !important;
     }
 }
