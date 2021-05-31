@@ -607,8 +607,14 @@ input.lift-option-default + label {
     overflow-y: initial !important
 }
 
-.address-modal .modal-footer {
+.address-modal .modal-footer-address {
     border: unset;
+}
+
+.address-modal .addresses-location-container {
+    padding: 0;
+    min-width: 385px;
+    max-width: 435px;
 }
 
 .address-items {
@@ -618,6 +624,10 @@ input.lift-option-default + label {
 
 .address-modal .modal-dialog {
     max-width: 1404px;
+}
+
+.address-modal .modal-dialog .modal-content {
+    padding: 0 0 40px 0;
 }
 
 .address-modal .modal-header {
@@ -639,7 +649,7 @@ input.lift-option-default + label {
     padding: 16px 24px;
 }
 
-.address-modal .address-title > span {
+.address-title > span {
     position: relative;
     font-weight: bold;
     font-size: 28px;
@@ -647,33 +657,33 @@ input.lift-option-default + label {
     color: #202020;
 }
 
-.address-modal .address-title > span .count {
+.address-title > span .count {
     line-height: 1;
 }
 
-.address-modal .address-container {
+.address-container {
     border: 1px solid #C4C4C4;
 }
 
-.address-modal .address-items .address-item {
+.address-items .address-item {
     padding: 10px 13px;
     border-top: 1px solid #C4C4C4;
 }
 
-.address-modal .address-items .address-item .item-img {
+.address-items .address-item .item-img {
     margin: 0 14px 0 0;
 }
 
-.address-modal .address-items .address-item .item-content .item-title span {
+.address-items .address-item .item-content .item-title span {
     font-weight: bold;
     font-size: 18px;
     color: #202020;
 }
-.address-modal .address-items .address-item .item-content .item-description span {
+.address-items .address-item .item-content .item-description span {
     font-size: 18px;
     color: #202020;
 }
-.address-modal .address-items .address-item .item-content .item-date span {
+.address-items .address-item .item-content .item-date span {
     font-size: 16px;
     color: #757575;
 }
@@ -760,7 +770,7 @@ input.lift-option-default + label {
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
-    .address-modal .modal-footer {
+    .address-modal .modal-footer-address {
         display: none;
     }
 
@@ -1158,7 +1168,7 @@ input.lift-option-default + label {
     }
 
     .address-modal .modal-content {
-        height: 100%;
+        /*height: 100%;*/
         border: unset;
         border-radius: unset;
     }
@@ -1199,5 +1209,31 @@ input.lift-option-default + label {
     .card-modal .modal-header .close {
         right: 14px;
         top: 16px;
+    }
+
+    .modal-body-address {
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    .address-modal .addresses-location-container {
+        max-width: 100%;
+    }
+
+    .address-modal .modal-header .modal-title {
+        font-size: 20px;
+    }
+
+    .modal-footer-address button.btn {
+        background: #ED2024;
+        border-radius: 4px;
+        color: #fff;
+        font-weight: bold;
+        font-size: 13px;
+        max-width: 120px;
+        width: 100%;
+        height: 34px;
+        cursor: pointer;
     }
 }

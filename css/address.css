@@ -172,9 +172,11 @@
 
     .addresses-map-container {
         position: relative;
+        width: 100%;
+        padding: 0 5px;
     }
 
-    .addresses-container .addresses-map-container .map-addresses {
+    .addresses-map-container .map-addresses {
         background: #FFFFFF;
         border-radius: 14px;
         padding: 34px 46px;
