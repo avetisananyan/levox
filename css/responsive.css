@@ -460,9 +460,9 @@
     .home-carousel img {
         height: 160px;
     }
-	.search-block-link {
-		display: none !important;
-	}
+    .search-block-link {
+        display: none !important;
+    }
     .page-wrapper .page-content .side-menu {
         display: none;
         max-width: 100%;
@@ -1067,5 +1067,67 @@
 
     .page-subcategory {
         padding: 0;
+    }
+
+    .small-footer-social-media {
+        display: block;
+    }
+
+    .small-footer-social-media .social-media-group {
+        -webkit-justify-content: center;
+        -ms-justify-content: center;
+        justify-content: center;
+    }
+
+    .small-footer-social-media .social-media-group li .social-media {
+        margin: 0 10px;
+    }
+
+    .small-footer-social-media .title {
+        margin: 0;
+    }
+
+    .footer .footer-container .footer-info .item li .social-media,
+    .small-footer-social-media .social-media-group li .social-media {
+        width: 30px;
+        height: 30px;
+    }
+
+    .footer .footer-container .footer-payments .title {
+        font-size: 14px;
+    }
+
+    .footer .footer-container .footer-payments .payments-group .payment {
+        margin: 0 10px;
+    }
+
+    .payments-group .payment.visa-img img {
+        width: 55px;
+        height: 42px;
+    }
+
+    .payments-group .payment.mastercard-img img {
+        width: 45px;
+        height: 42px;
+    }
+
+    .payments-group .payment.mir-img img {
+        width: 58px;
+        height: 21px;
+    }
+
+    .payments-group .payment.khalva-img img {
+        width: 60px;
+        height: 24px;
+    }
+
+    .payments-group .payment.apple-pay-img img {
+        width: 44px;
+        height: 19px;
+    }
+
+    .payments-group .payment.samsung-pay-img img {
+        width: 130px;
+        height: 19px;
     }
 }

@@ -8,6 +8,9 @@ $(function() {
             .parent(".cart-item-qty")
             .find(".qty");
         $n.val(Number($n.val())+1 );
+        if (Number($n.val()) > 1) {
+            $(this).parent().find(".cart-qty-minus").css("color", "#202020");
+        }
     });
 
     let incrementMinus = buttonMinus.click(function() {
@@ -18,6 +21,9 @@ $(function() {
         let amount = Number($n.val());
         if (amount > 1) {
             $n.val(amount-1);
+            $(this).css("color", "#202020");
+        } else {
+            $(this).css("color", "#C4C4C4");
         }
     });
 
@@ -159,7 +165,7 @@ let myMap = {
             if(!window.matchMedia("(max-width: 768px)").matches) {
                 google.maps.event.addListener(marker, 'click', function (marker, address) {
                     return function () {
-                        myMap.infowindow.setContent('<div class="map-addresses map-addresses-maps"><div class="map-addresses-title"><span>' + address.title + '</span><a class="close"><img src="assets/icons/close.svg"></a></div><div class="map-addresses-images d-flex"><div class="map-addresses-img"><img src="assets/images/addresses-1.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-2.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-3.png"></div></div><div class="map-addresses-info-container"><div class="map-addresses-info"><label>Адрес:</label><span class="map-addresses-description">' + address.description + '</span></div><div class="map-addresses-info"><label>Режим роботы:</label><span class="map-addresses-date">' + address.date + '</span></div><div class="map-addresses-info"><label>Площадь магазина:</label><span>1 000 м2</span></div><div class="map-addresses-info"><label>Телефон:</label><span>+ 7 (918) 333-33-33</span></div></div></div>');
+                        myMap.infowindow.setContent('<div class="map-addresses map-addresses-maps"><div class="map-addresses-title"><span>' + address.title + '</span><a class="close"><img src="assets/icons/close.svg"></a></div><div class="map-addresses-images d-flex"><div class="map-addresses-img"><img src="assets/images/addresses-1.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-2.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-3.png"></div></div><div class="map-addresses-info-container"><div class="map-addresses-info"><label>Адрес:</label><span class="map-addresses-description">' + address.description + '</span></div><div class="map-addresses-info"><label>Режим работы:</label><span class="map-addresses-date">' + address.date + '</span></div><div class="map-addresses-info"><label>Площадь магазина:</label><span>1 000 м2</span></div><div class="map-addresses-info"><label>Телефон:</label><span>+ 7 (918) 333-33-33</span></div></div></div>');
                         myMap.infowindow.open(myMap.map, marker);
 
                         for (let j = 0; j < markers.length; j++) {

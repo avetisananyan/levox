@@ -98,11 +98,11 @@ $(document).ready(function () {
     var ratingReviewSwiper = new Swiper(".product-view-rating-review-tab .product-view-review", {
         init: false,
         loop: false,
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 10,
         observer: true,
         observeParents: true,
-        allowTouchMove: true,
+        freeMode: true
     });
 
     if(window.matchMedia("(max-width: 768px)").matches) {

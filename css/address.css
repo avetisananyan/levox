@@ -107,6 +107,7 @@
     font-size: 18px;
     color: #4D4D4D;
     line-height: 24px;
+    display: block;
 }
 
 .addresses-location ul li.active {
@@ -134,9 +135,14 @@
     display: flex;
 }
 
-@media only screen and (max-width: 1367px) and (min-width: 769px) {
-    .addresses-location ul li {
-        padding: 7px 12px;
+.map-addresses-info > span {
+    font-weight: normal;
+    margin: 0 0 0 5px;
+}
+
+@media only screen and (max-width: 1484px) and (min-width: 769px) {
+    .addresses-location ul li:not(:last-child) {
+        max-width: 260px
     }
 }
 
@@ -151,13 +157,11 @@
         width: 180px;
     }
 
-    .addresses-map-container .map-addresses,
-    #addressFeatures {
+    .addresses-map-container .map-addresses {
         position: relative;
     }
 
-    .addresses-map-container .map-addresses:after,
-    #addressFeatures:after {
+    .addresses-map-container .map-addresses:after {
         content: '';
         position: absolute;
         left: 8%;
@@ -185,17 +189,7 @@
         height: 363px;
     }
 
-    #addressFeatures {
-        background: #FFFFFF;
-        border-radius: 14px;
-        padding: 34px 46px;
-        max-width: 442px;
-        width: 100%;
-        max-height: 363px;
-        height: 100%;
-    }
-
-    #addressFeatures .map-addresses-title .close {
+    .map-addresses .map-addresses-title .close {
         display: none;
     }
 
@@ -335,9 +329,11 @@
         font-size: 16px;
         line-height: 22px;
     }
+
     .addresses-location ul li span.description {
         font-size: 12px;
         line-height: 16px;
+        display: block;
     }
 
     .address-title > span {
@@ -449,5 +445,9 @@
 
     .map-addresses-maps {
         display: none !important;
+    }
+
+    .addresses-location ul li {
+        max-width: 260px;
     }
 }
