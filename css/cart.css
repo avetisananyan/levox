@@ -770,6 +770,7 @@ input.lift-option-default + label {
 @media only screen and (max-width: 1700px) and (min-width: 769px) {
     .fieldset .field.lift {
         margin: 0 0 50px 0;
+        min-width: 145px;
     }
 }
 

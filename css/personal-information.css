@@ -217,6 +217,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 /* The Address Modal */
 .address-modal .fieldset {
     margin: 0;
+    background: #fff;
 }
 .address-modal .fieldset .field {
     padding: 0 15px 0 0;
@@ -388,6 +389,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .address-modal .modal-body {
     padding: 0;
+    background: #fff;
 }
 .address-modal .modal-header a.close {
     position: absolute;
@@ -619,6 +621,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
         border: unset;
         border-radius: unset;
         padding: 25px 14px;
+        background: #fff;
     }
     .address-modal .modal-header .modal-title {
         font-size: 20px;
