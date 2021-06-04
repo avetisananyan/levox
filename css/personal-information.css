@@ -611,6 +611,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     body.modal-open {
         padding: 0 !important;
         margin: 0;
+        background: #fff;
     }
     .address-modal .modal-dialog {
         margin: 0 !important;
