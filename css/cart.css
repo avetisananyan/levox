@@ -463,8 +463,8 @@ input.lift-option-default + label {
     height: 50px;
     padding: 0 10px;
     outline: unset;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     color: #202020;
 }
 

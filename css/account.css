@@ -39,15 +39,15 @@
 
 .account-description {
     max-width: 345px;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 25px;
     color: #828282;
 }
 
 .account-read,
 .account-logout {
-    font-weight: 600;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 18px;
     line-height: 18px;
     color: #202020;
     text-decoration: none;
@@ -65,6 +65,10 @@
 .account-history-info,
 .account-electronic-checks-info {
     height: 100%;
+}
+
+.account-person-info > span {
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 769px) {
@@ -142,5 +146,10 @@
     .account-logout {
         font-weight: normal;
         font-size: 12px;
+    }
+
+    .account-container .account-history-info .account-title,
+    .account-container .account-electronic-checks-info .account-title {
+        font-size: 16px;
     }
 }

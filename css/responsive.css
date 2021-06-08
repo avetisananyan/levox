@@ -1,6 +1,14 @@
 /* Desktop */
 @media only screen and (min-width: 769px) {
 
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link:first-child a span {
+        font-size: 16px;
+    }
+
+    .header .header-contact .location > span {
+        font-size: 18px;
+    }
+
     body.non-home-page .page-wrapper .page-content .side-menu .side-menu-container ul li a span.side-menu-title {
         visibility: hidden;
         opacity: 0;
@@ -96,8 +104,9 @@
     }
 
     body .page-wrapper .page-content .side-menu .menu-sub .menu-sub-title a span {
-        font-size: 30px;
-        line-height: 1.1;
+        font-weight: bold;
+        font-size: 24px;
+        color: #202020;
     }
 
     .page-wrapper .page-content .side-menu {
@@ -763,6 +772,7 @@
         justify-content: space-between;
         font-size: 14px;
         padding: 0;
+        font-weight: 700;
     }
 
     .page-wrapper .footer .footer-container .footer-payments .payments-group {
@@ -1126,5 +1136,10 @@
     .payments-group .payment.samsung-pay-img img {
         width: 130px;
         height: 19px;
+    }
+
+    .footer-info-dropdown-list .dropdown-content a {
+        font-size: 12px;
+        padding: 7px 0;
     }
 }
