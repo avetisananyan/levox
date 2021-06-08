@@ -589,7 +589,6 @@
     }
 
     .filter-bottom-mobile .filter-title-mobile span {
-        font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -696,7 +695,6 @@
     }
 
     .filter-option-dropdown.expanded .filter-title-mobile span {
-        font-family: Roboto;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -854,11 +852,18 @@
         background: #252525;
         color: #ffffff;
         padding: 0 20px 0 16px;
+        font-size: 18px;
+        font-weight: 700;
     }
 
     .sort-dropdown > .sort-list > .sort-item,
     .composition-dropdown > .composition-list > .composition-item {
         border-top: 1px solid #C0C0C0;
         padding: 12px;
+        font-size: 16px;
+    }
+
+    .sort-dropdown > .sort-list > .sort-item.selected {
+        font-size: 16px;
     }
 }

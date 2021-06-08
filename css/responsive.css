@@ -511,7 +511,6 @@
     }
 
     .side-menu .menu-sub .menu-sub-close > span.back-sub span {
-        font-family: Roboto;
         font-weight: bold;
         font-size: 16px;
         color: #ED2024;
@@ -561,7 +560,6 @@
     }
 
     body .page-wrapper .page-content .side-menu .menu-sub .menu-sub-title a span {
-        font-family: Roboto;
         font-style: normal;
         font-weight: 900;
         font-size: 18px;
@@ -597,7 +595,6 @@
         -ms-align-items: center;
         align-items: center;
         margin: 0 0 0 15px;
-        font-family: Roboto;
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
