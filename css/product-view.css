@@ -19,7 +19,7 @@
 }
 
 .product-view .product-view-sku .sku-title {
-    font-size: 16px;
+    font-size: 18px;
     color: #757575;
 }
 
@@ -39,7 +39,7 @@
 
 .product-view .product-view-review > a {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     color: #757575;
     border-bottom: 1px dashed #757575;
 }
@@ -350,7 +350,7 @@
 
 .product-view-feature-tab ul li .feature-value {
     font-weight: bold;
-    max-width: 100px;
+    max-width: 175px;
     width: 100%;
 }
 
@@ -448,6 +448,7 @@
 
 .feature-package-size-content table tbody tr:last-of-type td {
     font-weight: bold;
+    font-size: 28px;
 }
 
 .feature-package-size-content table tbody tr td:first-of-type {
@@ -825,6 +826,16 @@
     color: #FFFFFF;
     max-width: 444px;
     height: 64px;
+}
+
+.product-view-equipment-collect a:hover,
+.product-view-equipment-collect a:focus {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.product-view-equipment-collect a > span {
+    margin: 0 0 0 14px;
 }
 
 .review-complain,
@@ -1234,6 +1245,10 @@
         -ms-align-items: center;
         align-items: center;
     }
+
+    ․rating-review-all-product-link {
+        display: none;
+    }
 }
 
 /* Mobile */
@@ -1317,7 +1332,7 @@
     }
 
     .product-view .product-view-content .product-view-info .product-view-price .special-price .price {
-        font-size: 30px;
+        font-size: 38px;
     }
 
     .product-view .product-view-content .product-view-info .product-view-price .special-price .price-label {
@@ -1439,7 +1454,7 @@
     }
 
     .product-view-tabs .product-view-feature-tab .feature-title span {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;;
     }
 
@@ -1541,7 +1556,7 @@
     }
 
     .product-view-rating-review-tab .rating-review-title > span {
-        font-weight: 600;
+        font-weight: 500;
         font-size: 16px;
     }
 
@@ -1556,7 +1571,6 @@
     }
 
     .rating-feedback-container .product-view-rating-number span {
-        font-weight: 600;
         font-size: 34px;
     }
 
@@ -2039,5 +2053,13 @@
         line-height: 14px;
         display: block;
         padding: 8px 4px 14px;
+    }
+
+    .product-view-feature-tab ul li .feature-value {
+        max-width: 100px;
+    }
+
+    .feature-package-size-content table tbody tr:last-of-type td {
+        font-size: 12px;
     }
 }
