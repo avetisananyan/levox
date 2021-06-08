@@ -217,7 +217,9 @@
         width: 100%;
     }
 
-    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a > span {
+    .header .header-contact .location > span,
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a > span,
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link:first-child a span {
         font-size: 1vw;
     }
 
