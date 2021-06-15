@@ -994,6 +994,12 @@
     }
 }
 
+@media only screen and (min-width: 1280px) {
+    .product-view .product-view-content .product-view-info {
+        min-width: 400px;
+    }
+}
+
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .product-view-content,
@@ -1059,10 +1065,6 @@
         font-weight: bold;
     }
 
-    .product-view .product-view-content .product-view-info {
-        min-width: 400px;
-    }
-
     .product-view-tabs .tab-content {
         padding: 40px;
     }
@@ -1100,6 +1102,7 @@
         display: table-cell;
         text-align: center;
         vertical-align: middle;
+        padding: 0 5px;
     }
     .product-view-equipment .divTableHead {
         font-weight: bold;
@@ -1252,11 +1255,172 @@
 }
 
 /* Tablet */
-@media only screen and (max-width: 1280px) and (min-width: 769px) {
+@media only screen and (max-width: 1279px) and (min-width: 769px) {
+    .product-view-equipment-tab .equipment-top .equipment-name span {
+        font-size: 3vw;
+    }
+    .product-view-slider .gallery-thumbs .swiper-slide {
+        height: 8vw;
+    }
+    .product-view .product-view-option {
+        padding: 15px 0 0 0;
+    }
+    .product-view-cart {
+        margin: 15px 0 20px;
+    }
+    .product-view .product-view-option ul li,
+    .product-view .product-view-title {
+        margin: 0 0 10px 0;
+    }
+    .product-view .product-view-option ul li .option-icon {
+        margin: 0 10px 0 0;
+    }
+    .product-view .product-view-option ul li .option-icon img {
+        width: 3.8vw;
+    }
+    .product-view .product-view-option ul li .product-count,
+    .product-view .product-view-option ul li span {
+        font-size: 1.6vw;
+    }
+    .product-view .cart a img {
+        width: 35px;
+    }
+    .product-view-opt-button a,
+    .product-view-execution-options a,
+    .product-view .cart a {
+        font-size: 1.7vw;
+    }
+    .product-view-opt-button,
+    .product-view-execution-options,
+    .product-view .cart {
+        height: 5vw;
+    }
+    .product-view .product-view-title span {
+        font-size: 2.4vw;
+    }
+    .product-view .product-view-sku .sku-title {
+        font-size: 1.5vw;
+    }
+    .product-view .product-view-content .product-view-info .product-view-price .old-price {
+        font-size: 2.2vw;
+    }
+    .product-view .product-view-content .product-view-info .product-view-price .special-price .price {
+        font-size: 5vw;
+    }
+    .product-view-tabs ul.nav-tabs li a {
+        font-size: 2vw;
+    }
+    .product-view-tabs .tab-content .tab-pane .product-view-video {
+        height: 40vw;
+    }
+    .product-view .product-view-content .product-view-info .product-view-price .special-price {
+        text-align: right;
+    }
+    .exec-options-container .exec-options-title {
+        font-size: 3vw;
+    }
+    .exec-options-product-count {
+        max-width: 33vw;
+        height: 2.8vw;
+    }
+    .exec-options-product-count span {
+        font-size: 1.3vw;
+        line-height: 1;
+        height: unset;
+    }
+    .product-view-equipment .divTableHead,
+    .product-view-equipment .divTableCell span,
+    .product-view-equipment .divTableCell, .product-view-equipment .divTableCell .dtc-3 span:first-child {
+        font-size: 2vw;
+    }
+    .product-view-equipment .divTableCell .dtc-3,
+    .product-view-equipment .divTableCell.dtc-4 {
+        padding: 0;
+        text-align: center;
+    }
+    .product-view-equipment .divTableCell .dtc-3 span {
+        width: 100%;
+        text-align: center;
+    }
+    .product-view-equipment-total span {
+        font-size: 3vw;
+    }
+    .product-view-equipment-total label {
+        font-size: 2.2vw;
+    }
+    .product-view-tabs .tab-content {
+        padding: 10px;
+    }
+    .product-view-equipment-tab .equipment-top .equipment-name {
+        margin: 0 0 10px 0;
+    }
+    .product-view-equipment .divTableBody .divTableRow {
+        height: 18vw;
+    }
+    .product-view-equipment .divTableCell span {
+        width: max-content;
+        display: inline-block;
+    }
+    .product-view-equipment-total {
+        height: 7vw;
+    }
+    .product-view-equipment-collect {
+        margin: 25px 0 0 0;
+    }
+    .product-view-equipment-collect a {
+        font-size: 1.8vw;
+        max-width: 35vw;
+        height: 5vw;
+    }
+    .product-view-equipment-collect a img {
+        width: 4vw;
+    }
 
+    .page-content.active .product-view .product-view-content .product-view-info .product-view-price .special-price .price {
+        font-size: 3vw;
+    }
+    .page-content.active .product-view-opt-button a, .product-view-execution-options a, .product-view .cart a {
+        font-size: 1.5vw;
+    }
+    .page-content.active .product-view .product-view-content .product-view-info .product-view-price .old-price {
+        font-size: 1.8vw;
+    }
+    .page-content.active .product-view .product-view-content .product-view-info .product-view-price .special-price .price-label {
+        font-size: 14px;
+    }
 }
 
-/* Mobile */
+@media only screen and (max-width: 1279px) and (min-width: 1201px) {
+    .page-wrapper .page-content.active .main {
+        width: 92%;
+    }
+
+    .page-content.active .product-view-slider .gallery-top, .page-content.active .product-view-slider .gallery-thumbs {
+        width: 45vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 1101px) {
+    .page-wrapper .page-content.active .main {
+        width: 80%;
+    }
+
+    .page-content.active .product-view-slider .gallery-top, .page-content.active .product-view-slider .gallery-thumbs {
+        width: 42vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 992px) {
+    .page-wrapper .page-content.active .main {
+        width: 73%;
+    }
+
+    .page-content.active .product-view-slider .gallery-top, .page-content.active .product-view-slider .gallery-thumbs {
+        width: 39vw;
+    }
+}
+
+    /* Mobile */
 @media only screen and (max-width: 768px) {
     body .page-wrapper .page {
         padding: 65px 0 0 0;

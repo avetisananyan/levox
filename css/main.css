@@ -246,7 +246,7 @@ label.radio-label {
     margin-right: 0;
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 1279px) {
     label.radio-label {
         font-size: 14px;
     }
