@@ -26,7 +26,7 @@ $(document).ready(function() {
         $submenu.removeClass('current');
     });
 
-    if(window.matchMedia("(max-width: 767px)").matches) {
+    if(window.matchMedia("(max-width: 991px)").matches) {
         moreText();
     }
 

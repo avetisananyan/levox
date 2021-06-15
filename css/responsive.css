@@ -1,5 +1,9 @@
 /* Desktop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 992px) {
+
+    .header-mobile {
+        display: none;
+    }
 
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link:first-child a span {
         font-size: 16px;
@@ -196,7 +200,7 @@
     }
 }
 
-@media only screen and (max-width: 1680px) and (min-width: 769px) {
+@media only screen and (max-width: 1680px) and (min-width: 992px) {
     .nav-container .nav-bar {
         flex-wrap: wrap;
     }
@@ -268,7 +272,7 @@
     }
 }
 
-@media only screen and (max-width: 1366px) and (min-width: 769px) {
+@media only screen and (max-width: 1366px) and (min-width: 992px) {
     .page-wrapper .page-content .side-menu a .side-menu-icon {
         height: 25px;
     }
@@ -334,7 +338,7 @@
     }
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 769px) {
+@media only screen and (max-width: 1280px) and (min-width: 992px) {
     .page-wrapper .page-content .side-menu a .side-menu-icon {
         margin-right: 0;
     }
@@ -367,7 +371,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px) and (min-width: 769px) {
+@media only screen and (max-width: 1024px) and (min-width: 992px) {
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link {
         padding-bottom: 5px;
     }
@@ -383,7 +387,7 @@
     }
 }
 
-@media only screen and (max-width: 1010px) and (min-width: 769px) {
+@media only screen and (max-width: 1010px) and (min-width: 992px) {
     .promotions .card .card-content {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -396,7 +400,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 991px) {
     .page {
         padding: 65px 15px 15px 15px;
         display: -webkit-box;
@@ -414,6 +418,15 @@
         -webkit-order: -1;
         -ms-flex-order: -1;
         order: -1;
+    }
+
+    .header-mobile {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
     }
 
     .main .main-content {
@@ -682,7 +695,7 @@
         color: #ED2024;
     }
 
-    .page-wrapper .page-content .d-md-none {
+    .page-wrapper .page-content .header-mobile {
         background: #252525;
         color: #FFFFFF;
         width: 100%;
@@ -692,41 +705,41 @@
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     }
 
-    .page-wrapper .page-content .d-md-none .logo {
+    .page-wrapper .page-content .header-mobile .logo {
         height: 100%;
     }
 
-    .page-wrapper .page-content .d-md-none .logo img {
+    .page-wrapper .page-content .header-mobile .logo img {
         max-width: 133px;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu {
+    .page-wrapper .page-content .header-mobile .header-links-menu {
         width: 100%;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .menu {
+    .page-wrapper .page-content .header-mobile .header-links-menu .menu {
         margin: 0 15px 0 0;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .nav-container-mobile {
+    .page-wrapper .page-content .header-mobile .header-links-menu .nav-container-mobile {
         width: 100%;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .nav-container-mobile .nav-bar {
+    .page-wrapper .page-content .header-mobile .header-links-menu .nav-container-mobile .nav-bar {
         list-style-type: none;
         width: 100%;
         margin: 0;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .nav-container-mobile .nav-bar .small-nav-link-icon {
+    .page-wrapper .page-content .header-mobile .header-links-menu .nav-container-mobile .nav-bar .small-nav-link-icon {
         margin: 0 15px 0 0;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .nav-container-mobile .nav-bar li a {
+    .page-wrapper .page-content .header-mobile .header-links-menu .nav-container-mobile .nav-bar li a {
         position: relative;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .nav-container-mobile .nav-bar li span.count {
+    .page-wrapper .page-content .header-mobile .header-links-menu .nav-container-mobile .nav-bar li span.count {
         width: 20px;
         height: 20px;
         border-radius: 10px;
@@ -743,7 +756,7 @@
         line-height: 18px;
     }
 
-    .page-wrapper .page-content .d-md-none .header-links-menu .menu img {
+    .page-wrapper .page-content .header-mobile .header-links-menu .menu img {
         width: 24px;
     }
 
