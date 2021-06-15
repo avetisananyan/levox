@@ -1251,6 +1251,11 @@
     }
 }
 
+/* Tablet */
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
+
+}
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     body .page-wrapper .page {
