@@ -1597,8 +1597,8 @@
 @media only screen and (max-width: 820px) and (min-width: 769px) {
     .exec-options-swiper-container .swiper-wrapper.disabled .swiper-slide,
     .all-collection-swiper-container .swiper-wrapper.disabled .swiper-slide {
-        -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+        -ms-flex: 0 0 48%;
+        flex: 0 0 48%;
     }
     .product-view .promotions .card .card-content .card-price {
         width: 75%;
