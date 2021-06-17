@@ -1256,6 +1256,14 @@
 
 /* Tablet */
 @media only screen and (max-width: 1279px) and (min-width: 769px) {
+    .exec-options-swiper-container .swiper-wrapper.disabled .swiper-slide,
+    .all-collection-swiper-container .swiper-wrapper.disabled .swiper-slide {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+    }
+    .product-view .product-view-option ul li .information-icon {
+        display: none;
+    }
     .product-view-equipment-tab .equipment-top .equipment-name span {
         font-size: 3vw;
     }
@@ -1476,6 +1484,9 @@
     .product-view .promotions .card .card-content .card-price .item .price-container .special-price span {
         font-size: 2vw;
     }
+    .product-view .promotions .card .card-content .card-price .item .price-container .old-price span {
+        font-size: 1.7vw;
+    }
     .product-view .promotions .card .card-name span {
         font-size: 1.6vw;
     }
@@ -1483,7 +1494,6 @@
     .product-view .promotions .card .card-content .card-button a {
         font-size: 1.4vw;
     }
-    .product-view .promotions .card .card-content .card-price .item .price-container .old-price span,
     .product-view .btn-in-garbage span {
         font-size: 1.3vw;
     }
@@ -1562,6 +1572,7 @@
 }
 
 @media only screen and (max-width: 991px) and (min-width: 769px) {
+
     .page-wrapper .product-view .promotions .card .card-name span {
         line-height: 20px;
         display: block;
@@ -2128,9 +2139,9 @@
     }
 
     .product-view-equipment-total {
-        -webkit-justify-content: space-between;
-        -ms-justify-content: space-between;
-        justify-content: space-between;
+        -webkit-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        justify-content: flex-end;
         padding: 12px 24px;
     }
 
@@ -2138,6 +2149,7 @@
         font-weight: bold;
         font-size: 14px;
         color: #FFFFFF;
+        margin: 0 10px 0 0;
     }
 
     .product-view-equipment-total span {
