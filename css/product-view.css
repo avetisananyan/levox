@@ -199,16 +199,10 @@
 
 .product-view .product-view-option ul li .product-count {
     border-bottom: 1.5px dashed #ED2024;
-    font-size: 18px;
 }
 
 .product-view .product-view-option ul li .product-count > span {
     color: #ED2024;
-}
-
-.product-view .product-view-option ul li .option-icon img {
-    width: 100%;
-    height: 100%;
 }
 
 .product-view-tabs ul.nav-tabs {
@@ -1252,6 +1246,11 @@
     .rating-review-all-product-link {
         display: none;
     }
+
+    .product-view .product-view-option ul li .option-icon img {
+        width: 52px;
+        height: 100%;
+    }
 }
 
 /* Tablet */
@@ -1477,9 +1476,9 @@
     }
     .exec-options-swiper-container .swiper-wrapper.disabled .swiper-slide,
     .all-collection-swiper-container .swiper-wrapper.disabled .swiper-slide {
-        -ms-flex: 0 0 32%;
-        flex: 0 0 32%;
-        padding: 0 5px;
+        /*-ms-flex: 0 0 32%;*/
+        /*flex: 0 0 32%;*/
+        padding: 0 5px 0 0;
     }
     .product-view .promotions .card .card-content .card-price .item .price-container .special-price span {
         font-size: 2vw;
@@ -1763,6 +1762,11 @@
 
     .product-view-tabs .tab-content .panel-heading.active {
         border-bottom: none;
+    }
+
+    .product-view .product-view-option ul li .option-icon img {
+        width: 100%;
+        height: 100%;
     }
 
     .product-view-tabs .tab-content .panel-heading a {

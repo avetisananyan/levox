@@ -530,6 +530,10 @@
     justify-content: space-between;
 }
 
+.promotions .card .card-content .card-price .item .price-label {
+    margin-bottom: 8px;
+}
+
 .promotions .card .card-content .card-price .item .price-label span {
     font-style: normal;
     font-weight: 400;
@@ -559,18 +563,23 @@
 .promotions .card .card-content .card-price .item .price-container .old-price span {
     font-style: normal;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     color: #747474;
     text-decoration: line-through;
+}
+
+.promotions .card .card-content .card-price .item .price-container .special-price {
+    line-height: 1;
 }
 
 .promotions .card .card-content .card-price .item .price-container .special-price span {
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 18px;
+    line-height: 1;
     color: #ED2024;
+    display: block;
 }
 
 .promotions .card .card-content .card-price .item .opt-price span {
@@ -579,7 +588,7 @@
     font-size: 25px;
     line-height: 18px;
     color: #202020;
-    
+
 }
 
 .promotions .card .card-content .card-button {
@@ -595,7 +604,7 @@
     -webkit-align-items: center;
     -ms-align-items: center;
     align-items: center;
-    
+
     width: 100%;
 }
 
