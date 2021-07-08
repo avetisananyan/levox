@@ -1055,7 +1055,7 @@
     font-weight: bold;
     font-size: 20px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff !important;
     letter-spacing: 0.05em;
     
 }

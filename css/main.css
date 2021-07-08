@@ -95,6 +95,12 @@ button:focus {
     background: #eee
 }
 
+.close {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 /* Dropdown Button */
  .dropbtn {
      color: #ffffff;
