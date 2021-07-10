@@ -384,27 +384,28 @@
     color: #000000;
 }
 
-.home-carousel {
+.carousel.slide.home-carousel  {
     margin-bottom: 80px;
 }
 
-.carousel-indicators li {
+.carousel.slide.home-carousel .carousel-indicators li {
     width: 14px;
     height: 14px;
     border-radius: 7px;
     background-color: #ED2024;
-    border: 1px solid #ED2024;
+    border: 2px solid #ED2024;
+    cursor: pointer;
 }
 
-.carousel-indicators {
-    bottom: -45px;
+.carousel.slide.home-carousel .carousel-indicators {
+    bottom: -50px;
 }
 
-.carousel-indicators .active {
+.carousel.slide.home-carousel .carousel-indicators .active {
     background-color: transparent;
 }
 
-.home-carousel img {
+.carousel.slide.home-carousel img {
     object-fit: cover;
 }
 
@@ -890,12 +891,11 @@
 }
 
 .advantage .advantage-block .item > span {
-    text-align: center;
+    text-align: justify;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
     padding: 25px 0 0 0;
-    
     color: #000000;
 }
 

@@ -53,7 +53,7 @@ function openCloseSideMenu (mouse) {
 }
 
 function myFunction (id) {
-    document.getElementById('my-dropdown-' + id).classList.toggle('d-block')
+    document.getElementById('my-dropdown-' + id).parentElement.classList.toggle('active')
 }
 
 //Nav Sticky

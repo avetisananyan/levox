@@ -230,6 +230,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .address-modal .fieldset .field > label {
     font-size: 18px;
     color: #757575;
+    width: max-content;
 }
 .address-modal .fieldset .field.required > label:after {
     content: "*";
@@ -277,8 +278,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
 }
 .address-modal .field.private-house .control > label.checkbox > input:checked + span::before {
-    left: 0;
-    top: 0;
+    left: 0.5px;
+    top: 0.5px;
+}
+.address-modal .fieldset .field #private-house {
+    padding: 0;
 }
 .address-modal .field.private-house > label {
     margin: 0 0 0 12px;

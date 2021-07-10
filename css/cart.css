@@ -502,8 +502,12 @@ input.lift-option-default + label {
 }
 
 .delivery-tab .field.private-house .control > label.checkbox > input:checked + span::before {
-    left: 0;
-    top: 0;
+    left: 0.5px;
+    top: 0.5px;
+}
+
+.fieldset .field #private-house {
+    padding: 0;
 }
 
 .delivery-tab .field.private-house > label {

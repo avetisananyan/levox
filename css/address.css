@@ -24,6 +24,8 @@
 }
 .address-title > span .count {
     line-height: 1;
+    letter-spacing: 0.5px;
+    font-size: 12px;
 }
 .address-container {
     border: 1px solid #C4C4C4;

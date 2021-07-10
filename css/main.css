@@ -123,12 +123,35 @@ button:focus {
     width: 100%;
 }
 
+.dropbtn:after {
+    content: "\f282";
+    display: inline-block;
+    font-family: bootstrap-icons !important;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    vertical-align: -.125em;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.dropdown.active .dropbtn:after {
+    content: "\f286";
+}
+
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     background-color: #252525;
     width: 100%;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown.active .dropdown-content {
+    display: block;
 }
 
 /* Links inside the dropdown */
@@ -250,6 +273,37 @@ label.radio-label {
 }
 .radio input[type="radio"] + .radio-label:empty:before {
     margin-right: 0;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-outer-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator{ visibility: hidden;-webkit-appearance: none;display: none;}
+
+@media only screen and (max-width: 1730px) {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .page-content.active ul.horizontal-scroll-wrapper::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge add Firefox */
+    .page-content.active ul.horizontal-scroll-wrapper {
+        -ms-overflow-style: none;
+        scrollbar-width: none; /* Firefox */
+    }
+    .page-content.active ul.horizontal-scroll-wrapper {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+    .page-content.active ul.horizontal-scroll-wrapper li {
+        flex: 0 0 auto;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
