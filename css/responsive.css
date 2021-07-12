@@ -1036,7 +1036,7 @@
 
     .promotions .card .card-content .card-price .item .price-label span {
         font-size: 10px;
-        line-height: 16px;
+        line-height: 12px;
     }
 
     .promotions .card .card-content .card-price .item .price-container .old-price span {
@@ -1334,5 +1334,14 @@
     .footer-info-dropdown-list .dropdown-content a {
         font-size: 12px;
         padding: 7px 0;
+    }
+
+    .promotions .card .card-content .card-price .item .price-label {
+        margin: 0;
+        line-height: 12px;
+    }
+
+    .promotions .card .card-content .card-price .item .price-container .old-price {
+        line-height: 12px;
     }
 }

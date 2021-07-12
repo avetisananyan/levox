@@ -53,6 +53,10 @@
     text-decoration: none;
 }
 
+.account-logout:hover {
+    color: red;
+}
+
 .account-person-info span {
     color: #202020;
 }

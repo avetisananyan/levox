@@ -538,6 +538,10 @@
     color: #000000;
 }
 
+.product-view-rating-feedback a:hover {
+    color: red;
+}
+
 .product-view-rating-items {
     padding: 18px 30px;
     background: #FFFFFF;
