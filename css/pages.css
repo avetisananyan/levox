@@ -183,6 +183,12 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
+
+    .page-subcategory .item {
+        margin: 0 10px 20px;
+        max-width: 23vw;
+    }
+
     .page-subcategory .sub-img img {
         height: 35px;
     }

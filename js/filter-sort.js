@@ -16,17 +16,28 @@ $(function() {
     });
 
     $('.filter-option-dropdown').click(function(e) {
+        $('.sort-dropdown > .sort-caption').parent().removeClass('open');
+        $('.composition-dropdown > .filter-composition').parent().removeClass('open');
         e.preventDefault();
         e.stopPropagation();
+        $('.filter-option-dropdown').not(this).removeClass('expanded');
         $(this).toggleClass('expanded');
         $('#' + $(e.target).attr('for')).prop('checked', true);
     });
 
-    $(document).click(function() {
+    $(document).click(function(e) {
+        e.preventDefault();
+        e.stopPropagation();
         $('.filter-option-dropdown').removeClass('expanded');
+        $('.sort-dropdown > .sort-caption').parent().removeClass('open');
+        $('.composition-dropdown > .filter-composition').parent().removeClass('open');
     });
 
-    $('.sort-dropdown > .sort-caption').on('click', function() {
+    $('.sort-dropdown > .sort-caption').on('click', function(e) {
+        $('.composition-dropdown > .filter-composition').parent().removeClass('open');
+        e.preventDefault();
+        e.stopPropagation();
+        $('.filter-option-dropdown').removeClass('expanded');
         $(this).parent().toggleClass('open');
     });
 
@@ -68,7 +79,11 @@ $(function() {
         $('.filter-content').toggleClass('is-visible');
     });
 
-    $('.composition-dropdown > .filter-composition').on('click', function() {
+    $('.composition-dropdown > .filter-composition').on('click', function(e) {
+        $('.sort-dropdown > .sort-caption').parent().removeClass('open');
+        e.preventDefault();
+        e.stopPropagation();
+        $('.filter-option-dropdown').removeClass('expanded');
         $(this).parent().toggleClass('open');
     });
 

@@ -401,6 +401,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 20px;
 }
 
+.personal-information-date > input {
+    padding: 0 0 0 7px;
+}
+
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .personal-information-title {

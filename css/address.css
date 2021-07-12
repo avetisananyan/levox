@@ -142,12 +142,6 @@
     margin: 0 0 0 5px;
 }
 
-@media only screen and (max-width: 1484px) and (min-width: 769px) {
-    .addresses-location ul li:not(:last-child) {
-        max-width: 260px
-    }
-}
-
 /* Desktop */
 @media only screen and (min-width: 769px) {
 
@@ -281,6 +275,42 @@
     }
 }
 
+@media only screen and (max-width: 1730px) {
+    .page-content.active .addresses-location ul li span {
+        font-size: 1.4vw;
+    }
+
+    .page-content.active .addresses-location ul li {
+        padding: 22px 7px;
+        max-width: 19vw;
+    }
+
+    .page-content.active .addresses-location ul li img {
+        width: 4.7vw;
+        height: 4.7vw;
+    }
+    .page-content.active .addresses-location ul li span.description {
+        font-size: 1vw;
+        line-height: 18px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .page-content.active .addresses-location ul li {
+        height: 9.2vw;
+    }
+
+    .page-content.active .addresses-location ul li span.description {
+        line-height: 14px;
+    }
+}
+
+@media only screen and (max-width: 1484px) and (min-width: 769px) {
+    .addresses-location ul li:not(:last-child) {
+        max-width: 260px
+    }
+}
+
 @media only screen and (max-width: 1280px) and (min-width: 769px) {
     .addresses-title span {
         font-size: 3.1vw;
@@ -344,6 +374,7 @@
         font-size: 1.6vw;
     }
 }
+
 @media only screen and (max-width: 991px) and (min-width: 769px) {
     .address-title > span .count {
         top: -5px;

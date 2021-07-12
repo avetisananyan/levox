@@ -373,7 +373,7 @@
 #slider-range-2,
 #slider-range-3,
 #slider-range-4 {
-    border: 1px solid #ffeeea;
+    border: 1px solid #ffab98;
     margin: 0;
     height: 6px;
 }
@@ -413,6 +413,20 @@
 #slider-range-3 .ui-slider-horizontal .ui-slider-handle,
 #slider-range-4 .ui-slider-horizontal .ui-slider-handle {
     top: -0.2em;
+}
+
+.sort-dropdown .sort-caption,
+.filter-name.filter-feature,
+.composition-dropdown .composition-caption {
+    display: block;
+    width: max-content;
+    width: -moz-max-content;
+}
+
+@media only screen and (max-width: 1366px) and (min-width: 991px) {
+    .page-content.active .filter-sort-param {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 1777px) and (min-width: 769px) {
@@ -928,5 +942,9 @@
 
     .sort-dropdown > .sort-list > .sort-item.selected {
         font-size: 16px;
+    }
+
+    .filter-option-dropdown.expanded.bi-chevron-right::after {
+        display: none;
     }
 }
