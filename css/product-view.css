@@ -939,6 +939,10 @@
     padding: 0 6px 10px 0;
 }
 
+.product-view .promotions .card {
+    margin-bottom: 2px;
+}
+
 .product-view .promotions .card .card-content .card-button {
     -webkit-flex-direction: column-reverse;
     -ms-flex-direction: column-reverse;
@@ -970,6 +974,10 @@
     line-height: 18px;
     color: #ED2024;
     display: block;
+}
+
+.img-count-container {
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 1800px) and (min-width: 769px) {

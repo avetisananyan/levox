@@ -79,6 +79,14 @@ $(function() {
             $(".modal:visible").each(alignModal);
         });
     }
+
+    $(".cart-terms-label").on('click', function() {
+        if($(".checkbox input").is(":checked")) {
+            $(".checkbox input").prop('checked', false);
+        } else {
+            $(".checkbox input").prop('checked', true);
+        }
+    });
 });
 
 let arr = [];

@@ -233,4 +233,12 @@ $(document).ready(function () {
             });
         }
     });
+
+    $(".img-count-container").on('click', function() {
+        if($(".checkbox input").is(":checked")) {
+            $(".checkbox input").prop('checked', false);
+        } else {
+            $(".checkbox input").prop('checked', true);
+        }
+    });
 });
