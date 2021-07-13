@@ -26,7 +26,6 @@ $(function() {
     });
 
     $(document).click(function(e) {
-        e.preventDefault();
         e.stopPropagation();
         $('.filter-option-dropdown').removeClass('expanded');
         $('.sort-dropdown > .sort-caption').parent().removeClass('open');
