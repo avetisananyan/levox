@@ -142,6 +142,40 @@
     margin: 0 0 0 5px;
 }
 
+.map-addresses-action {
+    width: 100%;
+}
+
+.map-addresses-action button {
+    width: 144px;
+    height: 49px;
+    background: #ED2024;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    border: unset;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.map-addresses-maps.map-addresses:after {
+    z-index: -1;
+}
+
+
 /* Desktop */
 @media only screen and (min-width: 769px) {
 

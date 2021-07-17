@@ -440,9 +440,18 @@
     flex-direction: column;
 }
 
-.promotions .card .card-img,
 .promotions .card .card-rating,
 .promotions .card .card-available {
+    margin: 0 0 20px 0;
+    line-height: 1;
+}
+
+.promotions .card .card-name {
+    line-height: 1;
+    margin: 0 0 8px 0;
+}
+
+.promotions .card .card-img {
     margin: 0 0 10px 0;
 }
 
@@ -526,13 +535,11 @@
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: space-between;
 }
 
 .promotions .card .card-content .card-price .item .price-label {
-    margin-bottom: 8px;
+    margin-bottom: 7px;
+    line-height: 18px;
 }
 
 .promotions .card .card-content .card-price .item .price-label span {
@@ -557,9 +564,9 @@
     width: max-content;
 }
 
-.promotions .card .card-content .card-price .item .price-container .old-price {
+/*.promotions .card .card-content .card-price .item .price-container .old-price {
     text-align: right;
-}
+}*/
 
 .promotions .card .card-content .card-price .item .price-container .old-price span {
     font-style: normal;
@@ -587,7 +594,7 @@
     font-style: normal;
     font-weight: bold;
     font-size: 25px;
-    line-height: 18px;
+    line-height: 1;
     color: #202020;
 
 }
@@ -602,10 +609,7 @@
     -webkit-justify-content: flex-end;
     -ms-justify-content: flex-end;
     justify-content: flex-end;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-
+    padding: 5px 0 0 0;
     width: 100%;
 }
 
@@ -616,7 +620,7 @@
     line-height: 22px;
     color: #4F4F4F;
     padding-right: 25px;
-    
+    padding-top: 11px;
 }
 
 .promotions .card .card-content .card-button button {
@@ -1225,4 +1229,30 @@ body.opt .promotions .card .card-content .card-price .item.opt-item .price-label
 
 body.opt .promotions .card .card-content .card-price .item {
     display: none;
+}
+
+.card .card-discount {
+    width: 43px;
+    height: 23px;
+    border: 1px solid #ED2024;
+    border-radius: 3px;
+    margin: 0 0 30px 0;
+}
+
+.card .card-discount span {
+    font-size: 12px;
+    color: #ED2024;
+    height: 100%;
+    line-height: 22px;
+}
+
+.card .card-sale-info {
+    margin: 10px 0 0 0;
+}
+
+.card .card-sale-info span {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #ED2024;
 }

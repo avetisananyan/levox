@@ -53,7 +53,8 @@
     text-decoration: none;
 }
 
-.account-logout:hover {
+.account-logout:hover,
+.account-read:hover {
     color: red;
 }
 
