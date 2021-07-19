@@ -125,6 +125,11 @@
 
 .range-slider-container input[type=range]::-mozz
 
+/*.ui-slider-handle {
+    -ms-touch-action: none;
+    touch-action: none;
+}*/
+
 /* Mobile */
 @media only screen and (max-width: 768px) {
     .range-slider-container .range-numbers .range-number label,

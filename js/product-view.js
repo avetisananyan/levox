@@ -1,17 +1,30 @@
 $.fn.responsiveTabs = function () {
     var container = this;
 
-    container.on('show.bs.collapse', '.panel-collapse', function () {
-        $(this).addClass('active').siblings('.panel-collapse').removeClass('active').collapse('hide');
-    }).on('show.bs.tab', '.nav-tabs a', function () {
-        $($(this).attr('href')).addClass('in').siblings('.tab-pane').removeClass('in');
-        container.find('.nav-tabs a[href="' + $(this).attr('href') + '"]').parent().addClass('active').siblings().removeClass('active');
-    }).on('click', '.panel-heading', function () {
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
-        }
-        $(this).addClass('active').siblings().removeClass('active');
-    });
+    if(!window.matchMedia("(max-width: 768px)").matches) {
+        container.on('show.bs.collapse', '.panel-collapse', function () {
+            $(this).addClass('active').siblings('.panel-collapse').removeClass('active').collapse('hide');
+        }).on('show.bs.tab', '.nav-tabs a', function () {
+            $($(this).attr('href')).addClass('in').siblings('.tab-pane').removeClass('in');
+            container.find('.nav-tabs a[href="' + $(this).attr('href') + '"]').parent().addClass('active').siblings().removeClass('active');
+        }).on('click', '.panel-heading', function () {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            }
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+    } else {
+        container.find('.tab-pane').siblings().removeClass('active');
+        $(".panel-heading").on('click', function() {
+            if ($(this).hasClass('active')) {
+                $(this).removeClass('active');
+            } else {
+                $(this).addClass('active');
+            }
+        });
+    }
+
+
 };
 
 $(document).ready(function () {
@@ -173,12 +186,6 @@ $(document).ready(function () {
                 $(".all-collection-swiper-container .swiper-wrapper").addClass('disabled');
                 $(".product-view-rating-review-tab .product-view-review .swiper-wrapper").addClass('disabled');
             }
-        }
-    });
-
-    $(".panel-heading").on('click', function() {
-        if ($(this).hasClass('active')) {
-            $(this).removeClass('active');
         }
     });
 

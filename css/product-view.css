@@ -2492,4 +2492,8 @@
         font-weight: bold;
         font-size: 10px;
     }
+
+    .panel-heading.active + .tab-pane {
+        display: block !important;
+    }
 }
