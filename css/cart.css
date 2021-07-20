@@ -1458,6 +1458,12 @@ input.lift-option-default + label {
     .delivery-tab .field:not(:first-child) {
         min-width: 146px;
     }
+
+    .map-addresses-action button {
+        font-size: 15px;
+        width: 120px;
+        height: 36px;
+    }
 }
 
 @media only screen and (max-width: 555px) {

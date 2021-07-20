@@ -144,6 +144,18 @@
 
 .map-addresses-action {
     width: 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }
 
 .map-addresses-action button {
@@ -216,7 +228,7 @@
         padding: 34px 46px;
         max-width: 442px;
         width: 100%;
-        height: 363px;
+        height: auto;
     }
 
     .map-addresses .map-addresses-title .close {
@@ -592,5 +604,11 @@
 
     .addresses-location ul li {
         max-width: 260px;
+    }
+
+    .map-addresses-action button {
+        font-size: 15px;
+        width: 120px;
+        height: 36px;
     }
 }
