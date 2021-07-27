@@ -95,13 +95,13 @@ button:focus {
     background: #eee
 }
 
-input[type=date]::-webkit-inner-spin-button, 
-input[type=date]::-webkit-calendar-picker-indicator { 
+#dateofbirth::-webkit-inner-spin-button, 
+#dateofbirth::-webkit-calendar-picker-indicator { 
   -webkit-appearance: none;
 }
 
-input[type=date]::-webkit-inner-spin-button, 
-input[type=date]::-webkit-outer-spin-button { 
+#dateofbirth::-webkit-inner-spin-button,
+#dateofbirth::-webkit-outer-spin-button { 
   -webkit-appearance: none; 
   margin: 0; 
 }
