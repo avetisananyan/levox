@@ -95,17 +95,6 @@ button:focus {
     background: #eee
 }
 
-#dateofbirth::-webkit-inner-spin-button, 
-#dateofbirth::-webkit-calendar-picker-indicator { 
-  -webkit-appearance: none;
-}
-
-#dateofbirth::-webkit-inner-spin-button,
-#dateofbirth::-webkit-outer-spin-button { 
-  -webkit-appearance: none; 
-  margin: 0; 
-}
-
 .close {
     appearance: unset !important;
     -moz-appearance:  unset !important;

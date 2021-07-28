@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="./css/personal-information.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <script src="./js/jquery.js"></script>
+  <script src="./js/jquery-ui.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="./js/index.js" async></script>
   <script src="./js/personal-information.js" async></script>
@@ -606,7 +607,13 @@
                 <div class="personal-information-bottom d-flex">
                   <div class="personal-information-date d-flex flex-column">
                     <label>Дата рождения:</label>
-                    <input type="date" name="dateofbirth" id="dateofbirth" required>
+                    <div class="date-picker">
+                      <div class="input">
+                        <div class="result"><span></span></div>
+                        <div class="date-picker-icon"><img src="./assets/icons/datepicker.svg"></div>
+                      </div>
+                      <div class="calendar"></div>
+                    </div>
                   </div>
                   <div class="personal-information-gender d-flex flex-column">
                     <label>Пол:</label>
