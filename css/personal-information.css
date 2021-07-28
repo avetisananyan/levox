@@ -566,6 +566,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   overflow: visible;
 }
 
+.date-picker.open .calendar {
+    display: block;
+}
+
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .personal-information-title {
