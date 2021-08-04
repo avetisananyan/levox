@@ -260,6 +260,10 @@
     .page-wrapper .footer .footer-container .footer-info {
         padding: 0;
     }
+
+    .search-block .search-block-link .cart-count-container {
+        margin: 0 6px 0 0;
+    }
 }
 
 @media only screen and (max-width: 1510px) and (min-width: 1280px) {
@@ -275,6 +279,10 @@
 }
 
 @media only screen and (max-width: 1366px) and (min-width: 991px) {
+    .page-wrapper .page-content .side-menu .side-menu-container ul li .side-menu-title {
+        font-size: 15px;
+    }
+
     .page-wrapper .page-content .side-menu a .side-menu-icon {
         height: 25px;
     }
@@ -466,6 +474,9 @@
     }
     .page-wrapper .page-content .side-menu a .side-menu-icon {
         margin-right: 0;
+    }
+    .search-block .search-block-link .cart-count-container {
+        margin: 0 6px 0 0;
     }
 }
 

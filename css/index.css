@@ -374,6 +374,7 @@
 
 .search-block .search-block-link .cart-count-container {
     position: relative;
+    margin: 0 16px 0 0;
 }
 
 .search-block .search-block-link a > span {
