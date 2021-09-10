@@ -1387,3 +1387,35 @@
         margin: 0;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    .modal.header-address-modal .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: 20px;
+        margin: 0 35px 0 0px;
+    }
+
+    .modal.header-address-modal .modal-body-description {
+        margin: 0 0 22px 0;
+    }
+
+    .modal.header-address-modal .modal-body-description span {
+        font-weight: 700;
+        font-size: 14px;
+    }
+
+    .modal.header-address-modal .modal-dialog .modal-content .modal-header {
+        padding: 0 14px;
+    }
+
+    .modal.header-address-modal .search-block .form-group input {
+        font-size: 14px;
+    }
+
+    .modal.header-address-modal .modal-dialog .modal-content .modal-container {
+        margin: 15px 0 0 0;
+    }
+
+    .modal.header-address-modal .all-addresses .fieldset .field {
+        width: 50%;
+    }
+}
