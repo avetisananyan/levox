@@ -1398,9 +1398,16 @@
     .promotions .card .card-name {
         margin: 0;
     }
-}
 
-@media only screen and (max-width: 768px) {
+    .modal.header-address-modal {
+        position: fixed;
+        background: #fff;
+    }
+
+    .modal.header-address-modal .modal-dialog .modal-content {
+        border: unset;
+    }
+
     .modal.header-address-modal .modal-dialog .modal-content .modal-header .modal-title {
         font-size: 20px;
         margin: 0 35px 0 0px;

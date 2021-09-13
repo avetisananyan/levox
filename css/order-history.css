@@ -327,12 +327,6 @@
     color: #ED2024;
 }
 
-@media only screen and (max-width: 992px) and (min-width: 769px) {
-    .page-cat-title .product-count {
-        background: #fff;
-    }
-}
-
 /* Desktop */
 @media only screen and (min-width: 769px) {
     .review-modal .modal-footer {
@@ -466,8 +460,7 @@
 }
 
 /* Mobile */
-@media only screen and (max-width: 768px) {
-
+@media only screen and (max-width: 991px) {
     .order-dropdown .promotions > div:not(:last-child) .card {
         margin: 0;
     }
@@ -534,10 +527,45 @@
         font-size: 15px;
     }
 
+    .rating-stars img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .email-field-container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: start;
+        -ms-align-items: start;
+        align-items: start;
+    }
+
+    .info-field {
+        font-size: 14px;
+    }
+
+    .page-cat-title .cat-name {
+        font-size: 20px;
+        margin: 0px 12px 0 0;
+    }
+
+    .page-cat-title .product-count {
+        background: #fff;
+    }
+
+    .page-cat-title {
+        margin: 30px 0 30px 0;
+    }
+
     /* Review Modal Mobile */
+    .review-modal {
+        background: #fff;
+    }
     .review-modal .modal-dialog {
         margin: 0 !important;
         height: 100%;
+        max-width: 100%;
     }
     .review-modal .modal-content {
         border: unset;
@@ -604,11 +632,6 @@
         margin: 0 0 20px 0;
     }
 
-    .rating-stars img {
-        width: 16px;
-        height: 16px;
-    }
-
     .review-modal .modal-footer {
         margin: 30px 0 0 0;
     }
@@ -621,31 +644,5 @@
 
     .review-modal .rating-stars-field {
         margin: 20px 0 0 0;
-    }
-
-    .email-field-container {
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -webkit-align-items: start;
-        -ms-align-items: start;
-        align-items: start;
-    }
-
-    .info-field {
-        font-size: 14px;
-    }
-
-    .page-cat-title .cat-name {
-        font-size: 20px;
-        margin: 0px 12px 0 0;
-    }
-
-    .page-cat-title .product-count {
-        background: #fff;
-    }
-
-    .page-cat-title {
-        margin: 30px 0 30px 0;
     }
 }
