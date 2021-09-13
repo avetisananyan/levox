@@ -327,18 +327,11 @@
     color: #ED2024;
 }
 
-/*@media only screen and (max-width: 1280px) and (min-width: 769px) {
-    .page-cat-title .cat-name {
-        font-size: 3.2vw;
+@media only screen and (max-width: 992px) and (min-width: 769px) {
+    .page-cat-title .product-count {
+        background: #fff;
     }
-    .page-cat-title .product-count .count-container {
-        font-size: 1.22vw;
-    }
-    .rating-stars img {
-        width: 1.6vw;
-        height: 1.6vw;
-    }
-}*/
+}
 
 /* Desktop */
 @media only screen and (min-width: 769px) {
@@ -645,6 +638,7 @@
 
     .page-cat-title .cat-name {
         font-size: 20px;
+        margin: 0px 12px 0 0;
     }
 
     .page-cat-title .product-count {
