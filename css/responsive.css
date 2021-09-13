@@ -13,6 +13,22 @@
         font-size: 18px;
     }
 
+    .header .nav-bar .nav-link.link-info {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -ms-flex;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
+        font-size: 30px;
+    }
+
     body.non-home-page .page-wrapper .page-content .side-menu .side-menu-container ul li a span.side-menu-title {
         visibility: hidden;
         opacity: 0;
@@ -131,10 +147,6 @@
         border-bottom: unset;
     }
 
-    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a .header-contact .phone-number {
-        font-size: 30px;
-    }
-
     .side-menu .menu-sub .menu-sub-close .back-sub {
         display: none;
     }
@@ -181,7 +193,7 @@
     }
 }
 @media only screen and (max-width: 1900px) and (min-width: 1700px) {
-    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a .header-contact .phone-number {
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
         font-size: 20px;
         width: 170px;
     }
@@ -234,7 +246,7 @@
         width: -moz-min-content;
     }
 
-    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a .header-contact .phone-number {
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
         font-size: 1vw;
         margin-top: 10px;
     }
@@ -466,7 +478,7 @@
         font-weight: 500;
         font-size: 18px;
     }
-    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a .header-contact .phone-number {
+    .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
         font-weight: bold;
         font-size: 26px;
         line-height: 30px;

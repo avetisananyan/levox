@@ -67,15 +67,15 @@
                             </a>
                         </li>
                         <li class="nav-link link-info">
-                            <a href="#">
-                                <div class="header-contact">
-                                    <div class="location">
+                            <div class="header-contact">
+                                <div class="location">
+                                    <a data-toggle="modal" data-target="#headerAddressModal" href="#" class="location btn-address d-flex align-items-center justify-content-center">
                                         <img src="./assets/icons/location.svg" alt="">
                                         <span>Москва</span>
-                                    </div>
-                                    <div class="phone-number">+7(938) 540-86-00</div>
+                                    </a>
                                 </div>
-                            </a>
+                                <div class="phone-number"><a href="tel:+79385408600">+7(938) 540-86-00</a></div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -1309,6 +1309,157 @@
                             <li class="next"><a href=""><span><img src="assets/icons/red-next.svg"></span></a></li>
                         </ul>
                     </div>
+            </div>
+            <!-- The Address Modal -->
+            <div class="modal header-address-modal" id="headerAddressModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-container">
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <span class="modal-title">Укажите или выберете город</span>
+                                <a type="button" class="close" data-dismiss="modal"><img src="assets/icons/close.svg"></a>
+                            </div>
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <div class="modal-body-description">
+                                    <span><span class="des-important">Важно!</span> От выбранного города зависят цены, наличие товара, способы доставки и сборки</span>
+                                </div>
+
+                                <div class="search-block">
+                                    <div class="form-group">
+                                        <input type="text" id="search-address" name="search" placeholder="Введите название города"> <img src="./assets/icons/search.svg" alt="" class="search-icon">
+                                    </div>
+                                </div>
+
+                                <div class="all-addresses">
+                                    <div class="fieldset d-flex flex-wrap w-100">
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-1" type="radio" name="radio">
+                                                <label for="radio-1" class="radio-label">Москва</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-2" type="radio" name="radio">
+                                                <label for="radio-2" class="radio-label">Волгоград</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-3" type="radio" name="radio">
+                                                <label for="radio-3" class="radio-label">Воронеж</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-4" type="radio" name="radio">
+                                                <label for="radio-4" class="radio-label">Белгород</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-5" type="radio" name="radio">
+                                                <label for="radio-5" class="radio-label">Сочи</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-6" type="radio" name="radio">
+                                                <label for="radio-6" class="radio-label">Москва</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-7" type="radio" name="radio">
+                                                <label for="radio-7" class="radio-label">Волгоград</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-8" type="radio" name="radio">
+                                                <label for="radio-8" class="radio-label">Воронеж</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-9" type="radio" name="radio">
+                                                <label for="radio-9" class="radio-label">Белгород</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-10" type="radio" name="radio">
+                                                <label for="radio-10" class="radio-label">Сочи</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-11" type="radio" name="radio" checked="">
+                                                <label for="radio-11" class="radio-label">Москва</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-12" type="radio" name="radio">
+                                                <label for="radio-12" class="radio-label">Волгоград</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-13" type="radio" name="radio">
+                                                <label for="radio-13" class="radio-label">Воронеж</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-14" type="radio" name="radio">
+                                                <label for="radio-14" class="radio-label">Белгород</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-15" type="radio" name="radio">
+                                                <label for="radio-15" class="radio-label">Сочи</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-16" type="radio" name="radio">
+                                                <label for="radio-16" class="radio-label">Москва</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-17" type="radio" name="radio">
+                                                <label for="radio-17" class="radio-label">Волгоград</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-18" type="radio" name="radio">
+                                                <label for="radio-18" class="radio-label">Воронеж</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-19" type="radio" name="radio">
+                                                <label for="radio-19" class="radio-label">Белгород</label>
+                                            </div>
+                                        </div>
+                                        <div class="field">
+                                            <div class="radio">
+                                                <input id="radio-20" type="radio" name="radio">
+                                                <label for="radio-20" class="radio-label">Сочи</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
