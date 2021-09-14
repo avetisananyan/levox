@@ -493,6 +493,15 @@
 }
 
 @media only screen and (max-width: 1280px) and (min-width: 769px) {
+    .modal.header-address-modal .modal-dialog .modal-content .modal-header .modal-title {
+        font-size: 3.25vw;
+    }
+    .modal.header-address-modal .modal-body-description span {
+        font-size: 1.55vw;
+    }
+    .modal.header-address-modal .search-block .form-group input {
+        font-size: 1.38vw;
+    }
     body.home-page .page-wrapper .in-numbers .in-numbers-block .item {
         width: 25%;
     }

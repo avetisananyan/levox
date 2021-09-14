@@ -327,8 +327,82 @@
     color: #ED2024;
 }
 
+.page-cat-title .product-count {
+    width: 100%;
+    padding: 0 3px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+.page-cat-title .product-count .count-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+
+.page-cat-title .product-count .count-container span {
+    line-height: 16px;
+    margin: 0 2px 0 0;
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 991px) {
+    .order-history-container .page-cat-title .cat-name {
+        font-size: 3vw;
+    }
+
+    .order-history-container .page-cat-title .product-count .count-container {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .order-history-container .page-cat-title .product-count {
+        height: 28px;
+        max-width: 100px;
+    }
+
+    .order-history-container .order-history-order label,
+    .order-history-container .order-history-price label,
+    .order-history-container .order-history-order > span,
+    .order-history-container .order-history-price span,
+    .order-history-container .order-history-price-container:after {
+        font-size: 1.85vw;
+    }
+
+    .order-history-container .order-dropdown-container .order-dropdown-toggle {
+        height: 6.1vw;
+    }
+
+    .order-history-container .order-history-order {
+        max-width: 27.9vw;
+    }
+
+    .order-history-container .order-history-price-container {
+        max-width: 21.6vw;
+    }
+}
+
 /* Desktop */
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 991px) {
+
+    .page-cat-title .product-count {
+        height: 30px;
+        max-width: 116px;
+    }
+
     .review-modal .modal-footer {
         margin: 55px 0 0 0;
     }
@@ -461,6 +535,17 @@
 
 /* Mobile */
 @media only screen and (max-width: 991px) {
+
+    .page-cat-title .product-count .count-container {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .page-cat-title .product-count {
+        height: 28px;
+        max-width: 100px;
+    }
+
     .order-dropdown .promotions > div:not(:last-child) .card {
         margin: 0;
     }
