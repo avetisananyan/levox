@@ -788,7 +788,7 @@
         position: absolute;
         top: 204px;
         left: 0;
-        height: auto;
+        height: 100%;
         width: 100%;
         z-index: 105;
         transition: width .2s ease,padding .2s ease;
@@ -1445,5 +1445,21 @@
 
     .modal.header-address-modal .all-addresses .fieldset .field {
         width: 50%;
+    }
+
+    body .page-wrapper .page-content .side-menu .menu-sub.current .menu-sub-content ul {
+        overflow-y: scroll;
+    }
+
+    body.hidden {
+        overflow: hidden;
+    }
+
+    body.hidden .page-wrapper .page-content .side-menu {
+        overflow-y: unset;
+    }
+
+    body .page-wrapper .page-content .side-menu .menu-sub .menu-sub-content ul li:last-child {
+        margin: 0 0 40px 0;
     }
 }

@@ -10,6 +10,11 @@ $(document).ready(function() {
         e.stopPropagation();
         let $el = $(this).attr("menu-sub");
         $("#" + $el).toggleClass('current');
+
+        $("body").toggleClass('hidden');
+        let height = $(window).height() - 258;
+        $("#" + $el + " .menu-sub-content ul").css("max-height", height + "px");
+        $()
     });
 
     const $submenu = $('.menu-sub');
@@ -24,6 +29,13 @@ $(document).ready(function() {
         e.preventDefault();
         e.stopPropagation();
         $submenu.removeClass('current');
+        $("body").removeClass('hidden');
+    });
+
+    $(document).on("click", "body #menu-button-open", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $("body").removeClass('hidden');
     });
 
     if(window.matchMedia("(max-width: 991px)").matches) {
