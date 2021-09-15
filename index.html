@@ -52,7 +52,7 @@
                             </label>
                         </li>
                         <li class="nav-link link-review">
-                            <a href="#">
+                            <a data-toggle="modal" data-target="#reviewModal" href="#">
                                 <img src="./assets/icons/comment.svg" alt="">
                                 <span>Отзывы и предложения</span>
                             </a>
@@ -1567,6 +1567,64 @@
             <div class="footer-contact d-flex justify-content-between">
                 <div class="footer-contact-left"><span>© 2004-2020  «LEVOX» фабрика мебели</span></div>
                 <div class="footer-contact-right"><span>+7(861) 290-86-01</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- The Review Modal -->
+<div class="modal review-modal" id="reviewModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <span class="modal-title">Оставить отзыв</span>
+                <a type="button" class="close" data-dismiss="modal"><img src="assets/icons/close.svg"></a>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+                <div class="email-field d-flex flex-column">
+                    <label>Email</label>
+                    <div class="email-field-container w-100 d-flex justify-content-between">
+                        <input type="email">
+                        <div class="rating-stars-field d-flex">
+                            <label>Оцените товар:</label>
+                            <div class="rating-stars d-flex">
+                                <img src="./assets/icons/star.svg" alt="">
+                                <img src="./assets/icons/star.svg" alt="">
+                                <img src="./assets/icons/star.svg" alt="">
+                                <img src="./assets/icons/star.svg" alt="">
+                                <img src="./assets/icons/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-field d-flex flex-column">
+                    <label>Отзыв</label>
+                    <textarea></textarea>
+                </div>
+
+                <div class="uploads-field">
+                    <input type="file" name="images[]" id="drag-drop" multiple />
+                    <div class="dropzone" id="dropzone">
+                        <div class="user-img">
+                            <img src="./assets/icons/review-user.svg">
+                        </div>
+                        <div class="drop-img-info d-flex flex-column">
+                            <span class="drop-img-text">Перетащите сюда или загрузите файлы</span>
+                            <span class="drop-img-size">.jpg, .jpeg, .png менее 8 MB</span>
+                        </div>
+                    </div>
+                    <div id="uploads"></div>
+                </div>
+
+                <div class="info-field d-flex flex-column">
+                    <span class="info-field-1">Для того,чтобы оставить отзыв войдите в аккаунт или зарегестрируйтесь</span>
+                    <span class="info-field-2">Все отзывы публикуются модератором после проверки</span>
+                </div>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer d-flex flex-column">
+                <button type="button" class="btn btn-select">Оставить отзыв</button>
             </div>
         </div>
     </div>

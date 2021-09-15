@@ -15,7 +15,7 @@
     border-radius: unset !important;
     max-width: 100%;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 }
 
 .modal.header-address-modal .modal-dialog {
@@ -55,6 +55,7 @@
     max-width: 928px;
     width: 100%;
     margin: 100px;
+    overflow-y: auto;
 }
 
 .modal.header-address-modal .modal-dialog .modal-content .modal-header {
@@ -1355,4 +1356,145 @@ body.opt .promotions .card .card-content .card-price .item {
     font-size: 14px;
     line-height: 18px;
     color: #ED2024;
+}
+
+/* Review Modal*/
+.review-modal .modal-content {
+    /*padding: 60px;*/
+    padding: 45px;
+}
+.review-modal .modal-header,
+.review-modal .modal-body,
+.review-modal .modal-footer {
+    padding: 0;
+}
+.review-modal .modal-header {
+    margin: 0 0 15px 0;
+    border: unset;
+}
+.review-modal .modal-header .modal-title {
+    font-weight: bold;
+    font-size: 36px;
+    letter-spacing: 0.6px;
+    color: #202020;
+}
+.review-modal .modal-header .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    color: #ED2024;
+    opacity: unset;
+}
+.review-modal .modal-body > span {
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.6px;
+    color: #202020;
+    margin: 0 0 34px 0;
+    display: block;
+}
+.review-modal input {
+    background: #FFFFFF;
+    border: 1px solid #C6C6C6;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 50px;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+.review-modal label {
+    font-size: 18px;
+    color: #757575;
+    /*margin: 0 0 14px 0;*/
+    margin: 0 0 5px 0;
+}
+.review-modal .review-modal-date input:first-child {
+    margin: 0 10px 0 0;
+}
+.review-modal .review-modal-date > div {
+    margin: 0 42px 0 0;
+}
+.review-modal .review-modal-number {
+    margin: 0 0 30px 0;
+}
+.review-modal .modal-footer {
+    border: unset;
+}
+.review-modal .modal-footer button {
+    width: 100%;
+    background: #ED2024;
+    border-radius: 3px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+.review-modal .modal-footer .card-images {
+    width: 100%;
+}
+
+.review-modal .rating-stars-field label {
+    margin: 0 10px 0 0;
+}
+
+.review-modal .email-field label,
+.review-modal .review-field label {
+    color: #757575;
+}
+
+.review-modal .email-field input {
+    border: 1px solid rgba(198, 198, 198, 1);
+}
+
+.review-modal .review-field textarea {
+    width: 100%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(198, 198, 198, 1);
+}
+
+.review-modal .uploads-field {
+    background: #F6F6F6;
+    border: 1px dashed #E0E0E0;
+    border-radius: 3px;
+}
+
+.review-modal .uploads-field .user-img img {
+    width: 100%;
+}
+
+.review-modal .rating-stars {
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.review-modal .rating-stars img {
+    width: 20px;
+    height: 20px;
+    margin: 0 2px 0 0;
+}
+
+#drag-drop {
+    display: none;
+}
+
+.info-field .info-field-1:before {
+    content: "*";
+    color: #ED2024;
+}
+
+.info-field .info-field-2:before {
+    content: "**";
+    color: #ED2024;
+}
+
+.uploads-field .dropzone {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
 }

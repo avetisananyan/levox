@@ -208,6 +208,91 @@
         -ms-justify-content: flex-end;
         justify-content: flex-end;
     }
+
+    /* Review Modal Desktop */
+    .review-modal .modal-footer {
+        /*margin: 55px 0 0 0;*/
+        margin: 41px 0 0 0;
+    }
+
+    .review-button-container {
+        width: 100%;
+        max-width: 186px;
+        height: 46px;
+    }
+
+    .review-button-container a span {
+        font-size: 16px;
+    }
+
+    .review-modal .modal-footer button {
+        max-width: 215px;
+        height: 49px;
+        font-size: 18px;
+    }
+
+    .review-modal .modal-dialog {
+        /*max-width: 733px;*/
+        max-width: 550px;
+        width: 100%;
+    }
+
+    .review-modal .email-field,
+    .review-modal .review-field {
+        /*margin: 0 0 30px 0;*/
+        margin: 0 0 22px 0;
+    }
+
+    .review-modal .email-field input {
+        /*max-width: 329px;*/
+        max-width: 200px;
+    }
+
+    .review-modal .email-field input {
+        height: 50px;
+    }
+
+    .review-modal .review-field textarea {
+        height: 135px;
+    }
+
+    .review-modal .review-field label,
+    .review-modal .email-field label {
+        font-size: 18px;
+    }
+
+    .review-modal .uploads-field {
+        padding: 15px 30px;
+    }
+
+    .review-modal .uploads-field .user-img {
+        margin: 0 20px 0 0;
+        max-width: 44px;
+    }
+
+    .review-modal .uploads-field .drop-img-info .drop-img-text {
+        font-size: 18px;
+        color: #000000;
+    }
+
+    .review-modal .uploads-field .drop-img-info .drop-img-size {
+        font-size: 16px;
+        color: #757575;
+    }
+
+    .review-modal .uploads-field {
+        margin: 0 0 12px 0;
+    }
+
+    .email-field-container {
+        -webkit-align-items: center;
+        -ms-align-items: center;
+        align-items: center;
+    }
+
+    .info-field {
+        font-size: 15px;
+    }
 }
 @media only screen and (max-width: 1900px) and (min-width: 1700px) {
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
@@ -640,10 +725,6 @@
         -ms-flex-direction: column;
         flex-direction: column;
     }
-
-    /*.promotions .card .card-content .card-price {*/
-    /*    margin: 0 0 15px;*/
-    /*}*/
 }
 
 /* Mobile */
@@ -1465,7 +1546,7 @@
     }
 
     body .page-wrapper .page-content .side-menu .menu-sub.current .menu-sub-content ul {
-        overflow-y: scroll;
+        overflow-y: auto;
     }
 
     body.hidden {
@@ -1478,5 +1559,111 @@
 
     body .page-wrapper .page-content .side-menu .menu-sub .menu-sub-content ul li:last-child {
         margin: 0 0 40px 0;
+    }
+
+    /* Review Modal Mobile */
+    .review-modal {
+        background: #fff;
+    }
+    .review-modal .modal-dialog {
+        margin: 0 !important;
+        height: 100%;
+        max-width: 100%;
+    }
+    .review-modal .modal-content {
+        border: unset;
+        border-radius: unset;
+        padding: 14px;
+        height: 100%;
+        display: block;
+    }
+    .review-modal .modal-header .modal-title {
+        font-size: 20px;
+    }
+    .review-modal .modal-body > span {
+        font-size: 16px;
+        margin: 0 0 26px 0;
+    }
+    .review-modal label {
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+    .review-modal input {
+        height: 40px;
+        font-size: 14px;
+    }
+    .review-modal .review-modal-number {
+        margin: 0 0 20px 0;
+    }
+    .review-modal .review-modal-date > div {
+        margin: 0 11px 0 0;
+    }
+    .review-modal .modal-header .close {
+        right: 14px;
+        top: 16px;
+    }
+    .review-modal .email-field input {
+        height: 40px;
+    }
+    .review-modal .review-field textarea {
+        height: 151px;
+    }
+    .review-modal .review-field label,
+    .review-modal .email-field label {
+        font-size: 14px;
+    }
+    .review-modal .uploads-field {
+        padding: 10px;
+    }
+    .review-modal .uploads-field .user-img {
+        margin: 0 10px 0 0;
+        width: 100%;
+        max-width: 30px;
+    }
+    .review-modal .uploads-field .drop-img-info .drop-img-text {
+        font-size: 14px;
+        color: #000000;
+    }
+    .review-modal .uploads-field .drop-img-info .drop-img-size {
+        font-size: 12px;
+        color: #757575;
+    }
+
+    .review-modal .email-field,
+    .review-modal .review-field,
+    .review-modal .uploads-field {
+        margin: 0 0 20px 0;
+    }
+
+    .review-modal .modal-footer {
+        margin: 30px 0 0 0;
+    }
+
+    .review-modal .modal-footer button {
+        max-width: unset;
+        height: 46px;
+        font-size: 16px;
+    }
+
+    .review-modal .rating-stars-field {
+        margin: 20px 0 0 0;
+    }
+
+    .review-modal .rating-stars img {
+        width: 16px;
+        height: 16px;
+    }
+
+    .email-field-container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: start;
+        -ms-align-items: start;
+        align-items: start;
+    }
+
+    .info-field {
+        font-size: 14px;
     }
 }
