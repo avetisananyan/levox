@@ -38,6 +38,18 @@ $(document).ready(function() {
         $("body").removeClass('hidden');
     });
 
+    $(document).on("click", "body a.location.btn-address", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $("body").addClass('popup-active');
+    });
+
+    $(document).on("click", "body .header-address-modal a.close", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        $("body").removeClass('popup-active');
+    });
+
     if(window.matchMedia("(max-width: 991px)").matches) {
         moreText();
     }
