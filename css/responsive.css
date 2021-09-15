@@ -201,6 +201,13 @@
     body.home-page.popup-active .page-wrapper .page-content .side-menu {
         max-width: 65px;
     }
+
+    .promotions .card .card-content .card-price .item .price-container {
+        height: 50px;
+        -webkit-justify-content: flex-end;
+        -ms-justify-content: flex-end;
+        justify-content: flex-end;
+    }
 }
 @media only screen and (max-width: 1900px) and (min-width: 1700px) {
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
