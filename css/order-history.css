@@ -402,15 +402,6 @@
         height: 30px;
         max-width: 116px;
     }
-
-    .review-modal .modal-footer {
-        margin: 55px 0 0 0;
-    }
-    .review-modal .modal-footer button {
-        max-width: 215px;
-        height: 49px;
-        font-size: 18px;
-    }
     .order-history-price-container:after {
         font-size: 24px;
     }
@@ -448,16 +439,6 @@
         font-size: 24px;
     }
 
-    .review-button-container {
-        width: 100%;
-        max-width: 186px;
-        height: 46px;
-    }
-
-    .review-button-container a span {
-        font-size: 16px;
-    }
-
     .order-dropdown .promotions .card .card-name {
         margin: 0 0 28px 0;
     }
@@ -470,6 +451,26 @@
 
     .order-dropdown .promotions .card {
         padding: 60px 50px;
+    }
+
+    .review-modal .modal-footer {
+        margin: 55px 0 0 0;
+    }
+
+    .review-button-container {
+        width: 100%;
+        max-width: 186px;
+        height: 46px;
+    }
+
+    .review-button-container a span {
+        font-size: 16px;
+    }
+
+    .review-modal .modal-footer button {
+        max-width: 215px;
+        height: 49px;
+        font-size: 18px;
     }
 
     .review-modal .modal-dialog {
