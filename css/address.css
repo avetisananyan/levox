@@ -214,7 +214,7 @@
 @media only screen and (max-width: 1700px) and (min-width: 991px) {
     .addresses-location ul li {
         height: 9.4vw;
-        padding-top: 1.3vw;
+        padding-top: 0.5vw !important;
     }
     .addresses-location ul li span.description {
         font-size: 1.06vw;
