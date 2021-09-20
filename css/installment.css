@@ -1,0 +1,528 @@
+.installment-title .installment-name {
+    font-weight: 700;
+    color: #202020;
+    line-height: 1;
+}
+
+.installment-description {
+    color: #202020;
+}
+
+.installment-block {
+    border: 1px solid #CCCCCC;
+}
+
+.installment-block-title span {
+    color: #202020;
+}
+
+.installment-block-information {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    justify-content: space-between;
+}
+
+.installment-block-info {
+    margin: 0 8px 0 0;
+}
+
+.installment-block-info label {
+    color: #4F4F4F;
+    margin: 0;
+}
+
+.installment-block-info span {
+    font-weight: bold;
+    color: #ED2024;
+    width: max-content;
+    width: -moz-max-content;
+}
+
+.installment-block-inf span {
+    color: #4F4F4F;
+}
+
+.installment-block-inf span:before {
+    content: "*";
+    color: #ED2024;
+}
+
+.installment-block-advantage {
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.installment-advantage {
+    width: 50%;
+}
+
+.installment-advantage-title {
+    color: #202020;
+}
+
+.installment-advantage-desc {
+    color: #202020;
+}
+
+.installment-partner-bank {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+}
+
+.partner-bank-img {
+    height: inherit;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.installment-partner-banks-title {
+    text-align: center;
+}
+
+.installment-partner-banks-title span {
+    color: #202020;
+}
+
+.installment-partner-bank span {
+    text-align: center;
+    color: #202020;
+}
+
+.partner-bank-img img {
+    width: 100%;
+}
+.opt-bank .partner-bank-img {
+    max-width: 272px;
+}
+.renensance-credit .partner-bank-img {
+    max-width: 276px;
+}
+.alfa-bank .partner-bank-img {
+    max-width: 271px;
+}
+.tinkoff-bank .partner-bank-img {
+    max-width: 340px;
+}
+.credit-europe-bank .partner-bank-img {
+    max-width: 380px;
+}
+.post-bank .partner-bank-img {
+    max-width: 188px;
+}
+.mts-bank .partner-bank-img {
+    max-width: 357px;
+}
+.russian-standart .partner-bank-img {
+    max-width: 289px;
+}
+.installment-question {
+    margin: 0 0 31px 0;
+}
+
+.installment-question span {
+    color: #202020;
+}
+
+.installment-question ol {
+    list-style: none;
+    counter-reset: li;
+}
+
+.installment-question ol li {
+    counter-increment: li;
+    color: #202020;
+}
+
+.installment-question ol li:before {
+    content: counter(li)".";
+    font-weight: bold;
+    color: #202020;
+    margin: 0 5px 0 0;
+}
+
+@media only screen and (max-width: 1800px) and (min-width: 991px) {
+    .partner-bank-img img {
+        width: 100%;
+    }
+    .opt-bank .partner-bank-img {
+        max-width: 14.6vw;
+    }
+    .renensance-credit .partner-bank-img {
+        max-width: 14.9vw;
+    }
+    .alfa-bank .partner-bank-img {
+        max-width: 14.5vw;
+    }
+    .tinkoff-bank .partner-bank-img {
+        max-width: 18.3vw;
+    }
+    .credit-europe-bank .partner-bank-img {
+        max-width: 20.4vw;
+    }
+    .post-bank .partner-bank-img {
+        max-width: 10vw;
+    }
+    .mts-bank .partner-bank-img {
+        max-width: 19.2vw;
+    }
+    .russian-standart .partner-bank-img {
+        max-width: 15.5vw;
+    }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 991px) {
+    .installment-container .installment-title .installment-name {
+        font-size: 3.15vw;
+    }
+    .installment-container .installment-description,
+    .installment-container .installment-block-inf span,
+    .installment-container .installment-question ol li {
+        font-size: 1.57vw;
+    }
+    .installment-container .installment-block-title span,
+    .installment-container .installment-partner-banks-title span {
+        font-size: 2.34vw;
+    }
+    .installment-container .installment-block-info label,
+    .installment-container .installment-block-inf span,
+    .installment-container .installment-partner-bank span {
+        font-size: 1.42vw;
+    }
+    .installment-container .installment-block-info span {
+        font-size: 3.72vw;
+    }
+    .installment-container .installment-advantage-desc {
+        font-size: 1.25vw;
+    }
+    .installment-container .installment-block {
+        padding: 24px 25px 25px 31px;
+    }
+    .installment-container .installment-partner-bank {
+        height: 22.4vw;
+    }
+    .installment-container .installment-question span {
+        font-size: 1.85vw;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 991px) {
+    .installment-question span {
+        margin: 0 0 20px 0;
+        display: block;
+        line-height: 28px;
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .installment-question ol li {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .installment-question span {
+        font-weight: bold;
+        font-size: 24px;
+    }
+    .installment-partner-banks-title {
+        margin: 0 0 34px 0;
+    }
+    .installment-title {
+        margin: 53px 0 48px 0;
+    }
+
+    .installment-title .installment-name {
+        font-size: 40px;
+        margin: 0 0 21px 0;
+        text-align: center;
+    }
+
+    .installment-description {
+        font-size: 20px;
+    }
+
+    .installment-blocks {
+        margin: 0 0 71px 0;
+    }
+
+    .installment-blocks .installment-block:first-child {
+        margin: 0 30px 0 0;
+    }
+
+    .installment-block {
+        padding: 48px 50px 50px 62px;
+        width: 50%;
+    }
+
+    .installment-block-title {
+        margin: 0 0 33px 0;
+    }
+
+    .installment-block-title span {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .installment-block-info label {
+        font-size: 18px;
+    }
+
+    .installment-block-info span {
+        font-size: 48px;
+        line-height: 65px;
+    }
+
+    .installment-block-inf {
+        margin: 0 0 36px 0;
+    }
+
+    .installment-block-inf span {
+        font-size: 18px;
+    }
+
+    .installment-advantage {
+        margin: 0 0 28px 0;
+        padding: 0 50px 0 0;
+    }
+
+    .installment-advantage-title {
+        font-weight: 700;
+        font-size: 20px;
+        margin: 0 0 6px 0;
+        line-height: 23px;
+    }
+
+    .installment-advantage-desc {
+        font-size: 16px;
+    }
+
+    .installment-partner-bank {
+        width: 33.3336%;
+        border-left: 1px solid #CCCCCC;
+        border-top: 1px solid #CCCCCC;
+        height: 286px;
+        padding: 0 10px 65px;
+    }
+
+    .installment-partner-bank.alfa-bank,
+    .installment-partner-bank.post-bank,
+    .installment-partner-bank.russian-standart {
+        border-right: 1px solid #CCCCCC;
+    }
+
+    .installment-partner-bank.post-bank,
+    .installment-partner-bank.russian-standart,
+    .installment-partner-bank.mts-bank {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .installment-partner-bank span {
+        font-size: 18px;
+    }
+
+    .installment-partner-banks-title span {
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .installment-partner-banks-container {
+        margin: 0 0 53px 0;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 991px) {
+    .installment-question-container {
+        padding: 0 15px;
+    }
+    .installment-question ol li {
+        font-size: 12px;
+        line-height: 14px;
+        margin: 0 0 14px 0;
+    }
+    .installment-question span {
+        margin: 0 0 12px 0;
+        display: block;
+        line-height: 16px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .installment-question span {
+        font-weight: 500;
+        font-size: 14px;
+    }
+    .installment-partner-banks-container {
+        margin: 0 0 54px 0;
+    }
+
+    .installment-partner-bank.opt-bank,
+    .installment-partner-bank.alfa-bank,
+    .installment-partner-bank.credit-europe-bank,
+    .installment-partner-bank.mts-bank {
+        border-right: 1px solid #CCCCCC;
+        padding-left: 15px;
+    }
+
+    .installment-partner-bank.renensance-credit,
+    .installment-partner-bank.tinkoff-bank,
+    .installment-partner-bank.post-bank,
+    .installment-partner-bank.russian-standart {
+        padding-right: 15px;
+    }
+
+    .installment-partner-bank.mts-bank,
+    .installment-partner-bank.russian-standart {
+        border-bottom: 1px solid #CCCCCC;
+    }
+
+    .installment-partner-bank {
+        width: 50%;
+        border-top: 1px solid #CCCCCC;
+        height: 145px;
+        padding: 0 10px 28px;
+    }
+
+    .opt-bank .partner-bank-img {
+        max-width: 119px;
+    }
+    .renensance-credit .partner-bank-img {
+        max-width: 125px;
+    }
+    .alfa-bank .partner-bank-img {
+        max-width: 119px;
+    }
+    .tinkoff-bank .partner-bank-img {
+        max-width: 136px;
+    }
+    .credit-europe-bank .partner-bank-img {
+        max-width: 136px;
+    }
+    .post-bank .partner-bank-img {
+        max-width: 68px;
+    }
+    .mts-bank .partner-bank-img {
+        max-width: 136px;
+    }
+    .russian-standart .partner-bank-img {
+        max-width: 117px;
+    }
+
+    .installment-partner-banks-title {
+        margin: 0 0 22px 0;
+    }
+    .page.installment {
+        padding: 65px 0 15px 0;
+    }
+    .installment .search-block,
+    .installment .breadcrumbs-block {
+        padding: 0 15px;
+    }
+    .installment-title {
+        padding: 0 15px;
+        margin: 46px 0 30px 0;
+    }
+
+    .installment-title .installment-name {
+        font-size: 20px;
+        margin: 0 0 11px 0;
+    }
+
+    .installment-description {
+        font-size: 12px;
+    }
+
+    .installment-blocks {
+        padding: 0 15px;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .installment-block {
+        padding: 15px 10px 20px 10px;
+    }
+
+    .installment-blocks .installment-block:first-child {
+        margin: 0 0 30px 0;
+    }
+
+    .installment-block-title {
+        margin: 0 0 18px 0;
+    }
+
+    .installment-block-title span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    .installment-block-info label {
+        font-size: 12px;
+    }
+
+    .installment-block-info span {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .installment-block-inf {
+        margin: 0 0 22px 0;
+    }
+
+    .installment-block-inf span {
+        font-size: 12px;
+    }
+
+    .installment-advantage {
+        margin: 0 0 24px 0;
+        padding: 0 10px 0 0;
+    }
+
+    .installment-advantage-title {
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0 0 10px 0;
+    }
+
+    .installment-advantage-desc {
+        font-size: 12px;
+    }
+
+    .installment-partner-bank span {
+        font-size: 12px;
+    }
+
+    .installment-blocks {
+        margin: 0 0 50px 0;
+    }
+
+    .installment-partner-banks-title span {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+}

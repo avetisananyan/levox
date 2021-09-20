@@ -1,0 +1,482 @@
+.hotels-top {
+    background-image: url("../assets/images/bedroom-decorated-with-bright-warm-tone-white-blanket-blue-gray-pillows.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 20vw;
+}
+
+.hotels-top-title span {
+    color: #202020;
+    font-weight: bold;
+}
+
+.hotels-top-desc span {
+    font-weight: 500;
+    color: #202020;
+}
+
+.hotels-advantages-block .item {
+    width: 100%;
+    max-width: 329px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+}
+.hotels-advantages-title,
+.hotels-advantages-item-title {
+    text-align: center;
+}
+.hotels-advantages-title span,
+.hotels-advantages-item-title,
+.hotels-advantages-item-info {
+    color: #202020;
+}
+
+.page-cat-title .cat-name {
+    margin: 0;
+}
+
+.hotels-contacts {
+    background: #F6F6F6;
+    border-radius: 3px 0 0 3px;
+    height: 24.15vw;
+    width: 50%;
+    margin: 0 46px 0 0;
+    padding: 30px;
+}
+
+.hotels-contacts-catalog {
+    background-image: url("../assets/images/loft-modern-bedroom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 24.15vw;
+    width: 50%;
+    padding: 40px;
+}
+.hotels-contacts-person-img img {
+    height: 100%;
+    border-radius: 100%;
+}
+.hotels-contacts-label,
+.hotels-contacts-sub-label {
+    color: #202020;
+}
+.hotels-contacts-person-name span {
+    color: #202020;
+    display: block;
+}
+.hotels-contacts-catalog-desc {
+
+}
+.hotels-contacts-catalog-action a {
+    background: #ED2024;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    align-items: center
+}
+.hotels-contacts-catalog-action a:hover {
+    color: #ffffff;
+}
+.swiper-wrapper.disabled {
+    transform: translate3d(0px, 0, 0) !important;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 991px) {
+    .hotels-container .hotels-advantages-item-info {
+        font-size: 1.1vw;
+        line-height: 1.5vw;
+    }
+    .hotels-container .hotels-advantages-item-title {
+        font-size: 1.4vw;
+        line-height: 1.6vw;
+    }
+    .hotels-container .hotels-advantages-img {
+        height: 5vw;
+        margin-bottom: 1vw;
+    }
+    .hotels-container .hotels-advantages-img img {
+        height: inherit;
+    }
+    .hotels-container .hotels-advantages-title {
+        margin-bottom: 1.8vw;
+    }
+    .hotels-container .hotels-advantages-title span {
+        font-size: 1.8vw;
+        line-height: 1.9vw;
+    }
+    .hotels-container .hotels-top {
+        margin-bottom: 1.5vw;
+    }
+    .hotels-container .hotels-top-desc span {
+        font-size: 1.175vw;
+        line-height: 1.6vw;
+    }
+    .hotels-container .hotels-top-title span {
+        font-size: 2.35vw;
+    }
+    .hotels-container .hotels-contacts {
+        margin-right: 2.6vw;
+    }
+    .hotels-container .hotels-contacts-catalog-desc {
+        font-size: 1.4vw;
+        line-height: 2vw;
+        margin-bottom: 2.1vw;
+    }
+    .hotels-container .hotels-contacts-catalog-action a {
+        font-size: 1.35vw !important;
+        height: 4.1vw !important;
+        max-width: 11.4vw !important;
+    }
+    .hotels-container .hotels-contacts-label {
+        font-size: 1.76vw;
+        margin-bottom: 1.2vw;
+        line-height: 2.1vw;
+    }
+    .hotels-container .hotels-contacts-sub-label {
+        font-size: 1.4vw;
+        margin-bottom: 1vw;
+        line-height: 1.7vw;
+    }
+    .hotels-container .hotels-contacts-info a {
+        font-size: 1.06vw;
+        line-height: 1.55vw;
+    }
+    .hotels-container .hotels-contacts-info a img {
+        width: 1.354vw;
+        height: 1.354vw;
+    }
+    .hotels-container .hotels-contacts-info {
+        margin-bottom: 1.3vw;
+    }
+    .hotels-container .hotels-contacts-person-img img,
+    .hotels-container .hotels-contacts-person-img {
+        width: 5.35vw;
+        height: 5.35vw;
+    }
+    .hotels-container .hotels-contacts-person-name span {
+        font-size: 1.18vw;
+        line-height: 1.4vw;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 991px) {
+    .hotels-contacts-container {
+        margin: 0 0 40px 0;
+    }
+    .hotels-contacts-catalog-action a {
+        max-width: 194px;
+        width: 100%;
+        height: 72px;
+        font-size: 23px;
+        line-height: 27px;
+    }
+    .hotels-contacts-catalog-desc {
+        font-size: 24px;
+        line-height: 35px;
+        margin: 0 0 35px 0;
+    }
+    .hotels-contacts-person-name span {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .hotels-contacts-info {
+        margin: 0 0 40px 0;
+    }
+    .hotels-contacts-info a {
+        color: #000000;
+        font-size: 18px;
+        line-height: 26px;
+        margin: 0 0 9px 0;
+    }
+    .hotels-contacts-info a img {
+        width: 23px;
+        height: 23px;
+        margin: 0 22px 0 0;
+    }
+    .hotels-contacts-sub-label {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 32px 0;
+    }
+    .hotels-contacts-label {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        margin: 0 0 37px 0;
+    }
+    .hotels-contacts-content {
+        max-width: 475px;
+        max-height: 333px;
+        height: 100%;
+    }
+    .hotels-contacts-catalog-content {
+        max-width: 595px;
+        max-height: 282px;
+        height: 100%;
+    }
+    .hotels-contacts-person-img {
+        height: 91px;
+        margin: 0 19px 0 0
+    }
+    .hotels-advantages {
+        margin: 0 0 80px 0;
+    }
+    .hotels-advantages-block .item {
+        margin: 0 20px 0 0;
+    }
+    .hotels-advantages-block .item:last-child {
+        margin: 0;
+    }
+    .hotels-advantages-item-info {
+        font-size: 18px;
+        line-height: 26px;
+        text-align: justify;
+    }
+    .hotels-advantages-item-title {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 28px;
+        margin: 0 0 6px 0;
+    }
+    .hotels-advantages-img {
+        margin: 0 0 22px 0;
+    }
+    .hotels-advantages-title {
+        margin: 0 0 41px 0;
+    }
+    .hotels-advantages-title span {
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .hotels-top-desc {
+        margin: 0 0 103px 0;
+    }
+    .hotels-top-desc span {
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .hotels-top {
+        margin: 0 0 32px 0;
+    }
+    .hotels-top-title span {
+        font-size: 40px;
+        line-height: 47px;
+    }
+}
+
+/* Mobile */
+@media only screen and (max-width: 991px) {
+    .hotels-container .swiper-container  {
+        width: 100%;
+        margin: 0 auto !important;
+        overflow: visible !important;
+    }
+    .hotels-container .swiper-wrapper {
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -moz-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .hotels-container .swiper-slide {
+        width: 252px !important;
+        padding: 0 !important;
+        margin: 0 0 0 11px !important;
+    }
+    .hotels-container .pagination-block {
+        padding: 30px 0;
+    }
+    .hotels-container .pagination-block .pagination li {
+        width: 42px;
+        height: 32px;
+    }
+    .hotels-container .page-subcategory {
+        padding: 0 0 0 15px;
+    }
+    .hotels-contacts-catalog {
+        padding: 50px 15px;
+    }
+    .hotels-contacts {
+        margin: 0;
+        padding: 30px 15px;
+    }
+    .hotels-contacts-container {
+        margin: 0 0 55px 0;
+    }
+    .hotels .search-block,
+    .hotels .breadcrumbs-block {
+        padding: 0 15px;
+    }
+    .page.hotels {
+        padding: 65px 0 15px;
+    }
+    .hotels-contacts{
+        width: 100%;
+        height: 281px;
+    }
+
+    .hotels-contacts-catalog {
+        width: 100%;
+        height: 300px;
+    }
+    .hotels-contacts-container {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .hotels-contacts-person-img {
+        width: 64px;
+        height: 64px;
+        margin: 0 10px 0 0
+    }
+    .hotels-contacts-catalog-action a {
+        max-width: 145px;
+        width: 100%;
+        height: 46px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hotels-contacts-catalog-desc {
+        font-size: 14px;
+        line-height: 28px;
+        margin: 0 0 15px 0;
+    }
+    .hotels-contacts-person-name span {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .hotels-contacts-info {
+        margin: 0 0 21px 0;
+    }
+    .hotels-contacts-info a {
+        color: #000000;
+        font-size: 12px;
+        line-height: 26px;
+        margin: 0 0 6px 0;
+    }
+    .hotels-contacts-info a img {
+        width: 18px;
+        height: 18px;
+        margin: 0 11px 0 0;
+    }
+    .hotels-contacts-sub-label {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 0 15px 0;
+    }
+    .hotels-contacts-label {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        margin: 0 0 20px 0;
+    }
+    .hotels-container .page-subcategory .item {
+        margin: 0 20px 0 0;
+    }
+
+    .hotels-container .page-subcategory .sub-img img {
+        height: 56px;
+    }
+    .hotels-container .page-subcategory .count {
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+        right: -20px;
+    }
+    .hotels-container .page-subcategory .sub-name {
+        font-size: 12px;
+    }
+    .hotels-advantages {
+        margin: 0 0 15px 0;
+    }
+    .hotels-container .page-cat-title {
+        margin: 0 0 20px 0;
+    }
+    .page-cat-title .cat-name {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #202020;
+        margin: 0;
+    }
+    .hotels-advantages-block .item {
+        max-width: 100%;
+        margin: 0 0 30px 0;
+    }
+    .hotels-advantages-block {
+        padding: 0 15px;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .hotels-advantages-item-info {
+        font-size: 12px;
+        line-height: 18px;
+        text-align: center;
+    }
+    .hotels-advantages-item-title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        margin: 0 0 10px 0;
+    }
+    .hotels-advantages-img {
+        margin: 0 0 20px 0;
+    }
+    .hotels-advantages-title {
+        margin: 0 0 20px 0;
+    }
+    .hotels-advantages-title span {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .hotels-top {
+        height: 150px;
+        background-position: center;
+    }
+    .hotels-top-desc {
+        margin: 0 0 35px 0;
+        padding: 0 15px;
+    }
+    .hotels-top-desc span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .hotels-top {
+        margin: 0 0 20px 0;
+    }
+    .hotels-top-title span {
+        font-size: 20px;
+        line-height: 23px;
+    }
+}
