@@ -12,6 +12,9 @@
     height: 60vh;
     overflow-y: auto;
 }
+/*.address-items.box {*/
+/*    display: none;*/
+/*}*/
 .address-title {
     padding: 16px 24px;
 }
@@ -120,7 +123,8 @@
     display: none;
 }
 
-#addressMap {
+#addressMap,
+#addressMapFranchise {
     height: 100%;
 }
 
@@ -187,7 +191,50 @@
     z-index: -1;
 }
 
+.address-title > select {
+    position: relative;
+    font-weight: bold;
+    font-size: 28px;
+    color: #202020;
+    border: 0;
+    outline: 0;
+    margin: 0;
+    overflow: hidden;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #fff;
+}
+.address-title > select option {
+    font-size: 20px;
+    color: #202020
+}
 
+@media only screen and (max-width: 1700px) and (min-width: 991px) {
+    .addresses-location ul li {
+        height: 9.4vw;
+        padding-top: 1.3vw;
+    }
+    .addresses-location ul li span.description {
+        font-size: 1.06vw;
+        line-height: 1.41vw;
+    }
+    .addresses-location ul li span {
+        line-height: 2vw;
+        font-size: 1.41vw;
+    }
+    .addresses-location ul li img {
+        width: 3.58vw;
+        height: 3.58vw;
+    }
+}
+
+@media only screen and (max-width: 1700px) and (min-width: 768px) {
+    .address-title > select {
+        font-size: 1.65vw;
+    }
+}
 /* Desktop */
 @media only screen and (min-width: 769px) {
 

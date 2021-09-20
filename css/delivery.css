@@ -77,20 +77,23 @@
     }
     .delivery-container .delivery-area-city,
     .delivery-container .delivery-area-time {
-        font-size: 1.2vw;
+        font-size: 1.18vw;
         line-height: 1.55vw;
     }
     .delivery-container .delivery-area {
         font-size: 1.3vw;
         margin-bottom: 1vw;
+        line-height: 1.55vw;
     }
     .delivery-container .delivery-to-city {
         font-size: 2.35vw;
         margin-bottom: 2.6vw;
+        line-height: 2.8vw;
     }
     .delivery-container .delivery-to-entrance {
         font-size: 1.75vw;
         margin-bottom: 1.6vw;
+        line-height: 2.1vw;
     }
 }
 

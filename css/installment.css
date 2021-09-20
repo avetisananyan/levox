@@ -197,6 +197,19 @@
     }
 }
 
+/*@media only screen and (max-width: 1700px) and (min-width: 991px) {*/
+/*    .installment-title {*/
+/*        margin: 2.8vw 0 2.35vw 0;*/
+/*    }*/
+/*    .installment-description {*/
+/*        font-size: 1.18vw;*/
+/*    }*/
+/*    .installment-title .installment-name {*/
+/*        font-size: 2.35vw;*/
+/*        margin-bottom: 1.18vw;*/
+/*    }*/
+/*}*/
+
 @media only screen and (max-width: 1280px) and (min-width: 991px) {
     .installment-container .installment-title .installment-name {
         font-size: 3.15vw;

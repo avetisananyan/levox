@@ -395,6 +395,7 @@
 @media only screen and (max-width: 1366px) and (min-width: 991px) {
     .page-wrapper .page-content .side-menu .side-menu-container ul li .side-menu-title {
         font-size: 15px;
+        padding: 15px 0;
     }
 
     .page-wrapper .page-content .side-menu a .side-menu-icon {

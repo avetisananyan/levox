@@ -611,16 +611,31 @@
           <div class="addresses-location">
             <ul class="tabs d-flex horizontal-scroll-wrapper">
               <li class="tab-link active" data-tab="1">
-                <img src="assets/images/address-location.svg">
-                <span>LEVOX магазины фирменные</span>
+                <div class="flex-column">
+                  <div class="d-flex align-items-sm-center">
+                    <img src="assets/images/address-location.svg">
+                    <span>LEVOX магазины фирменные</span>
+                  </div>
+                  <span class="description">Адреса фирменных магазинов Levox</span>
+                </div>
               </li>
               <li class="tab-link" data-tab="2">
-                <img src="assets/images/address-location-1.svg">
-                <span>LEVOX магазины по франшизе</span>
+                <div class="flex-column">
+                  <div class="d-flex align-items-sm-center">
+                    <img src="assets/images/address-location-1.svg">
+                    <span>LEVOX магазины по франшизе</span>
+                  </div>
+                  <span class="description">Адреса магазинов по франшизе Levox</span>
+                </div>
               </li>
               <li class="tab-link" data-tab="3">
-                <img src="assets/images/address-location-2.svg">
-                <span>LEVOX фабрики</span>
+                <div class="flex-column">
+                  <div class="d-flex align-items-sm-center">
+                    <img src="assets/images/address-location-2.svg">
+                    <span>LEVOX фабрики</span>
+                  </div>
+                  <span class="description">Адреса фабрик Levox</span>
+                </div>
               </li>
               <li class="tab-link" data-tab="4">
                 <div class="flex-column">
@@ -636,8 +651,13 @@
           <div id="tab-1" class="addresses-map active">
             <div class="addresses-location-container">
               <div class="address-container">
-                <div class="address-title"><span>Краснодарский край <span class="count">9</span></span></div>
-                <div class="address-items">
+                <div class="address-title">
+                  <select>
+                    <option value="branded1">Levox фирменные 1</option>
+                    <option value="branded2">Levox фирменные 2</option>
+                  </select>
+                </div>
+                <div class="address-items branded1 box">
                   <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
@@ -769,6 +789,28 @@
                     </div>
                   </div>
                 </div>
+                <div class="address-items branded2 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="addresses-map-container">
@@ -814,11 +856,556 @@
               </div>
             </div>
           </div>
-          <div id="tab-2" class="addresses-map">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab asperiores autem consequuntur debitis dignissimos eligendi harum inventore laboriosam perferendis provident repellendus sequi, sint soluta tempore totam ullam veritatis. Aut, rerum? </div>
 
-          <div id="tab-3" class="addresses-map">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci corporis delectus eius fuga harum ipsa maxime molestiae nulla, odio possimus praesentium quas quis repellat saepe, sint tempora tenetur, veritatis? Modi?</div>
+          <div id="tab-2" class="addresses-map">
+            <div class="addresses-location-container">
+              <div class="address-container">
+                <div class="address-title">
+                  <select>
+                    <option value="franchise1">Levox по франшизе 1</option>
+                    <option value="franchise2">Levox по франшизе 2</option>
+                  </select>
+                </div>
 
-          <div id="tab-4" class="addresses-map">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci animi aspernatur assumenda doloremque exercitationem nisi nostrum saepe voluptatibus. Amet assumenda dolore ex maiores, nobis quasi quisquam quod tempore vel voluptate.</div>
+                <div class="address-items franchise1 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.181066">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.172483">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.180076">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="5" data-lat="51.1" data-lng="-3.1">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="6" data-lat="51.2" data-lng="-3.2">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="7" data-lat="51.3" data-lng="-3.3">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="8" data-lat="51.4" data-lng="-3.4">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="9" data-lat="51.5" data-lng="-3.5">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="10" data-lat="51.6" data-lng="-3.6">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="11" data-lat="51.7" data-lng="-3.7">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="12" data-lat="51.8" data-lng="-3.8">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="address-items franchise2 box">
+                  <div class="address-item" data-item="0" data-lat="51.4805671" data-lng="-3.1792398">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.4794161" data-lng="-3.1791826">
+                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="addresses-map-container">
+              <div id="addressMapFranchise"></div>
+              <div class="map-addresses map-addresses-mobile">
+                <div class="map-addresses-title">
+                  <span>LEVOX магазин</span>
+                  <a class="close"><img src="assets/icons/close.svg"></a>
+                </div>
+
+                <div class="map-addresses-images d-flex">
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-1.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-2.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-3.png">
+                  </div>
+                </div>
+
+                <div class="map-addresses-info-container">
+                  <div class="map-addresses-info">
+                    <label>Адрес:</label>
+                    <span class="map-addresses-description">поселок городского типа Мостовкой (Краснодарский край), улица Горького, д. 74</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Режим работы:</label>
+                    <span class="map-addresses-date">Ежедневно 10:00-21:00</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Площадь магазина:</label>
+                    <span>1 000 м2</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Телефон:</label>
+                    <a href="tel:+79183333333"><span>+ 7 (918) 333-33-33</span></a>
+                  </div>
+                </div>
+
+                <div class="map-addresses-action"><button>Выбрать</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-3" class="addresses-map">
+            <div class="addresses-location-container">
+              <div class="address-container">
+                <div class="address-title">
+                  <select>
+                    <option value="factory1">LEVOX фабрики 1</option>
+                    <option value="factory2">LEVOX фабрики 2</option>
+                  </select>
+                </div>
+
+                <div class="address-items factory1 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.181066">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.172483">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.180076">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="5" data-lat="51.1" data-lng="-3.1">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="6" data-lat="51.2" data-lng="-3.2">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="7" data-lat="51.3" data-lng="-3.3">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="8" data-lat="51.4" data-lng="-3.4">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="address-items factory2 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="addresses-map-container">
+              <div id="addressMapFactory"></div>
+              <div class="map-addresses map-addresses-mobile">
+                <div class="map-addresses-title">
+                  <span>LEVOX магазин</span>
+                  <a class="close"><img src="assets/icons/close.svg"></a>
+                </div>
+
+                <div class="map-addresses-images d-flex">
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-1.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-2.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-3.png">
+                  </div>
+                </div>
+
+                <div class="map-addresses-info-container">
+                  <div class="map-addresses-info">
+                    <label>Адрес:</label>
+                    <span class="map-addresses-description">поселок городского типа Мостовкой (Краснодарский край), улица Горького, д. 74</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Режим работы:</label>
+                    <span class="map-addresses-date">Ежедневно 10:00-21:00</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Площадь магазина:</label>
+                    <span>1 000 м2</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Телефон:</label>
+                    <a href="tel:+79183333333"><span>+ 7 (918) 333-33-33</span></a>
+                  </div>
+                </div>
+
+                <div class="map-addresses-action"><button>Выбрать</button></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="tab-4" class="addresses-map">
+            <div class="addresses-location-container">
+              <div class="address-container">
+                <div class="address-title">
+                  <select>
+                    <option value="wholesale1">LEVOX оптовые склады 1</option>
+                    <option value="wholesale2">LEVOX оптовые склады 2</option>
+                  </select>
+                </div>
+
+                <div class="address-items wholesale1 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.181066">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.172483">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.180076">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="5" data-lat="51.1" data-lng="-3.1">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="6" data-lat="51.2" data-lng="-3.2">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="7" data-lat="51.3" data-lng="-3.3">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="8" data-lat="51.4" data-lng="-3.4">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="address-items wholesale2 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                    <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="addresses-map-container">
+              <div id="addressMapWholesale"></div>
+              <div class="map-addresses map-addresses-mobile">
+                <div class="map-addresses-title">
+                  <span>LEVOX магазин</span>
+                  <a class="close"><img src="assets/icons/close.svg"></a>
+                </div>
+
+                <div class="map-addresses-images d-flex">
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-1.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-2.png">
+                  </div>
+                  <div class="map-addresses-img">
+                    <img src="assets/images/addresses-3.png">
+                  </div>
+                </div>
+
+                <div class="map-addresses-info-container">
+                  <div class="map-addresses-info">
+                    <label>Адрес:</label>
+                    <span class="map-addresses-description">поселок городского типа Мостовкой (Краснодарский край), улица Горького, д. 74</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Режим работы:</label>
+                    <span class="map-addresses-date">Ежедневно 10:00-21:00</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Площадь магазина:</label>
+                    <span>1 000 м2</span>
+                  </div>
+                  <div class="map-addresses-info">
+                    <label>Телефон:</label>
+                    <a href="tel:+79183333333"><span>+ 7 (918) 333-33-33</span></a>
+                  </div>
+                </div>
+
+                <div class="map-addresses-action"><button>Выбрать</button></div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <!-- The Address Modal -->

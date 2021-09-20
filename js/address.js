@@ -1,8 +1,39 @@
+var markersArrList = [];
 $('.tab-link').click( function() {
     let tabID = $(this).attr('data-tab');
     $(this).addClass('active').siblings().removeClass('active');
     $('#tab-'+tabID).addClass('active').siblings().removeClass('active');
+    let kk = "#tab-" + tabID + " .address-container";
+    $(kk).addClass("address-items-1");
+    console.log(kk)
+    $(this).find("option:selected").each(function() {
+        var optionValue = $(this).attr("value");
+        if(optionValue) {
+            $(".addresses-map.active .box").not("." + optionValue).hide();
+            $("." + optionValue).show();
+            markersArrList = getItems(optionValue);
+            myMapFranchise.initialize(markersArrList);
+        } else {
+            $(".addresses-map.active .box").hide();
+        }
+    }).change();
+    myMap.initialize();
+    myMapFranchise.initialize(markersArrList);
 });
+
+$(".addresses-container select").change(function() {
+    $(this).find("option:selected").each(function() {
+        var optionValue = $(this).attr("value");
+        if(optionValue) {
+            $(".addresses-map.active .box").not("." + optionValue).hide();
+            $("." + optionValue).show();
+            markersArrList = getItems(optionValue);
+            // myMapFranchise.initialize(markersArrList);
+        } else {
+            $(".addresses-map .box").hide();
+        }
+    });
+}).change();
 
 let arr = [];
 let obj = {};
@@ -49,6 +80,7 @@ if(window.matchMedia("(max-width: 768px)").matches) {
 
 function initMap() {
     myMap.initialize();
+    myMapFranchise.initialize(markersArrList);
 }
 
 let markers = [];
@@ -121,3 +153,102 @@ let myMap = {
         google.maps.event.trigger(this.markers[dataItem], 'click');
     }
 };
+
+function getItems(optionValue) {
+    let arrFranchise = [];
+    let objFranchise = {};
+    let optionsItem = ".addresses-map.active " + "." + optionValue + " .address-item";
+
+    $(optionsItem).each(function(index) {
+        objFranchise = {
+            item: $(this).attr("data-item"),
+            lat: $(this).attr("data-lat"),
+            lng: $(this).attr("data-lng"),
+            title: $(this).find(".item-title").text(),
+            description: $(this).find(".item-description span").text(),
+            date: $(this).find(".item-date span").text(),
+        };
+
+        arrFranchise.push(objFranchise);
+    });
+
+    return arrFranchise;
+}
+
+let markersFranchise = [];
+
+let myMapFranchise = {
+    map: null,
+    markersFranchise: [],
+    infowindow: null,
+    image: "assets/images/map-loc.svg",
+    addressList: [],
+    initialize: function(markersArrList) {
+        if (markersArrList.length) {
+            this.addressList = markersArrList;
+        }
+
+        this.createMap();
+        this.setMarkersAndInfoWindow();
+    },
+    createMap: function() {
+        const myLatlng = { lat: 51.481382, lng: -3.179028 };
+
+        let mapOptions = {
+            center: myLatlng,
+            zoom: 16,
+            disableDefaultUI: true,
+            scrollwheel: true
+        };
+        this.map = new google.maps.Map($("#addressMapFranchise")[0], mapOptions);
+        this.infowindow = new google.maps.InfoWindow();
+    },
+    setMarkersAndInfoWindow: function() {
+        for (let i = 0; i < this.addressList.length; i++) {
+            let address = this.addressList[i];
+            let marker = new google.maps.Marker({
+                position: new google.maps.LatLng(address.lat, address.lng),
+                map: myMap.map,
+                title: address.name,
+                icon: this.image,
+                draggarble: false
+            });
+            this.markersFranchise.push(marker);
+
+            if(!window.matchMedia("(max-width: 768px)").matches) {
+                google.maps.event.addListener(marker, 'click', function (marker, address) {
+                    return function () {
+                        myMapFranchise.infowindow.setContent('<div class="map-addresses map-addresses-maps"><div class="map-addresses-title"><span>' + address.title + '</span><a class="close"><img src="assets/icons/close.svg"></a></div><div class="map-addresses-images d-flex"><div class="map-addresses-img"><img src="assets/images/addresses-1.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-2.png"></div><div class="map-addresses-img"><img src="assets/images/addresses-3.png"></div></div><div class="map-addresses-info-container"><div class="map-addresses-info"><label>Адрес:</label><span class="map-addresses-description">' + address.description + '</span></div><div class="map-addresses-info"><label>Режим работы:</label><span class="map-addresses-date">' + address.date + '</span></div><div class="map-addresses-info"><label>Площадь магазина:</label><span>1 000 м2</span></div><div class="map-addresses-info"><label>Телефон:</label><a href="tel:+79183333333"><span>+ 7 (918) 333-33-33</span></a></div></div><div class="map-addresses-action"><button>Выбрать</button></div></div>');
+                        myMapFranchise.infowindow.open(myMapFranchise.map, marker);
+
+                        for (let j = 0; j < markersFranchise.length; j++) {
+                            markersFranchise[j].setIcon("assets/images/map-loc.svg");
+                        }
+                        marker.setIcon("assets/images/map-loc-active.svg");
+                        $(".addresses-map-container .gm-ui-hover-effect").on("click", function() {
+                            marker.setIcon("assets/images/map-loc.svg");
+                        });
+                    };
+                }(marker, address));
+            } else {
+                google.maps.event.addListener(marker, 'click', function (marker, address) {
+                    return function () {
+                        $(`.address-items .address-item[data-item=${address.item}]`).click();
+                        for (let j = 0; j < markersFranchise.length; j++) {
+                            markersFranchise[j].setIcon("assets/images/map-loc.svg");
+                        }
+                        marker.setIcon("assets/images/map-loc-active.svg");
+                        $(".addresses-map-container .map-addresses .map-addresses-title .close").click(function() {
+                            marker.setIcon("assets/images/map-loc.svg");
+                        });
+                    };
+                }(marker, address));
+            }
+            markersFranchise.push(marker);
+        }
+    },
+    setMarker: function(dataItem) {
+        google.maps.event.trigger(this.markersFranchise[dataItem], 'click');
+    }
+};
+
