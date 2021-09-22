@@ -536,9 +536,6 @@
     .addresses-container .addresses-location-container {
         min-width: 22vw;
     }
-    .address-title {
-        padding: 12px 24px 12px 12px;
-    }
     .address-title > span {
         display: block;
         width: max-content;
