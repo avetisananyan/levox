@@ -652,13 +652,21 @@
             <div class="addresses-location-container">
               <div class="address-container">
                 <div class="address-title">
-                  <select>
-                    <option value="branded1">Levox фирменные 1</option>
-                    <option value="branded2">Levox фирменные 2</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <div class="select">
+                      <div class="select__trigger"><span>Levox фирменные 1</span>
+                        <div class="arrow"></div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="branded1">Levox фирменные 1</span>
+                        <span class="custom-option" data-value="branded2">Levox фирменные 2</span>
+                        <span class="custom-option" data-value="branded3">Levox фирменные 3</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="address-items branded1 box">
-                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                <div class="address-items current load branded1 box">
+                  <div class="address-item" data-item="0" data-lat="51.480500" data-lng="-3.179500">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -668,7 +676,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                  <div class="address-item" data-item="1" data-lat="51.479600" data-lng="-3.179600">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -678,7 +686,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.181066">
+                  <div class="address-item" data-item="2" data-lat="51.480700" data-lng="-3.181700">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -688,7 +696,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.172483">
+                  <div class="address-item" data-item="3" data-lat="51.479800" data-lng="-3.172800">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -698,7 +706,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.180076">
+                  <div class="address-item" data-item="4" data-lat="51.480900" data-lng="-3.180900">
                     <div class="item-img"><img src="assets/images/address-location.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -811,10 +819,42 @@
                     </div>
                   </div>
                 </div>
+                <div class="address-items branded3 box">
+                  <div class="address-item" data-item="0" data-lat="51.480422" data-lng="-3.179211">
+                    <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="1" data-lat="51.479310" data-lng="-3.179162">
+                    <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                  <div class="address-item" data-item="2" data-lat="51.479350" data-lng="-3.179175">
+                    <div class="item-img"><img src="assets/images/address-location.svg"></div>
+                    <div class="item-content d-flex flex-column">
+                      <div class="item-title"><span>LEVOX Краснодар</span></div>
+                      <div class="item-description">
+                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
+                      </div>
+                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="addresses-map-container">
-              <div id="addressMap"></div>
+              <div id="addressMap1" class="h-100"></div>
               <div class="map-addresses map-addresses-mobile">
                 <div class="map-addresses-title">
                   <span>LEVOX магазин</span>
@@ -861,13 +901,20 @@
             <div class="addresses-location-container">
               <div class="address-container">
                 <div class="address-title">
-                  <select>
-                    <option value="franchise1">Levox по франшизе 1</option>
-                    <option value="franchise2">Levox по франшизе 2</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <div class="select">
+                      <div class="select__trigger"><span>Levox по франшизе 1</span>
+                        <div class="arrow"></div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="franchise1">Levox по франшизе 1</span>
+                        <span class="custom-option" data-value="franchise2">Levox по франшизе 1</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="address-items franchise1 box">
+                <div class="address-items current franchise1 box">
                   <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
                     <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
                     <div class="item-content d-flex flex-column">
@@ -948,56 +995,6 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="8" data-lat="51.4" data-lng="-3.4">
-                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
-                    <div class="item-content d-flex flex-column">
-                      <div class="item-title"><span>LEVOX Краснодар</span></div>
-                      <div class="item-description">
-                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
-                      </div>
-                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
-                    </div>
-                  </div>
-                  <div class="address-item" data-item="9" data-lat="51.5" data-lng="-3.5">
-                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
-                    <div class="item-content d-flex flex-column">
-                      <div class="item-title"><span>LEVOX Краснодар</span></div>
-                      <div class="item-description">
-                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
-                      </div>
-                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
-                    </div>
-                  </div>
-                  <div class="address-item" data-item="10" data-lat="51.6" data-lng="-3.6">
-                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
-                    <div class="item-content d-flex flex-column">
-                      <div class="item-title"><span>LEVOX Краснодар</span></div>
-                      <div class="item-description">
-                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
-                      </div>
-                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
-                    </div>
-                  </div>
-                  <div class="address-item" data-item="11" data-lat="51.7" data-lng="-3.7">
-                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
-                    <div class="item-content d-flex flex-column">
-                      <div class="item-title"><span>LEVOX Краснодар</span></div>
-                      <div class="item-description">
-                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
-                      </div>
-                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
-                    </div>
-                  </div>
-                  <div class="address-item" data-item="12" data-lat="51.8" data-lng="-3.8">
-                    <div class="item-img"><img src="assets/images/address-location-1.svg"></div>
-                    <div class="item-content d-flex flex-column">
-                      <div class="item-title"><span>LEVOX Краснодар</span></div>
-                      <div class="item-description">
-                        <label>Адрес: </label><span>Краснодар, ул. Костюшки 140Б</span>
-                      </div>
-                      <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
-                    </div>
-                  </div>
                 </div>
                 <div class="address-items franchise2 box">
                   <div class="address-item" data-item="0" data-lat="51.4805671" data-lng="-3.1792398">
@@ -1024,7 +1021,7 @@
               </div>
             </div>
             <div class="addresses-map-container">
-              <div id="addressMapFranchise"></div>
+              <div id="addressMap2" class="h-100"></div>
               <div class="map-addresses map-addresses-mobile">
                 <div class="map-addresses-title">
                   <span>LEVOX магазин</span>
@@ -1071,14 +1068,21 @@
             <div class="addresses-location-container">
               <div class="address-container">
                 <div class="address-title">
-                  <select>
-                    <option value="factory1">LEVOX фабрики 1</option>
-                    <option value="factory2">LEVOX фабрики 2</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <div class="select">
+                      <div class="select__trigger"><span>LEVOX фабрики 1</span>
+                        <div class="arrow"></div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="factory1">LEVOX фабрики 1</span>
+                        <span class="custom-option" data-value="factory2">LEVOX фабрики 2</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="address-items factory1 box">
-                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
+                <div class="address-items current factory1 box">
+                  <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.178239">
                     <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -1088,7 +1092,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.179182">
+                  <div class="address-item" data-item="1" data-lat="51.479411" data-lng="-3.178182">
                     <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -1098,7 +1102,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.181066">
+                  <div class="address-item" data-item="2" data-lat="51.480742" data-lng="-3.182066">
                     <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -1108,7 +1112,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.172483">
+                  <div class="address-item" data-item="3" data-lat="51.479870" data-lng="-3.173483">
                     <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -1118,7 +1122,7 @@
                       <div class="item-date"><span>Ежедневно 10-00:21:00</span></div>
                     </div>
                   </div>
-                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.180076">
+                  <div class="address-item" data-item="4" data-lat="51.480650" data-lng="-3.181076">
                     <div class="item-img"><img src="assets/images/address-location-2.svg"></div>
                     <div class="item-content d-flex flex-column">
                       <div class="item-title"><span>LEVOX Краснодар</span></div>
@@ -1194,7 +1198,7 @@
               </div>
             </div>
             <div class="addresses-map-container">
-              <div id="addressMapFactory"></div>
+              <div id="addressMap3" class="h-100"></div>
               <div class="map-addresses map-addresses-mobile">
                 <div class="map-addresses-title">
                   <span>LEVOX магазин</span>
@@ -1241,13 +1245,19 @@
             <div class="addresses-location-container">
               <div class="address-container">
                 <div class="address-title">
-                  <select>
-                    <option value="wholesale1">LEVOX оптовые склады 1</option>
-                    <option value="wholesale2">LEVOX оптовые склады 2</option>
-                  </select>
+                  <div class="select-wrapper">
+                    <div class="select">
+                      <div class="select__trigger"><span>LEVOX оптовые склады 1</span>
+                        <div class="arrow"></div>
+                      </div>
+                      <div class="custom-options">
+                        <span class="custom-option selected" data-value="wholesale1">LEVOX оптовые склады 1</span>
+                        <span class="custom-option" data-value="wholesale2">LEVOX оптовые склады 2</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-
-                <div class="address-items wholesale1 box">
+                <div class="address-items current wholesale1 box">
                   <div class="address-item" data-item="0" data-lat="51.480561" data-lng="-3.179239">
                     <div class="item-img"><img src="assets/images/address-location-3.svg"></div>
                     <div class="item-content d-flex flex-column">
@@ -1363,8 +1373,9 @@
                 </div>
               </div>
             </div>
+          </div>
             <div class="addresses-map-container">
-              <div id="addressMapWholesale"></div>
+              <div id="addressMap4" class="h-100"></div>
               <div class="map-addresses map-addresses-mobile">
                 <div class="map-addresses-title">
                   <span>LEVOX магазин</span>
