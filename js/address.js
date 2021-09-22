@@ -19,11 +19,10 @@ $(".tab-link").click(function() {
     let tabId = $(this).attr('data-tab');
     $(this).addClass('active').siblings().removeClass('active');
     $('#tab-' + tabId).addClass('active').siblings().removeClass('active');
-    console.log("#tab-" + tabId + " .address-container .address-items")
     let addressItem = $("#tab-" + tabId + " .address-container .address-items").first();
-
     itemsArrList = getItems(addressItem);
-    console.log(itemsArrList)
+    tabSelect();
+
     myMap.initialize(itemsArrList, tabId);
 });
 
@@ -44,53 +43,57 @@ function getItems(addressItem) {
     return arr;
 }
 
+tabSelect();
+
 //For Select
-document.querySelector('.select-wrapper').addEventListener('click', function() {
-    this.querySelector('.select').classList.toggle('open');
-});
-for (const option of document.querySelectorAll(".custom-option")) {
-    option.addEventListener('click', function() {
-        if (!this.classList.contains('selected')) {
-            this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
-            this.classList.add('selected');
-            this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
+function tabSelect()
+{
+    document.querySelector('.addresses-map.active .select-wrapper').addEventListener('click', function() {
+        this.querySelector('.select').classList.toggle('open');
+    });
+    for (const option of document.querySelectorAll(".custom-option")) {
+        option.addEventListener('click', function() {
+            if (!this.classList.contains('selected')) {
+                this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
+                this.classList.add('selected');
+                this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
 
-            let dataValue = this.getAttribute('data-value');
-            let className =  document.querySelectorAll(".addresses-map.active .address-container .address-items");
-            for (const item of className) {
-                item.classList.remove('current') // Remove class "info"
+                let dataValue = this.getAttribute('data-value');
+                let className =  document.querySelectorAll(".addresses-map.active .address-container .address-items");
+                for (const item of className) {
+                    item.classList.remove('current') // Remove class "info"
+                }
+                document.getElementsByClassName(dataValue)[0].classList.add('current');
+
+                let itemArrList = [];
+                let dataObj = {};
+                let addressItem =  document.querySelectorAll(".addresses-map.active .address-container .address-items" + "." + dataValue + " .address-item");
+                for (const item of addressItem) {
+                    dataObj = {
+                        item: $(item).attr("data-item"),
+                        lat: $(item).attr("data-lat"),
+                        lng: $(item).attr("data-lng"),
+                        title: $(item).find(".item-title").text(),
+                        description: $(item).find(".item-description span").text(),
+                        date: $(item).find(".item-date span").text(),
+                    };
+                    itemArrList.push(dataObj);
+                }
+
+                let dataTab = document.querySelector(".addresses-container .tabs .tab-link.active").getAttribute('data-tab');
+                myMap.initialize(itemArrList, dataTab);
             }
-            document.getElementsByClassName(dataValue)[0].classList.add('current');
-
-            let itemArrList = [];
-            let dataObj = {};
-            let addressItem =  document.querySelectorAll(".addresses-map.active .address-container .address-items" + "." + dataValue + " .address-item");
-            for (const item of addressItem) {
-                dataObj = {
-                    item: $(item).attr("data-item"),
-                    lat: $(item).attr("data-lat"),
-                    lng: $(item).attr("data-lng"),
-                    title: $(item).find(".item-title").text(),
-                    description: $(item).find(".item-description span").text(),
-                    date: $(item).find(".item-date span").text(),
-                };
-                itemArrList.push(dataObj);
-            }
-
-            let dataTab = document.querySelector(".addresses-container .tabs .tab-link.active").getAttribute('data-tab');
-            myMap.initialize(itemArrList, dataTab);
-        }
-    })
-}
-window.addEventListener('click', function(e) {
-    const select = document.querySelector('.select')
-    if (!select.contains(e.target)) {
-        select.classList.remove('open');
+        });
     }
-});
+    window.addEventListener('click', function(e) {
+        const select = document.querySelector('.select')
+        if (!select.contains(e.target)) {
+            select.classList.remove('open');
+        }
+    });
+}
 
-
-$(".address-items .address-item").on("click", function() {
+$(".address-items .address-item").click(function() {
     if(window.matchMedia("(max-width: 768px)").matches) {
         $('.address-items .address-item').removeClass('active');
         $(this).addClass('active');
@@ -142,8 +145,8 @@ let myMap = {
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             scrollwheel: true
         };
-        let aa = $("#addressMap" + tabId);
-        this.map = new google.maps.Map(aa[0], mapOptions);
+        let addressMapId = $("#addressMap" + tabId);
+        this.map = new google.maps.Map(addressMapId[0], mapOptions);
         this.infowindow = new google.maps.InfoWindow();
     },
     setMarkersAndInfoWindow: function() {
