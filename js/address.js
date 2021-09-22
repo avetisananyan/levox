@@ -150,6 +150,7 @@ let myMap = {
         this.infowindow = new google.maps.InfoWindow();
     },
     setMarkersAndInfoWindow: function() {
+        this.markers = [];
         for (let i = 0; i < this.addressList.length; i++) {
             let address = this.addressList[i];
             let marker = new google.maps.Marker({

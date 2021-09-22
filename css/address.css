@@ -340,6 +340,9 @@
 }
 /* Desktop */
 @media only screen and (min-width: 769px) {
+    .addresses-container .addresses-map-container .addressMap {
+        height: 100vh;
+    }
 
     .addresses-container .addresses-location-container {
         min-width: 400px;
@@ -676,6 +679,10 @@
 
     .addresses-container {
         margin: 0 0 15px 0;
+    }
+
+    .addresses-container .addresses-map-container .addressMap {
+        height: 300px;
     }
 
     .addresses-container .addresses-location-container,
