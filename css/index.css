@@ -168,7 +168,7 @@
     color: white;
     position: relative;
     font-style: normal;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 18px;
     line-height: 18px;
     
@@ -216,7 +216,10 @@
     line-height: 16px;
     margin-top: 22px;
     text-align: end;
-    
+}
+
+.page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-factory span {
+    text-transform: uppercase;
 }
 
 /*Nav*/
@@ -924,6 +927,21 @@
 .in-numbers .in-numbers-block .item > span.in-numbers-item-info {
     font-weight: 300;
     font-size: 40px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: -webkit-flex;
+    display: flex;
+}
+.in-numbers .in-numbers-block .item > span.in-numbers-item-info > span {
+    padding: 0 10px 0 0;
+}
+.in-numbers .in-numbers-block .item > span.in-numbers-item-info.deg:after {
+    content: "2";
+    font-size: 18px;
+    font-weight: bold;
+    padding: 7px 0 0 2px;
 }
 
 .in-numbers .in-numbers-title span img {

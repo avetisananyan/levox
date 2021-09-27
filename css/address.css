@@ -323,6 +323,10 @@
 .select-wrapper .select-content {
     position: relative;
 }
+.map-addresses-info-container .map-addresses-info > a {
+    outline: unset;
+    border: none;
+}
 
 @media only screen and (max-width: 1700px) and (min-width: 991px) {
     .addresses-location ul li {
@@ -340,6 +344,9 @@
     .addresses-location ul li img {
         width: 3.58vw;
         height: 3.58vw;
+    }
+    .addresses-location ul li div div span {
+        max-width: 14.8vw;
     }
 }
 
@@ -439,6 +446,8 @@
     .map-addresses-info-container .map-addresses-info span {
         font-size: 18px;
         color: #202020;
+        font-weight: normal;
+        margin: 0 0 0 5px;
     }
 
     .map-addresses-images .map-addresses-img:not(:last-child) {
@@ -596,6 +605,9 @@
 
 /* Mobile */
 @media only screen and (max-width: 768px) {
+    .addresses-location ul li div div span {
+        max-width: 170px;
+    }
     .page.addresses {
         padding: 65px 0 15px 0;
     }
@@ -742,6 +754,8 @@
     .map-addresses-info-container .map-addresses-info span {
         font-size: 13px;
         color: #202020;
+        font-weight: normal;
+        margin: 0 0 0 5px;
     }
 
     .map-addresses-images .map-addresses-img:not(:last-child) {

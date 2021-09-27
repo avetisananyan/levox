@@ -1254,6 +1254,14 @@
         font-size: 12px;
     }
 
+    .production .production-block .item {
+        max-width: 135px;
+    }
+    .production .production-block .item > span {
+        font-size: 11px;
+        line-height: 14px;
+    }
+
     .in-numbers .in-numbers-block .item > span.in-numbers-item-info {
         font-size: 26px;
     }
@@ -1295,6 +1303,7 @@
     .advantage .advantage-block .item {
         max-width: 100%;
         margin: 20px 0 0 0;
+        padding: 20px;
     }
 
     .advantage .advantage-title {
@@ -1666,5 +1675,10 @@
 
     .info-field {
         font-size: 14px;
+    }
+
+    .in-numbers .in-numbers-block .item > span.in-numbers-item-info.deg:after {
+        font-size: 12px;
+        padding: 5px 0 0 1px;
     }
 }

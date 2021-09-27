@@ -112,7 +112,7 @@ function navStickyFunction() {
 
 function moreText() {
     $('.advantage-item-text').each(function () {
-        $(this).html(formatWords($(this).html(), 30));
+        $(this).html(formatWords($(this).html(), 15));
         $(this).children('span').hide();
     }).click(function () {
         let more_text = $(this).children('span.more_text');
