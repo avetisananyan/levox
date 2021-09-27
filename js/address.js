@@ -56,7 +56,7 @@ function tabSelect()
             if (!this.classList.contains('selected')) {
                 this.parentNode.querySelector('.custom-option.selected').classList.remove('selected');
                 this.classList.add('selected');
-                this.closest('.select').querySelector('.select__trigger span').textContent = this.textContent;
+                this.closest('.select').querySelector('.select__trigger span.select-option-name').textContent = this.textContent;
 
                 let dataValue = this.getAttribute('data-value');
                 let className =  document.querySelectorAll(".addresses-map.active .address-container .address-items");

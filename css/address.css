@@ -316,10 +316,12 @@
     left: 5px;
     transform: rotate(45deg);
 }
-
 .select-wrapper span.count {
     top: 5px;
-    right: -20px;
+    right: -30px;
+}
+.select-wrapper .select-content {
+    position: relative;
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 991px) {
