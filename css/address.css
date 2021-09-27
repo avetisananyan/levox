@@ -217,7 +217,6 @@
     position: relative;
     user-select: none;
     width: 100%;
-    padding: 20px;
 }
 .select {
     position: relative;
@@ -243,6 +242,9 @@
     border-width: 2px 0 2px 0;
     border-style: solid;
     border-color: #394a6d;
+}
+.select__trigger > span {
+    position: relative;
 }
 .custom-options {
     position: absolute;
@@ -316,8 +318,8 @@
 }
 
 .select-wrapper span.count {
-    top: 2px;
-    right: 2px;
+    top: 5px;
+    right: -20px;
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 991px) {
