@@ -1681,4 +1681,20 @@
         font-size: 12px;
         padding: 5px 0 0 1px;
     }
+
+    .category-section .subcategory-block {
+        margin-bottom: 50px;
+    }
+
+    .in-numbers .in-numbers-title {
+        margin: 0 0 15px 0;
+    }
+
+    .card-section {
+        margin: 35px 0 50px;
+    }
+
+    .category-section .category-section-title {
+        margin: 0 0 30px 0;
+    }
 }
