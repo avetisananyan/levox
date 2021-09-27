@@ -297,7 +297,54 @@
 @media only screen and (max-width: 1900px) and (min-width: 1700px) {
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link .header-contact .phone-number a {
         font-size: 20px;
-        width: 170px;
+        width: 172px;
+    }
+}
+@media only screen and (max-width: 1900px) and (min-width: 1280px) {
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-factory {
+        max-width: 10.3vw;
+        width: 100%;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-factory a span {
+        font-size: 0.84vw;
+    }
+
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-address {
+        max-width: 12vw;
+        width: 100%;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-address a > span {
+        font-size: 0.95vw;
+    }
+
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-delivery {
+        max-width: 7.6vw;
+        width: 100%;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-delivery a span {
+        font-size: 0.95vw;
+    }
+
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-review {
+        max-width: 14.5vw;
+        width: 100%;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-review a span {
+        font-size: 0.95vw;
+    }
+
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-info {
+        max-width: 10.8vw;
+        width: 100%;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-info a span {
+        font-size: 0.95vw;
+    }
+    body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link a > span.nav-address-title {
+        width: unset;
+    }
+    .nav-bar .nav-link {
+        padding: .5rem;
     }
 }
 
