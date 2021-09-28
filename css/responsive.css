@@ -349,6 +349,11 @@
 }
 
 /* Tablet and All responsive */
+@media only screen and (max-width: 1790px) and (min-width: 1200px) {
+    .promotions.card-select .card .card-sale-info span {
+        font-size: 0.7vw;
+    }
+}
 @media only screen and (max-width: 1790px) and (min-width: 991px) {
     .promotions.card-select .card .card-content .card-price {
         width: 35%;
