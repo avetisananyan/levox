@@ -112,7 +112,7 @@ function navStickyFunction() {
 
 function moreText() {
     $('.advantage-item-text').each(function () {
-        $(this).html(formatWords($(this).html(), 15));
+        $(this).html(formatWords($(this).html(), 10));
         $(this).children('span').hide();
     }).click(function () {
         let more_text = $(this).children('span.more_text');
@@ -145,6 +145,29 @@ function formatWords(sentence, show) {
     }
     return new_sentence;
 }
+
+/* Custom Select*/
+let selectWrapper = document.querySelectorAll('.card-select-button .select-wrapper');
+for (const option of selectWrapper) {
+    option.addEventListener('click', function() {
+        this.querySelector('.card-select-button .select').classList.toggle('open');
+    });
+}
+for (const option of document.querySelectorAll(".card-select-button .custom-option")) {
+    option.addEventListener('click', function() {
+        if (!this.classList.contains('selected')) {
+            this.parentNode.querySelector('.card-select-button .custom-option.selected').classList.remove('selected');
+            this.classList.add('selected');
+            this.closest('.card-select-button .select').querySelector('.card-select-button .select__trigger span').textContent = this.textContent;
+        }
+    })
+}
+window.addEventListener('click', function(e) {
+    const select = document.querySelector('.card-select-button .select')
+    if (!select.contains(e.target)) {
+        select.classList.remove('open');
+    }
+});
 
 (function() {
     const dropzone = document.getElementById("dropzone");

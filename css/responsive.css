@@ -349,9 +349,21 @@
 }
 
 /* Tablet and All responsive */
-@media only screen and (max-width: 1790px) and (min-width: 1200px) {
-    .promotions .card .card-content .card-price {
-        margin: 0 0 15px;
+@media only screen and (max-width: 1790px) and (min-width: 991px) {
+    .promotions.card-select .card .card-content .card-price {
+        width: 35%;
+    }
+    .promotions.card-select .card .card-content .card-button {
+        width: 65%;
+    }
+    .promotions.card-select .card .card-content .card-button a {
+        padding-right: 1.2vw;
+        text-align: end;
+    }
+    .promotions.card-select .card .card-content {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
     }
 }
 
@@ -1301,6 +1313,10 @@
         font-size: 12px;
     }
 
+    .advantage .advantage-block .item > span {
+        text-align: center;
+    }
+
     .production .production-block .item {
         max-width: 135px;
     }
@@ -1367,6 +1383,7 @@
 
     .advantage .advantage-block .item > span.advantage-item-text a.more_link {
         color: #ED2024;
+        padding: 0 0 0 5px;
     }
 
     .page-subcategory {
@@ -1743,5 +1760,51 @@
 
     .category-section .category-section-title {
         margin: 0 0 30px 0;
+    }
+
+    .promotions.card-select .card .card-content .card-button .card-optical-conditions {
+        padding: 0;
+    }
+    .promotions.card-select .card .card-content .card-button a {
+        line-height: 1;
+        padding: 7px 0 0 0;
+    }
+
+    /* SELECT */
+    .card-select-button {
+        max-width: 101px;
+    }
+    .card-select-button .select-wrapper {
+        margin: 0 0 7px 0;
+    }
+    .card-select-button .select__trigger {
+        font-size: 10px;
+        height: 26px;
+        padding: 0 7px;
+    }
+    .card-select-button .arrow {
+        height: 8px;
+        width: 8px;
+    }
+    .card-select-button .arrow::before,
+    .card-select-button .arrow::after {
+        width: 0.05rem;
+    }
+    .card-select-button .arrow::before {
+        left: -2px;
+    }
+    .card-select-button .arrow::after {
+        left: 2px;
+    }
+    .card-select-button .open .arrow::before {
+        left: -2px;
+    }
+    .card-select-button .open .arrow::after {
+        left: 2px;
+    }
+    .card-select-button .custom-option {
+        font-size: 10px;
+        height: 26px;
+        padding: 0 7px;
     }
 }
