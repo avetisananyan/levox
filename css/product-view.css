@@ -2496,4 +2496,8 @@
     .panel-heading.active + .tab-pane {
         display: block !important;
     }
+
+    .exec-options-product-count .product-count {
+        margin: 0 3px 0 0;
+    }
 }

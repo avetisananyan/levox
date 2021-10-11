@@ -28,6 +28,7 @@ $(function() {
     });
 
     $('.delivery .tabs-nav a').click(function() {
+
         // Check for active
         $('.delivery .tabs-nav li').removeClass('active');
         $(this).parent().addClass('active');
@@ -41,6 +42,18 @@ $(function() {
     });
 
     $('.payment-method .tabs-nav a').click(function() {
+        let wrapperWith = $(".horizontal-scroll-wrapper").width();
+        let windowWith = $(window).width();
+        let attrTab = $(this).parent().attr("tab");
+
+        if (attrTab == 1) {
+            $(".horizontal-scroll-wrapper").scrollLeft(0);
+        } else if (attrTab == 3) {
+            $(".horizontal-scroll-wrapper").scrollLeft(wrapperWith);
+        } else {
+            $(".horizontal-scroll-wrapper").scrollLeft((wrapperWith - $(this).parent().width()) / 6);
+        }
+        
         $(this).parent().parent().attr("data-tab", 'tab-'+$(this).parent().attr('tab'));
         // Check for active
         $('.payment-method .tabs-nav li').removeClass('active');

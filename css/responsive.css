@@ -303,7 +303,7 @@
         right: -10px;
         width: 10px;
         height: 100%;
-        background: #ffffff;
+        background: #e2e2e2;
         box-shadow: 5px 5px 15px -4px rgb(0 0 0 / 70%);
     }
 }
@@ -1635,6 +1635,10 @@
 
     .modal.header-address-modal .all-addresses .fieldset .field {
         width: 50%;
+    }
+
+    .modal.header-address-modal label.radio-label {
+        font-size: 14px;
     }
 
     body .page-wrapper .page-content .side-menu .menu-sub.current .menu-sub-content ul {

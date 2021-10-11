@@ -101,7 +101,9 @@
     margin: 0 0 20px 0;
 }
 
-
+.modal.header-address-modal label.radio-label {
+    font-size: 22px;
+}
 
 
 .main .main-content {
@@ -1500,6 +1502,10 @@ body.opt .promotions .card .card-content .card-price .item {
 
 .review-modal .uploads-field .user-img img {
     width: 100%;
+}
+
+.review-modal .rating-stars-field label {
+    color: #202020;
 }
 
 .review-modal .rating-stars {

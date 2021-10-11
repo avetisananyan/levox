@@ -164,8 +164,7 @@ button:focus {
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-    background-color: #989898;
-    color: #252525;
+    color: #ffffff;
 }
 
 /* Custom Checkbox */

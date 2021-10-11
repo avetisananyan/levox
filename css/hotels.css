@@ -14,6 +14,9 @@
     font-weight: 500;
     color: #202020;
 }
+.sub-title {
+    position: relative;
+}
 
 .hotels-advantages-block .item {
     width: 100%;
@@ -73,6 +76,7 @@
 .hotels-contacts-person-name span {
     color: #202020;
     display: block;
+    font-weight: 500;
 }
 .hotels-contacts-catalog-desc {
 
@@ -428,6 +432,7 @@
     .hotels-container .page-subcategory .sub-name {
         font-size: 12px;
     }
+
     .hotels-advantages {
         margin: 0 0 15px 0;
     }

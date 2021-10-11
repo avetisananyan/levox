@@ -3,6 +3,10 @@ $(document).ready(function() {
         e.preventDefault();
         e.stopPropagation();
         $(".page-wrapper .page-content").toggleClass('active');
+        if ($('.menu-sub').hasClass("current")) {
+            console.log("ssss")
+        }
+        // $(this).parent().children(".side-menu-title").click();
     });
 
     $(document).on("click", "body #side-menu .side-menu-title", function (e) {
@@ -167,6 +171,18 @@ window.addEventListener('click', function(e) {
     if (!select.contains(e.target)) {
         select.classList.remove('open');
     }
+});
+
+$(".carousel").swipe({
+
+  swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+    if (direction == 'left') $(this).carousel('next');
+    if (direction == 'right') $(this).carousel('prev');
+
+  },
+  allowPageScroll:"vertical"
+
 });
 
 (function() {
