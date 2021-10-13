@@ -635,8 +635,13 @@ input.lift-option-default + label {
     max-width: 435px;
 }
 
+.address-modal.cart-address-modal .addresses-location-container {
+    height: 70vh;
+}
+
 .address-modal.cart-address-modal .address-items {
     display: block;
+    height: 60vh;
 }
 
 .address-items {
@@ -822,6 +827,9 @@ input.lift-option-default + label {
 }
 
 @media only screen and (max-width: 1700px) and (min-width: 769px) {
+    .address-modal .modal-dialog {
+        max-width: 90vw;
+    }
     .fieldset .field.lift {
         margin: 0 0 50px 0;
         min-width: 160px;

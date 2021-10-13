@@ -105,6 +105,10 @@
     font-size: 22px;
 }
 
+.modal.header-address-modal .all-addresses {
+    padding-bottom: 40px;
+}
+
 
 .main .main-content {
     width: 100%;
