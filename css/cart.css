@@ -314,9 +314,6 @@
     -webkit-justify-content: space-between;
     -ms-justify-content: space-between;
     justify-content: space-between;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
 }
 
 .tabs-content .info-content .info-item {
@@ -346,6 +343,8 @@
     font-size: 22px;
     text-align: right;
     color: #ED2024;
+    display: block;
+    width: max-content;
 }
 
 .lift-option-container {
@@ -1312,6 +1311,9 @@ input.lift-option-default + label {
         font-weight: 600;
         font-size: 13px;
         color: #202020;
+    }
+    .delivery .tabs-content .pickup-tab .change-address {
+        padding: 0 0 0 15px;
     }
 
     .delivery .tabs-content .pickup-tab .change-address a {
