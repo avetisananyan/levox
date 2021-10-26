@@ -503,6 +503,9 @@
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.switch-checkbox .switch {
         width: 165px;
     }
+    .nav-link .slider:after {
+        right: 30px;
+    }
 
     /*before*/
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.switch-checkbox .switch span.slider:before {
@@ -520,7 +523,7 @@
         font-size: 14px;
     }
     .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.switch-checkbox input:checked + .slider:after {
-        left: 15px;
+        left: 12px;
     }
 
     .page-wrapper .footer .footer-container .footer-info .item {
