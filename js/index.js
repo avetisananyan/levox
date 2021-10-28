@@ -108,7 +108,9 @@ let sticky = header.offsetTop;
 
 function navStickyFunction() {
     if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+        if (!header.classList.contains("sticky")) {
+            header.classList.add("sticky");
+        }
     } else {
         header.classList.remove("sticky");
     }

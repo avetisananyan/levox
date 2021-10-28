@@ -1674,3 +1674,6 @@ body.opt .promotions .card .card-content .card-price .item {
     left: 4px;
     transform: rotate(-42deg);
 }
+body .page-wrapper .header .header-container .header-links .nav-container .nav-bar .nav-link.link-address .count {
+    line-height: 1;
+}
